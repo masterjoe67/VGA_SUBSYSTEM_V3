@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun May  3 23:41:01 2026
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Standard Edition
+Revision Name : VGA_Subsystem
+Top-level Entity Name : top
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 508 / 22,320 ( 2 % )
+    Total combinational functions : 348 / 22,320 ( 2 % )
+    Dedicated logic registers : 376 / 22,320 ( 2 % )
+Total registers : 410
+Total pins : 87 / 154 ( 56 % )
+Total virtual pins : 0
+Total memory bits : 26,624 / 608,256 ( 4 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

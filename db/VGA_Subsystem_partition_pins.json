@@ -1,0 +1,317 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "busy",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_RAS_N",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_CAS_N",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_WE_N",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADDR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADDR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADDR[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADDR[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADDR[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_BA_0",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_BA_1",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[3]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[4]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[0]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[2]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[3]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[4]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[5]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_HSYNC",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_VSYNC",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[13]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[14]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[15]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_bus[1]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_bus[0]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_bus[2]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_bus[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_bus[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_bus[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_bus[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_bus[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_stb",
+					"strict" : false
+				},
+				{
+					"name" : "cmd_stb",
+					"strict" : false
+				},
+				{
+					"name" : "data_bus[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_bus[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data_bus[9]",
+					"strict" : false
+				},
+				{
+					"name" : "data_bus[8]",
+					"strict" : false
+				},
+				{
+					"name" : "data_bus[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_bus[10]",
+					"strict" : false
+				},
+				{
+					"name" : "data_bus[11]",
+					"strict" : false
+				},
+				{
+					"name" : "data_bus[12]",
+					"strict" : false
+				},
+				{
+					"name" : "data_bus[13]",
+					"strict" : false
+				},
+				{
+					"name" : "data_bus[14]",
+					"strict" : false
+				},
+				{
+					"name" : "data_bus[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

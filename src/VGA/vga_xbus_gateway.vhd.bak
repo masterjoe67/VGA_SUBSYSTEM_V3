@@ -1,0 +1,76 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity vga_xbus_gateway is
+  port (
+    clk          : in  std_logic; -- clk_sys (100MHz)
+    rst_n        : in  std_logic;
+
+    -- Lato NEORV32 XBUS
+    xbus_addr_i  : in  std_logic_vector(31 downto 0);
+    xbus_data_i  : in  std_logic_vector(31 downto 0);
+    xbus_we_i    : in  std_logic;
+    xbus_stb_i   : in  std_logic;
+    xbus_cyc_i   : in  std_logic;
+    xbus_ack_o   : out std_logic;
+
+    -- Lato Arbitro PSRAM
+    cpu_req_o    : out std_logic;
+    cpu_addr_o   : out std_logic_vector(23 downto 0);
+    cpu_data_o   : out std_logic_vector(31 downto 0);
+    cpu_we_o     : out std_logic;
+    cpu_gnt_i    : in  std_logic  -- Grant/Acknowledge dall'arbitro
+  );
+end entity;
+
+architecture rtl of vga_xbus_gateway is
+  type state_t is (IDLE, PENDING, DONE);
+  signal state : state_t;
+begin
+
+  process(clk, rst_n)
+  begin
+    if rst_n = '0' then
+      state      <= IDLE;
+      xbus_ack_o <= '0';
+      cpu_req_o  <= '0';
+      cpu_addr_o <= (others => '0');
+      cpu_data_o <= (others => '0');
+      cpu_we_o   <= '0';
+    elsif rising_edge(clk) then
+      case state is
+
+        when IDLE =>
+          xbus_ack_o <= '0';
+          -- Rileva l'inizio di un ciclo Wishbone (CYC e STB alti)
+          if (xbus_cyc_i = '1' and xbus_stb_i = '1') then
+            cpu_req_o  <= '1';
+            cpu_addr_o <= xbus_addr_i(23 downto 0);
+            cpu_data_o <= xbus_data_i;
+            cpu_we_o   <= xbus_we_i;
+            state      <= PENDING;
+          else
+            cpu_req_o  <= '0';
+          end if;
+
+        when PENDING =>
+          -- Aspetta che l'arbitro PSRAM abbia completato l'operazione
+          if cpu_gnt_i = '1' then
+            cpu_req_o  <= '0';
+            xbus_ack_o <= '1'; -- Invia l'ACK al NEORV32
+            state      <= DONE;
+          end if;
+
+        when DONE =>
+          -- Fine del ciclo: aspetta che il SoC abbassi STB
+          xbus_ack_o <= '0';
+          if xbus_stb_i = '0' then
+            state <= IDLE;
+          end if;
+
+      end case;
+    end if;
+  end process;
+
+end architecture;

@@ -1,0 +1,173 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -1.975
+TNS   : -13.748
+
+Type  : Slow 1200mV 85C Model Setup 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.457
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 35.077
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.294
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 5.184
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 5.203
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 1.055
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.221
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 3.309
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.315
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.747
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 19.588
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -1.679
+TNS   : -10.668
+
+Type  : Slow 1200mV 0C Model Setup 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.830
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 35.611
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.291
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.310
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 5.408
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 5.409
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.962
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.116
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 3.314
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.709
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 19.585
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -0.789
+TNS   : -3.662
+
+Type  : Fast 1200mV 0C Model Setup 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 4.981
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 37.036
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.139
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.158
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.190
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 5.995
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 6.013
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.570
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.659
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 3.320
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.323
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.416
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst_pll_vga|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 19.596
+TNS   : 0.000
+
+------------------------------------------------------------
