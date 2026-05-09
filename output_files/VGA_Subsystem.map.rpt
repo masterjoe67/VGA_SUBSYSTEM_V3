@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA_Subsystem
-Sun May  3 23:40:50 2026
+Sat May  9 14:58:15 2026
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
 
 
@@ -80,15 +80,15 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                            ;
 +------------------------------------+----------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May  3 23:40:50 2026              ;
+; Analysis & Synthesis Status        ; Successful - Sat May  9 14:58:15 2026              ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Standard Edition ;
 ; Revision Name                      ; VGA_Subsystem                                      ;
 ; Top-level Entity Name              ; top                                                ;
 ; Family                             ; Cyclone IV E                                       ;
-; Total logic elements               ; 582                                                ;
-;     Total combinational functions  ; 346                                                ;
-;     Dedicated logic registers      ; 395                                                ;
-; Total registers                    ; 397                                                ;
+; Total logic elements               ; 607                                                ;
+;     Total combinational functions  ; 381                                                ;
+;     Dedicated logic registers      ; 396                                                ;
+; Total registers                    ; 398                                                ;
 ; Total pins                         ; 87                                                 ;
 ; Total virtual pins                 ; 0                                                  ;
 ; Total memory bits                  ; 26,624                                             ;
@@ -207,20 +207,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
-; src/VGA/DCLK_BUF.vhd             ; yes             ; User Wizard-Generated File   ; D:/LAVORI/VGA_SUBSYSTEM/src/VGA/DCLK_BUF.vhd                               ;         ;
-; src/VGA/vgaout.vhd               ; yes             ; User VHDL File               ; D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vgaout.vhd                                 ;         ;
-; src/VGA/sdram.vhd                ; yes             ; User VHDL File               ; D:/LAVORI/VGA_SUBSYSTEM/src/VGA/sdram.vhd                                  ;         ;
-; src/VGA/ram2.vhd                 ; yes             ; User Wizard-Generated File   ; D:/LAVORI/VGA_SUBSYSTEM/src/VGA/ram2.vhd                                   ;         ;
-; src/VGA/vga_fifo.vhd             ; yes             ; User Wizard-Generated File   ; D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vga_fifo.vhd                               ;         ;
-; src/top.vhd                      ; yes             ; User VHDL File               ; D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd                                        ;         ;
-; src/VGA/vga_subsystem_top.vhd    ; yes             ; User VHDL File               ; D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vga_subsystem_top.vhd                      ;         ;
-; src/pll/pll_vga.vhd              ; yes             ; User Wizard-Generated File   ; D:/LAVORI/VGA_SUBSYSTEM/src/pll/pll_vga.vhd                                ;         ;
+; src/VGA/DCLK_BUF.vhd             ; yes             ; User Wizard-Generated File   ; D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/DCLK_BUF.vhd                            ;         ;
+; src/VGA/vgaout.vhd               ; yes             ; User VHDL File               ; D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vgaout.vhd                              ;         ;
+; src/VGA/sdram.vhd                ; yes             ; User VHDL File               ; D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/sdram.vhd                               ;         ;
+; src/VGA/ram2.vhd                 ; yes             ; User Wizard-Generated File   ; D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/ram2.vhd                                ;         ;
+; src/VGA/vga_fifo.vhd             ; yes             ; User Wizard-Generated File   ; D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_fifo.vhd                            ;         ;
+; src/top.vhd                      ; yes             ; User VHDL File               ; D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd                                     ;         ;
+; src/VGA/vga_subsystem_top.vhd    ; yes             ; User VHDL File               ; D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd                   ;         ;
+; src/pll/pll_vga.vhd              ; yes             ; User Wizard-Generated File   ; D:/LAVORI/VGA_SUBSYSTEM_V3/src/pll/pll_vga.vhd                             ;         ;
 ; altpll.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/altpll.tdf            ;         ;
 ; aglobal221.inc                   ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/aglobal221.inc        ;         ;
 ; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/stratix_pll.inc       ;         ;
 ; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/stratixii_pll.inc     ;         ;
 ; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/cycloneii_pll.inc     ;         ;
-; db/pll_vga_altpll.v              ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/pll_vga_altpll.v                                ;         ;
+; db/pll_vga_altpll.v              ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/pll_vga_altpll.v                             ;         ;
 ; dcfifo.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/dcfifo.tdf            ;         ;
 ; lpm_counter.inc                  ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/lpm_counter.inc       ;         ;
 ; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/lpm_add_sub.inc       ;         ;
@@ -232,20 +232,20 @@ https://fpgasoftware.intel.com/eula.
 ; alt_sync_fifo.inc                ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/alt_sync_fifo.inc     ;         ;
 ; lpm_compare.inc                  ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/lpm_compare.inc       ;         ;
 ; altsyncram_fifo.inc              ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/altsyncram_fifo.inc   ;         ;
-; db/dcfifo_eok1.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/dcfifo_eok1.tdf                                 ;         ;
-; db/a_gray2bin_ugb.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/a_gray2bin_ugb.tdf                              ;         ;
-; db/a_graycounter_t57.tdf         ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/a_graycounter_t57.tdf                           ;         ;
-; db/a_graycounter_pjc.tdf         ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/a_graycounter_pjc.tdf                           ;         ;
-; db/altsyncram_7o41.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/altsyncram_7o41.tdf                             ;         ;
-; db/dffpipe_3dc.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/dffpipe_3dc.tdf                                 ;         ;
-; db/alt_synch_pipe_0ol.tdf        ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/alt_synch_pipe_0ol.tdf                          ;         ;
-; db/dffpipe_hd9.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/dffpipe_hd9.tdf                                 ;         ;
-; db/dffpipe_gd9.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/dffpipe_gd9.tdf                                 ;         ;
-; db/alt_synch_pipe_1ol.tdf        ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/alt_synch_pipe_1ol.tdf                          ;         ;
-; db/dffpipe_id9.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/dffpipe_id9.tdf                                 ;         ;
-; db/cmpr_b66.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/cmpr_b66.tdf                                    ;         ;
-; db/cmpr_a66.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/cmpr_a66.tdf                                    ;         ;
-; db/mux_j28.tdf                   ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/mux_j28.tdf                                     ;         ;
+; db/dcfifo_eok1.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/dcfifo_eok1.tdf                              ;         ;
+; db/a_gray2bin_ugb.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/a_gray2bin_ugb.tdf                           ;         ;
+; db/a_graycounter_t57.tdf         ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/a_graycounter_t57.tdf                        ;         ;
+; db/a_graycounter_pjc.tdf         ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/a_graycounter_pjc.tdf                        ;         ;
+; db/altsyncram_7o41.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/altsyncram_7o41.tdf                          ;         ;
+; db/dffpipe_3dc.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/dffpipe_3dc.tdf                              ;         ;
+; db/alt_synch_pipe_0ol.tdf        ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/alt_synch_pipe_0ol.tdf                       ;         ;
+; db/dffpipe_hd9.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/dffpipe_hd9.tdf                              ;         ;
+; db/dffpipe_gd9.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/dffpipe_gd9.tdf                              ;         ;
+; db/alt_synch_pipe_1ol.tdf        ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/alt_synch_pipe_1ol.tdf                       ;         ;
+; db/dffpipe_id9.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/dffpipe_id9.tdf                              ;         ;
+; db/cmpr_b66.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/cmpr_b66.tdf                                 ;         ;
+; db/cmpr_a66.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/cmpr_a66.tdf                                 ;         ;
+; db/mux_j28.tdf                   ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/mux_j28.tdf                                  ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -253,12 +253,12 @@ https://fpgasoftware.intel.com/eula.
 ; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
 ; altrom.inc                       ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/altram.inc            ;         ;
-; db/altsyncram_mno3.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/altsyncram_mno3.tdf                             ;         ;
+; db/altsyncram_mno3.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/altsyncram_mno3.tdf                          ;         ;
 ; altddio_out.tdf                  ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/altddio_out.tdf       ;         ;
 ; stratix_ddio.inc                 ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/stratix_ddio.inc      ;         ;
 ; cyclone_ddio.inc                 ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/cyclone_ddio.inc      ;         ;
 ; stratix_lcell.inc                ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/stratix_lcell.inc     ;         ;
-; db/ddio_out_p9j.tdf              ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM/db/ddio_out_p9j.tdf                                ;         ;
+; db/ddio_out_p9j.tdf              ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/ddio_out_p9j.tdf                             ;         ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
 
 
@@ -267,20 +267,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                       ;
 +---------------------------------------------+---------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 582                                                                                         ;
+; Estimated Total logic elements              ; 607                                                                                         ;
 ;                                             ;                                                                                             ;
-; Total combinational functions               ; 346                                                                                         ;
+; Total combinational functions               ; 381                                                                                         ;
 ; Logic element usage by number of LUT inputs ;                                                                                             ;
-;     -- 4 input functions                    ; 212                                                                                         ;
-;     -- 3 input functions                    ; 44                                                                                          ;
-;     -- <=2 input functions                  ; 90                                                                                          ;
+;     -- 4 input functions                    ; 214                                                                                         ;
+;     -- 3 input functions                    ; 62                                                                                          ;
+;     -- <=2 input functions                  ; 105                                                                                         ;
 ;                                             ;                                                                                             ;
 ; Logic elements by mode                      ;                                                                                             ;
-;     -- normal mode                          ; 306                                                                                         ;
-;     -- arithmetic mode                      ; 40                                                                                          ;
+;     -- normal mode                          ; 332                                                                                         ;
+;     -- arithmetic mode                      ; 49                                                                                          ;
 ;                                             ;                                                                                             ;
-; Total registers                             ; 397                                                                                         ;
-;     -- Dedicated logic registers            ; 395                                                                                         ;
+; Total registers                             ; 398                                                                                         ;
+;     -- Dedicated logic registers            ; 396                                                                                         ;
 ;     -- I/O registers                        ; 4                                                                                           ;
 ;                                             ;                                                                                             ;
 ; I/O pins                                    ; 87                                                                                          ;
@@ -292,9 +292,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1                                                                                           ;
 ;                                             ;                                                                                             ;
 ; Maximum fan-out node                        ; pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 454                                                                                         ;
-; Total fan-out                               ; 3720                                                                                        ;
-; Average fan-out                             ; 3.76                                                                                        ;
+; Maximum fan-out                             ; 455                                                                                         ;
+; Total fan-out                               ; 3823                                                                                        ;
+; Average fan-out                             ; 3.73                                                                                        ;
 +---------------------------------------------+---------------------------------------------------------------------------------------------+
 
 
@@ -303,14 +303,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                               ; Entity Name        ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
-; |top                                            ; 346 (1)             ; 395 (0)                   ; 26624       ; 0            ; 0       ; 0         ; 87   ; 0            ; |top                                                                                                                                                              ; top                ; work         ;
+; |top                                            ; 381 (1)             ; 396 (0)                   ; 26624       ; 0            ; 0       ; 0         ; 87   ; 0            ; |top                                                                                                                                                              ; top                ; work         ;
 ;    |DCLK_BUF:u_dram_clk_gen|                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|DCLK_BUF:u_dram_clk_gen                                                                                                                                      ; DCLK_BUF           ; work         ;
 ;       |altddio_out:ALTDDIO_OUT_component|       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component                                                                                                    ; altddio_out        ; work         ;
 ;          |ddio_out_p9j:auto_generated|          ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component|ddio_out_p9j:auto_generated                                                                        ; ddio_out_p9j       ; work         ;
 ;    |pll_vga:inst_pll_vga|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pll_vga:inst_pll_vga                                                                                                                                         ; pll_vga            ; work         ;
 ;       |altpll:altpll_component|                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pll_vga:inst_pll_vga|altpll:altpll_component                                                                                                                 ; altpll             ; work         ;
 ;          |pll_vga_altpll:auto_generated|        ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated                                                                                   ; pll_vga_altpll     ; work         ;
-;    |vga_subsystem_top:inst_vga_subsystem|       ; 345 (14)            ; 395 (92)                  ; 26624       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem                                                                                                                         ; vga_subsystem_top  ; work         ;
+;    |vga_subsystem_top:inst_vga_subsystem|       ; 380 (49)            ; 396 (93)                  ; 26624       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem                                                                                                                         ; vga_subsystem_top  ; work         ;
 ;       |ram2:read_buffer|                        ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer                                                                                                        ; ram2               ; work         ;
 ;          |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component                                                                        ; altsyncram         ; work         ;
 ;             |altsyncram_mno3:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated                                         ; altsyncram_mno3    ; work         ;
@@ -433,12 +433,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 395   ;
+; Total registers                              ; 396   ;
 ; Number of registers using Synchronous Clear  ; 51    ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 10    ;
 ; Number of registers using Asynchronous Clear ; 150   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 198   ;
+; Number of registers using Clock Enable       ; 188   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -465,6 +465,8 @@ Encoding Type:  One-Hot
 +----------------------------------------------------------------------------------------------+------------------+---------------------+
 ; Node                                                                                         ; Action           ; Reason              ;
 +----------------------------------------------------------------------------------------------+------------------+---------------------+
+; vga_subsystem_top:inst_vga_subsystem|Add1~1                                                  ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|Add1~2                                                  ; Modified         ; Timing optimization ;
 ; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal0~0                               ; Modified         ; Timing optimization ;
 ; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal2~0_OTERM63                       ; Retimed Register ; Timing optimization ;
 ; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal2~1                               ; Modified         ; Timing optimization ;
@@ -630,9 +632,10 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[9] ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[1] ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|reg_x[5]                      ;
 ; 11:1               ; 3 bits    ; 21 LEs        ; 6 LEs                ; 15 LEs                 ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrAdr_s[11] ;
-; 12:1               ; 9 bits    ; 72 LEs        ; 27 LEs               ; 45 LEs                 ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrAdr_s[3]  ;
+; 12:1               ; 9 bits    ; 72 LEs        ; 27 LEs               ; 45 LEs                 ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrAdr_s[2]  ;
 ; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; No         ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector21   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
 
@@ -1426,28 +1429,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; boundary_port         ; 87                          ;
 ; cycloneiii_ddio_out   ; 1                           ;
-; cycloneiii_ff         ; 407                         ;
+; cycloneiii_ff         ; 408                         ;
 ;     CLR               ; 77                          ;
+;     CLR SLD           ; 10                          ;
 ;     ENA               ; 115                         ;
-;     ENA CLR           ; 73                          ;
+;     ENA CLR           ; 63                          ;
 ;     ENA SCLR          ; 10                          ;
 ;     SCLR              ; 53                          ;
-;     plain             ; 79                          ;
+;     plain             ; 80                          ;
 ; cycloneiii_io_obuf    ; 16                          ;
-; cycloneiii_lcell_comb ; 349                         ;
-;     arith             ; 40                          ;
-;         2 data inputs ; 40                          ;
-;     normal            ; 309                         ;
+; cycloneiii_lcell_comb ; 384                         ;
+;     arith             ; 49                          ;
+;         2 data inputs ; 49                          ;
+;     normal            ; 335                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 12                          ;
-;         2 data inputs ; 39                          ;
-;         3 data inputs ; 44                          ;
-;         4 data inputs ; 212                         ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 44                          ;
+;         3 data inputs ; 62                          ;
+;         4 data inputs ; 214                         ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 56                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.12                        ;
+; Average LUT depth     ; 2.21                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1456,7 +1460,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -1466,40 +1470,40 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
-    Info: Processing started: Sun May  3 23:40:35 2026
+    Info: Processing started: Sat May  9 14:57:48 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA_Subsystem -c VGA_Subsystem
 Info (16303): Aggressive Performance optimization mode selected -- timing performance will be prioritized at the potential cost of increased logic area and compilation time
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
 Info (12021): Found 2 design units, including 1 entities, in source file src/vga/dclk_buf.vhd
-    Info (12022): Found design unit 1: dclk_buf-SYN File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/DCLK_BUF.vhd Line: 54
-    Info (12023): Found entity 1: DCLK_BUF File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/DCLK_BUF.vhd Line: 43
+    Info (12022): Found design unit 1: dclk_buf-SYN File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/DCLK_BUF.vhd Line: 54
+    Info (12023): Found entity 1: DCLK_BUF File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/DCLK_BUF.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file src/vga/vgaout.vhd
-    Info (12022): Found design unit 1: vgaout-behavioral File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vgaout.vhd Line: 29
-    Info (12023): Found entity 1: vgaout File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vgaout.vhd Line: 5
+    Info (12022): Found design unit 1: vgaout-behavioral File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vgaout.vhd Line: 29
+    Info (12023): Found entity 1: vgaout File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vgaout.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file src/vga/sdram.vhd
-    Info (12022): Found design unit 1: sdram-rtl File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/sdram.vhd Line: 33
-    Info (12023): Found entity 1: sdram File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/sdram.vhd Line: 5
+    Info (12022): Found design unit 1: sdram-rtl File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/sdram.vhd Line: 33
+    Info (12023): Found entity 1: sdram File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/sdram.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file src/vga/ram2.vhd
-    Info (12022): Found design unit 1: ram2-SYN File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/ram2.vhd Line: 57
-    Info (12023): Found entity 1: ram2 File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/ram2.vhd Line: 43
+    Info (12022): Found design unit 1: ram2-SYN File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/ram2.vhd Line: 57
+    Info (12023): Found entity 1: ram2 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/ram2.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file src/vga/vga_fifo.vhd
-    Info (12022): Found design unit 1: vga_fifo-SYN File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vga_fifo.vhd Line: 60
-    Info (12023): Found entity 1: vga_fifo File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vga_fifo.vhd Line: 43
+    Info (12022): Found design unit 1: vga_fifo-SYN File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_fifo.vhd Line: 60
+    Info (12023): Found entity 1: vga_fifo File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_fifo.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file src/top.vhd
-    Info (12022): Found design unit 1: top-syn File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 79
-    Info (12023): Found entity 1: top File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 19
+    Info (12022): Found design unit 1: top-syn File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 79
+    Info (12023): Found entity 1: top File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 19
 Info (12021): Found 2 design units, including 1 entities, in source file src/vga/vga_subsystem_top.vhd
-    Info (12022): Found design unit 1: vga_subsystem_top-rtl File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vga_subsystem_top.vhd Line: 40
-    Info (12023): Found entity 1: vga_subsystem_top File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vga_subsystem_top.vhd Line: 5
+    Info (12022): Found design unit 1: vga_subsystem_top-rtl File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 40
+    Info (12023): Found entity 1: vga_subsystem_top File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file src/pll/pll_vga.vhd
-    Info (12022): Found design unit 1: pll_vga-SYN File: D:/LAVORI/VGA_SUBSYSTEM/src/pll/pll_vga.vhd Line: 55
-    Info (12023): Found entity 1: pll_vga File: D:/LAVORI/VGA_SUBSYSTEM/src/pll/pll_vga.vhd Line: 43
+    Info (12022): Found design unit 1: pll_vga-SYN File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/pll/pll_vga.vhd Line: 55
+    Info (12023): Found entity 1: pll_vga File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/pll/pll_vga.vhd Line: 43
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at top.vhd(37): used implicit default value for signal "TDO_o" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 37
-Info (12128): Elaborating entity "pll_vga" for hierarchy "pll_vga:inst_pll_vga" File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 138
-Info (12128): Elaborating entity "altpll" for hierarchy "pll_vga:inst_pll_vga|altpll:altpll_component" File: D:/LAVORI/VGA_SUBSYSTEM/src/pll/pll_vga.vhd Line: 155
-Info (12130): Elaborated megafunction instantiation "pll_vga:inst_pll_vga|altpll:altpll_component" File: D:/LAVORI/VGA_SUBSYSTEM/src/pll/pll_vga.vhd Line: 155
-Info (12133): Instantiated megafunction "pll_vga:inst_pll_vga|altpll:altpll_component" with the following parameter: File: D:/LAVORI/VGA_SUBSYSTEM/src/pll/pll_vga.vhd Line: 155
+Warning (10541): VHDL Signal Declaration warning at top.vhd(37): used implicit default value for signal "TDO_o" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 37
+Info (12128): Elaborating entity "pll_vga" for hierarchy "pll_vga:inst_pll_vga" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 138
+Info (12128): Elaborating entity "altpll" for hierarchy "pll_vga:inst_pll_vga|altpll:altpll_component" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/pll/pll_vga.vhd Line: 155
+Info (12130): Elaborated megafunction instantiation "pll_vga:inst_pll_vga|altpll:altpll_component" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/pll/pll_vga.vhd Line: 155
+Info (12133): Instantiated megafunction "pll_vga:inst_pll_vga|altpll:altpll_component" with the following parameter: File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/pll/pll_vga.vhd Line: 155
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "5"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -1564,13 +1568,13 @@ Info (12133): Instantiated megafunction "pll_vga:inst_pll_vga|altpll:altpll_comp
     Info (12134): Parameter "self_reset_on_loss_lock" = "OFF"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_vga_altpll.v
-    Info (12023): Found entity 1: pll_vga_altpll File: D:/LAVORI/VGA_SUBSYSTEM/db/pll_vga_altpll.v Line: 30
+    Info (12023): Found entity 1: pll_vga_altpll File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/pll_vga_altpll.v Line: 30
 Info (12128): Elaborating entity "pll_vga_altpll" for hierarchy "pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated" File: c:/intelfpga/22.1std/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "vga_subsystem_top" for hierarchy "vga_subsystem_top:inst_vga_subsystem" File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 163
-Info (12128): Elaborating entity "vga_fifo" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo" File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vga_subsystem_top.vhd Line: 134
-Info (12128): Elaborating entity "dcfifo" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component" File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vga_fifo.vhd Line: 105
-Info (12130): Elaborated megafunction instantiation "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component" File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vga_fifo.vhd Line: 105
-Info (12133): Instantiated megafunction "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component" with the following parameter: File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vga_fifo.vhd Line: 105
+Info (12128): Elaborating entity "vga_subsystem_top" for hierarchy "vga_subsystem_top:inst_vga_subsystem" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 163
+Info (12128): Elaborating entity "vga_fifo" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 147
+Info (12128): Elaborating entity "dcfifo" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_fifo.vhd Line: 105
+Info (12130): Elaborated megafunction instantiation "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_fifo.vhd Line: 105
+Info (12133): Instantiated megafunction "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component" with the following parameter: File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_fifo.vhd Line: 105
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "lpm_numwords" = "256"
     Info (12134): Parameter "lpm_showahead" = "ON"
@@ -1585,52 +1589,52 @@ Info (12133): Instantiated megafunction "vga_subsystem_top:inst_vga_subsystem|vg
     Info (12134): Parameter "write_aclr_synch" = "ON"
     Info (12134): Parameter "wrsync_delaypipe" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/dcfifo_eok1.tdf
-    Info (12023): Found entity 1: dcfifo_eok1 File: D:/LAVORI/VGA_SUBSYSTEM/db/dcfifo_eok1.tdf Line: 47
+    Info (12023): Found entity 1: dcfifo_eok1 File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dcfifo_eok1.tdf Line: 47
 Info (12128): Elaborating entity "dcfifo_eok1" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated" File: c:/intelfpga/22.1std/quartus/libraries/megafunctions/dcfifo.tdf Line: 191
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_gray2bin_ugb.tdf
-    Info (12023): Found entity 1: a_gray2bin_ugb File: D:/LAVORI/VGA_SUBSYSTEM/db/a_gray2bin_ugb.tdf Line: 23
-Info (12128): Elaborating entity "a_gray2bin_ugb" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_gray2bin_ugb:wrptr_g_gray2bin" File: D:/LAVORI/VGA_SUBSYSTEM/db/dcfifo_eok1.tdf Line: 61
+    Info (12023): Found entity 1: a_gray2bin_ugb File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/a_gray2bin_ugb.tdf Line: 23
+Info (12128): Elaborating entity "a_gray2bin_ugb" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_gray2bin_ugb:wrptr_g_gray2bin" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dcfifo_eok1.tdf Line: 61
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_graycounter_t57.tdf
-    Info (12023): Found entity 1: a_graycounter_t57 File: D:/LAVORI/VGA_SUBSYSTEM/db/a_graycounter_t57.tdf Line: 25
-Info (12128): Elaborating entity "a_graycounter_t57" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_t57:rdptr_g1p" File: D:/LAVORI/VGA_SUBSYSTEM/db/dcfifo_eok1.tdf Line: 63
+    Info (12023): Found entity 1: a_graycounter_t57 File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/a_graycounter_t57.tdf Line: 25
+Info (12128): Elaborating entity "a_graycounter_t57" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_t57:rdptr_g1p" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dcfifo_eok1.tdf Line: 63
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_graycounter_pjc.tdf
-    Info (12023): Found entity 1: a_graycounter_pjc File: D:/LAVORI/VGA_SUBSYSTEM/db/a_graycounter_pjc.tdf Line: 25
-Info (12128): Elaborating entity "a_graycounter_pjc" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_pjc:wrptr_g1p" File: D:/LAVORI/VGA_SUBSYSTEM/db/dcfifo_eok1.tdf Line: 64
+    Info (12023): Found entity 1: a_graycounter_pjc File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/a_graycounter_pjc.tdf Line: 25
+Info (12128): Elaborating entity "a_graycounter_pjc" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_pjc:wrptr_g1p" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dcfifo_eok1.tdf Line: 64
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7o41.tdf
-    Info (12023): Found entity 1: altsyncram_7o41 File: D:/LAVORI/VGA_SUBSYSTEM/db/altsyncram_7o41.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_7o41" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram" File: D:/LAVORI/VGA_SUBSYSTEM/db/dcfifo_eok1.tdf Line: 65
+    Info (12023): Found entity 1: altsyncram_7o41 File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/altsyncram_7o41.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_7o41" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dcfifo_eok1.tdf Line: 65
 Info (12021): Found 1 design units, including 1 entities, in source file db/dffpipe_3dc.tdf
-    Info (12023): Found entity 1: dffpipe_3dc File: D:/LAVORI/VGA_SUBSYSTEM/db/dffpipe_3dc.tdf Line: 25
-Info (12128): Elaborating entity "dffpipe_3dc" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|dffpipe_3dc:rdaclr" File: D:/LAVORI/VGA_SUBSYSTEM/db/dcfifo_eok1.tdf Line: 84
+    Info (12023): Found entity 1: dffpipe_3dc File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dffpipe_3dc.tdf Line: 25
+Info (12128): Elaborating entity "dffpipe_3dc" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|dffpipe_3dc:rdaclr" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dcfifo_eok1.tdf Line: 84
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_synch_pipe_0ol.tdf
-    Info (12023): Found entity 1: alt_synch_pipe_0ol File: D:/LAVORI/VGA_SUBSYSTEM/db/alt_synch_pipe_0ol.tdf Line: 27
-Info (12128): Elaborating entity "alt_synch_pipe_0ol" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_0ol:rs_dgwp" File: D:/LAVORI/VGA_SUBSYSTEM/db/dcfifo_eok1.tdf Line: 85
+    Info (12023): Found entity 1: alt_synch_pipe_0ol File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/alt_synch_pipe_0ol.tdf Line: 27
+Info (12128): Elaborating entity "alt_synch_pipe_0ol" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_0ol:rs_dgwp" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dcfifo_eok1.tdf Line: 85
 Info (12021): Found 1 design units, including 1 entities, in source file db/dffpipe_hd9.tdf
-    Info (12023): Found entity 1: dffpipe_hd9 File: D:/LAVORI/VGA_SUBSYSTEM/db/dffpipe_hd9.tdf Line: 25
-Info (12128): Elaborating entity "dffpipe_hd9" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_0ol:rs_dgwp|dffpipe_hd9:dffpipe14" File: D:/LAVORI/VGA_SUBSYSTEM/db/alt_synch_pipe_0ol.tdf Line: 35
+    Info (12023): Found entity 1: dffpipe_hd9 File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dffpipe_hd9.tdf Line: 25
+Info (12128): Elaborating entity "dffpipe_hd9" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_0ol:rs_dgwp|dffpipe_hd9:dffpipe14" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/alt_synch_pipe_0ol.tdf Line: 35
 Info (12021): Found 1 design units, including 1 entities, in source file db/dffpipe_gd9.tdf
-    Info (12023): Found entity 1: dffpipe_gd9 File: D:/LAVORI/VGA_SUBSYSTEM/db/dffpipe_gd9.tdf Line: 25
-Info (12128): Elaborating entity "dffpipe_gd9" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|dffpipe_gd9:ws_brp" File: D:/LAVORI/VGA_SUBSYSTEM/db/dcfifo_eok1.tdf Line: 87
+    Info (12023): Found entity 1: dffpipe_gd9 File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dffpipe_gd9.tdf Line: 25
+Info (12128): Elaborating entity "dffpipe_gd9" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|dffpipe_gd9:ws_brp" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dcfifo_eok1.tdf Line: 87
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_synch_pipe_1ol.tdf
-    Info (12023): Found entity 1: alt_synch_pipe_1ol File: D:/LAVORI/VGA_SUBSYSTEM/db/alt_synch_pipe_1ol.tdf Line: 27
-Info (12128): Elaborating entity "alt_synch_pipe_1ol" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_1ol:ws_dgrp" File: D:/LAVORI/VGA_SUBSYSTEM/db/dcfifo_eok1.tdf Line: 89
+    Info (12023): Found entity 1: alt_synch_pipe_1ol File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/alt_synch_pipe_1ol.tdf Line: 27
+Info (12128): Elaborating entity "alt_synch_pipe_1ol" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_1ol:ws_dgrp" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dcfifo_eok1.tdf Line: 89
 Info (12021): Found 1 design units, including 1 entities, in source file db/dffpipe_id9.tdf
-    Info (12023): Found entity 1: dffpipe_id9 File: D:/LAVORI/VGA_SUBSYSTEM/db/dffpipe_id9.tdf Line: 25
-Info (12128): Elaborating entity "dffpipe_id9" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_1ol:ws_dgrp|dffpipe_id9:dffpipe18" File: D:/LAVORI/VGA_SUBSYSTEM/db/alt_synch_pipe_1ol.tdf Line: 35
+    Info (12023): Found entity 1: dffpipe_id9 File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dffpipe_id9.tdf Line: 25
+Info (12128): Elaborating entity "dffpipe_id9" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_1ol:ws_dgrp|dffpipe_id9:dffpipe18" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/alt_synch_pipe_1ol.tdf Line: 35
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_b66.tdf
-    Info (12023): Found entity 1: cmpr_b66 File: D:/LAVORI/VGA_SUBSYSTEM/db/cmpr_b66.tdf Line: 23
-Info (12128): Elaborating entity "cmpr_b66" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|cmpr_b66:rdempty_eq_comp1_lsb" File: D:/LAVORI/VGA_SUBSYSTEM/db/dcfifo_eok1.tdf Line: 93
+    Info (12023): Found entity 1: cmpr_b66 File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/cmpr_b66.tdf Line: 23
+Info (12128): Elaborating entity "cmpr_b66" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|cmpr_b66:rdempty_eq_comp1_lsb" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dcfifo_eok1.tdf Line: 93
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_a66.tdf
-    Info (12023): Found entity 1: cmpr_a66 File: D:/LAVORI/VGA_SUBSYSTEM/db/cmpr_a66.tdf Line: 23
-Info (12128): Elaborating entity "cmpr_a66" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|cmpr_a66:rdempty_eq_comp1_msb" File: D:/LAVORI/VGA_SUBSYSTEM/db/dcfifo_eok1.tdf Line: 94
+    Info (12023): Found entity 1: cmpr_a66 File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/cmpr_a66.tdf Line: 23
+Info (12128): Elaborating entity "cmpr_a66" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|cmpr_a66:rdempty_eq_comp1_msb" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dcfifo_eok1.tdf Line: 94
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_j28.tdf
-    Info (12023): Found entity 1: mux_j28 File: D:/LAVORI/VGA_SUBSYSTEM/db/mux_j28.tdf Line: 23
-Info (12128): Elaborating entity "mux_j28" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:rdemp_eq_comp_lsb_mux" File: D:/LAVORI/VGA_SUBSYSTEM/db/dcfifo_eok1.tdf Line: 101
-Info (12128): Elaborating entity "sdram" for hierarchy "vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl" File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vga_subsystem_top.vhd Line: 148
-Info (12128): Elaborating entity "ram2" for hierarchy "vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer" File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vga_subsystem_top.vhd Line: 178
-Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component" File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/ram2.vhd Line: 64
-Info (12130): Elaborated megafunction instantiation "vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component" File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/ram2.vhd Line: 64
-Info (12133): Instantiated megafunction "vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component" with the following parameter: File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/ram2.vhd Line: 64
+    Info (12023): Found entity 1: mux_j28 File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/mux_j28.tdf Line: 23
+Info (12128): Elaborating entity "mux_j28" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:rdemp_eq_comp_lsb_mux" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dcfifo_eok1.tdf Line: 101
+Info (12128): Elaborating entity "sdram" for hierarchy "vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 161
+Info (12128): Elaborating entity "ram2" for hierarchy "vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 191
+Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/ram2.vhd Line: 64
+Info (12130): Elaborated megafunction instantiation "vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/ram2.vhd Line: 64
+Info (12133): Instantiated megafunction "vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component" with the following parameter: File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/ram2.vhd Line: 64
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -1682,13 +1686,13 @@ Info (12133): Instantiated megafunction "vga_subsystem_top:inst_vga_subsystem|ra
     Info (12134): Parameter "lpm_hint" = "UNUSED"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mno3.tdf
-    Info (12023): Found entity 1: altsyncram_mno3 File: D:/LAVORI/VGA_SUBSYSTEM/db/altsyncram_mno3.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_mno3 File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/altsyncram_mno3.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_mno3" for hierarchy "vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated" File: c:/intelfpga/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "vgaout" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine" File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vga_subsystem_top.vhd Line: 190
-Info (12128): Elaborating entity "DCLK_BUF" for hierarchy "DCLK_BUF:u_dram_clk_gen" File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 208
-Info (12128): Elaborating entity "altddio_out" for hierarchy "DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component" File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/DCLK_BUF.vhd Line: 61
-Info (12130): Elaborated megafunction instantiation "DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component" File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/DCLK_BUF.vhd Line: 61
-Info (12133): Instantiated megafunction "DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component" with the following parameter: File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/DCLK_BUF.vhd Line: 61
+Info (12128): Elaborating entity "vgaout" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 203
+Info (12128): Elaborating entity "DCLK_BUF" for hierarchy "DCLK_BUF:u_dram_clk_gen" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 208
+Info (12128): Elaborating entity "altddio_out" for hierarchy "DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/DCLK_BUF.vhd Line: 61
+Info (12130): Elaborated megafunction instantiation "DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/DCLK_BUF.vhd Line: 61
+Info (12133): Instantiated megafunction "DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component" with the following parameter: File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/DCLK_BUF.vhd Line: 61
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "extend_oe_disable" = "OFF"
     Info (12134): Parameter "invert_output" = "OFF"
@@ -1698,16 +1702,16 @@ Info (12133): Instantiated megafunction "DCLK_BUF:u_dram_clk_gen|altddio_out:ALT
     Info (12134): Parameter "lpm_hint" = "UNUSED"
     Info (12134): Parameter "lpm_type" = "altddio_out"
 Info (12021): Found 1 design units, including 1 entities, in source file db/ddio_out_p9j.tdf
-    Info (12023): Found entity 1: ddio_out_p9j File: D:/LAVORI/VGA_SUBSYSTEM/db/ddio_out_p9j.tdf Line: 28
+    Info (12023): Found entity 1: ddio_out_p9j File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/ddio_out_p9j.tdf Line: 28
 Info (12128): Elaborating entity "ddio_out_p9j" for hierarchy "DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component|ddio_out_p9j:auto_generated" File: c:/intelfpga/22.1std/quartus/libraries/megafunctions/altddio_out.tdf Line: 101
-Info (13000): Registers with preset signals will power-up high File: D:/LAVORI/VGA_SUBSYSTEM/db/a_graycounter_pjc.tdf Line: 33
+Info (13000): Registers with preset signals will power-up high File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/a_graycounter_pjc.tdf Line: 33
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "TDO_o" is stuck at GND File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 37
-    Warning (13410): Pin "SDRAM_CKE" is stuck at VCC File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 52
-    Warning (13410): Pin "SDRAM_CS_N" is stuck at GND File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 53
-    Warning (13410): Pin "SDRAM_DQML" is stuck at GND File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 58
-    Warning (13410): Pin "SDRAM_DQMU" is stuck at GND File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 59
+    Warning (13410): Pin "TDO_o" is stuck at GND File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 37
+    Warning (13410): Pin "SDRAM_CKE" is stuck at VCC File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 52
+    Warning (13410): Pin "SDRAM_CS_N" is stuck at GND File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 53
+    Warning (13410): Pin "SDRAM_DQML" is stuck at GND File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 58
+    Warning (13410): Pin "SDRAM_DQMU" is stuck at GND File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 59
 Info (286030): Timing-Driven Synthesis is running
 Info (128000): Starting physical synthesis optimizations for speed
 Info (332164): Evaluating HDL-embedded SDC commands
@@ -1720,32 +1724,32 @@ Info (332110): Deriving PLL clocks
     Info (332110): create_generated_clock -source {inst_pll_vga|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 125 -multiply_by 63 -duty_cycle 50.00 -name {inst_pll_vga|altpll_component|auto_generated|pll1|clk[1]} {inst_pll_vga|altpll_component|auto_generated|pll1|clk[1]}
     Info (332110): create_generated_clock -source {inst_pll_vga|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 5 -multiply_by 14 -phase 40.00 -duty_cycle 50.00 -name {inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]} {inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]}
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
-Warning (332174): Ignored filter at VGA_Subsystem.sdc(74): altera_reserved_tck could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 74
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(74): Argument <from> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 74
-    Info (332050): set_false_path -from [get_ports {altera_reserved_tck}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 74
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(75): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 75
-    Info (332050): set_false_path -to [get_ports {altera_reserved_tck}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 75
-Warning (332174): Ignored filter at VGA_Subsystem.sdc(77): DRAM_ADDR[*] could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 77
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(77): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 77
-    Info (332050): set_false_path -to [get_ports {DRAM_ADDR[*]}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 77
-Warning (332174): Ignored filter at VGA_Subsystem.sdc(78): DRAM_BA[*] could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 78
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(78): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 78
-    Info (332050): set_false_path -to [get_ports {DRAM_BA[*]}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 78
-Warning (332174): Ignored filter at VGA_Subsystem.sdc(79): DRAM_CAS_N could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 79
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(79): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 79
-    Info (332050): set_false_path -to [get_ports {DRAM_CAS_N}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 79
-Warning (332174): Ignored filter at VGA_Subsystem.sdc(80): DRAM_RAS_N could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 80
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(80): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 80
-    Info (332050): set_false_path -to [get_ports {DRAM_RAS_N}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 80
-Warning (332174): Ignored filter at VGA_Subsystem.sdc(81): DRAM_WE_N could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 81
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(81): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 81
-    Info (332050): set_false_path -to [get_ports {DRAM_WE_N}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 81
-Warning (332174): Ignored filter at VGA_Subsystem.sdc(82): DRAM_CS_N could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 82
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(82): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 82
-    Info (332050): set_false_path -to [get_ports {DRAM_CS_N}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 82
-Warning (332174): Ignored filter at VGA_Subsystem.sdc(83): DRAM_CKE could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 83
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(83): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 83
-    Info (332050): set_false_path -to [get_ports {DRAM_CKE}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 83
+Warning (332174): Ignored filter at VGA_Subsystem.sdc(74): altera_reserved_tck could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 74
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(74): Argument <from> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 74
+    Info (332050): set_false_path -from [get_ports {altera_reserved_tck}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 74
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(75): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 75
+    Info (332050): set_false_path -to [get_ports {altera_reserved_tck}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 75
+Warning (332174): Ignored filter at VGA_Subsystem.sdc(77): DRAM_ADDR[*] could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 77
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(77): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 77
+    Info (332050): set_false_path -to [get_ports {DRAM_ADDR[*]}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 77
+Warning (332174): Ignored filter at VGA_Subsystem.sdc(78): DRAM_BA[*] could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 78
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(78): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 78
+    Info (332050): set_false_path -to [get_ports {DRAM_BA[*]}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 78
+Warning (332174): Ignored filter at VGA_Subsystem.sdc(79): DRAM_CAS_N could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 79
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(79): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 79
+    Info (332050): set_false_path -to [get_ports {DRAM_CAS_N}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 79
+Warning (332174): Ignored filter at VGA_Subsystem.sdc(80): DRAM_RAS_N could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 80
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(80): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 80
+    Info (332050): set_false_path -to [get_ports {DRAM_RAS_N}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 80
+Warning (332174): Ignored filter at VGA_Subsystem.sdc(81): DRAM_WE_N could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 81
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(81): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 81
+    Info (332050): set_false_path -to [get_ports {DRAM_WE_N}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 81
+Warning (332174): Ignored filter at VGA_Subsystem.sdc(82): DRAM_CS_N could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 82
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(82): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 82
+    Info (332050): set_false_path -to [get_ports {DRAM_CS_N}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 82
+Warning (332174): Ignored filter at VGA_Subsystem.sdc(83): DRAM_CKE could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 83
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(83): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 83
+    Info (332050): set_false_path -to [get_ports {DRAM_CKE}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 83
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
 Info (332111): Found 4 clocks
@@ -1759,29 +1763,29 @@ Info (128002): Starting physical synthesis algorithm register retiming
 Info (128003): Physical synthesis algorithm register retiming complete: estimated slack improvement of 667 ps
 Info (128002): Starting physical synthesis algorithm combinational resynthesis using boolean division
 Info (128003): Physical synthesis algorithm combinational resynthesis using boolean division complete: estimated slack improvement of 0 ps
-Info (128001): Physical synthesis optimizations for speed complete: elapsed time is 00:00:01
+Info (128001): Physical synthesis optimizations for speed complete: elapsed time is 00:00:02
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Info (35003): Optimize away 15 nodes that do not fanout to OUTPUT or BIDIR pins
-    Info (35004): Node: "vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[10]" File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/sdram.vhd Line: 66
-    Info (35004): Node: "vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[11]" File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/sdram.vhd Line: 66
-    Info (35004): Node: "vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[6]" File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/sdram.vhd Line: 66
+    Info (35004): Node: "vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[10]" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/sdram.vhd Line: 66
+    Info (35004): Node: "vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[11]" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/sdram.vhd Line: 66
+    Info (35004): Node: "vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[6]" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/sdram.vhd Line: 66
 Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "nTRST_i" File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 34
-    Warning (15610): No output dependent on input pin "TCK_i" File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 35
-    Warning (15610): No output dependent on input pin "TDI_i" File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 36
-    Warning (15610): No output dependent on input pin "TMS_i" File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 38
-Info (21057): Implemented 744 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "nTRST_i" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 34
+    Warning (15610): No output dependent on input pin "TCK_i" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 35
+    Warning (15610): No output dependent on input pin "TDI_i" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 36
+    Warning (15610): No output dependent on input pin "TMS_i" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 38
+Info (21057): Implemented 769 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 28 input pins
     Info (21059): Implemented 43 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 599 logic cells
+    Info (21061): Implemented 624 logic cells
     Info (21064): Implemented 56 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
-    Info: Peak virtual memory: 4864 megabytes
-    Info: Processing ended: Sun May  3 23:40:50 2026
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Peak virtual memory: 4886 megabytes
+    Info: Processing ended: Sat May  9 14:58:15 2026
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:32
 
 

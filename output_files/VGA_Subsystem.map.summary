@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sun May  3 23:40:50 2026
+Analysis & Synthesis Status : Successful - Sat May  9 14:58:15 2026
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Standard Edition
 Revision Name : VGA_Subsystem
 Top-level Entity Name : top
 Family : Cyclone IV E
-Total logic elements : 582
-    Total combinational functions : 346
-    Dedicated logic registers : 395
-Total registers : 397
+Total logic elements : 607
+    Total combinational functions : 381
+    Dedicated logic registers : 396
+Total registers : 398
 Total pins : 87
 Total virtual pins : 0
 Total memory bits : 26,624

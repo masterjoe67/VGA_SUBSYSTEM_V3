@@ -1,5 +1,5 @@
 Fitter report for VGA_Subsystem
-Sun May  3 23:41:01 2026
+Sat May  9 14:58:40 2026
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
 
 
@@ -74,17 +74,17 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                          ;
 +------------------------------------+----------------------------------------------------+
-; Fitter Status                      ; Successful - Sun May  3 23:41:01 2026              ;
+; Fitter Status                      ; Successful - Sat May  9 14:58:40 2026              ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Standard Edition ;
 ; Revision Name                      ; VGA_Subsystem                                      ;
 ; Top-level Entity Name              ; top                                                ;
 ; Family                             ; Cyclone IV E                                       ;
 ; Device                             ; EP4CE22F17C6                                       ;
 ; Timing Models                      ; Final                                              ;
-; Total logic elements               ; 508 / 22,320 ( 2 % )                               ;
-;     Total combinational functions  ; 348 / 22,320 ( 2 % )                               ;
-;     Dedicated logic registers      ; 376 / 22,320 ( 2 % )                               ;
-; Total registers                    ; 410                                                ;
+; Total logic elements               ; 531 / 22,320 ( 2 % )                               ;
+;     Total combinational functions  ; 383 / 22,320 ( 2 % )                               ;
+;     Dedicated logic registers      ; 377 / 22,320 ( 2 % )                               ;
+; Total registers                    ; 411                                                ;
 ; Total pins                         ; 87 / 154 ( 56 % )                                  ;
 ; Total virtual pins                 ; 0                                                  ;
 ; Total memory bits                  ; 26,624 / 608,256 ( 4 % )                           ;
@@ -161,14 +161,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.04        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.3%      ;
-;     Processor 3            ;   1.3%      ;
-;     Processor 4            ;   1.2%      ;
+;     Processor 2            ;   1.1%      ;
+;     Processor 3            ;   1.1%      ;
+;     Processor 4            ;   1.1%      ;
 +----------------------------+-------------+
 
 
@@ -268,8 +268,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 1002 ) ; 0.00 % ( 0 / 1002 )        ; 0.00 % ( 0 / 1002 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 1002 ) ; 0.00 % ( 0 / 1002 )        ; 0.00 % ( 0 / 1002 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 1038 ) ; 0.00 % ( 0 / 1038 )        ; 0.00 % ( 0 / 1038 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 1038 ) ; 0.00 % ( 0 / 1038 )        ; 0.00 % ( 0 / 1038 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -292,7 +292,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 990 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 1026 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 12 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -300,7 +300,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsystem.pin.
+The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM_V3/output_files/VGA_Subsystem.pin.
 
 
 +------------------------------------------------------------------------+
@@ -308,26 +308,26 @@ The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsys
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Total logic elements                        ; 508 / 22,320 ( 2 % )     ;
-;     -- Combinational with no register       ; 132                      ;
-;     -- Register only                        ; 160                      ;
-;     -- Combinational with a register        ; 216                      ;
+; Total logic elements                        ; 531 / 22,320 ( 2 % )     ;
+;     -- Combinational with no register       ; 154                      ;
+;     -- Register only                        ; 148                      ;
+;     -- Combinational with a register        ; 229                      ;
 ;                                             ;                          ;
 ; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 212                      ;
-;     -- 3 input functions                    ; 44                       ;
-;     -- <=2 input functions                  ; 92                       ;
-;     -- Register only                        ; 160                      ;
+;     -- 4 input functions                    ; 214                      ;
+;     -- 3 input functions                    ; 62                       ;
+;     -- <=2 input functions                  ; 107                      ;
+;     -- Register only                        ; 148                      ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 308                      ;
-;     -- arithmetic mode                      ; 40                       ;
+;     -- normal mode                          ; 334                      ;
+;     -- arithmetic mode                      ; 49                       ;
 ;                                             ;                          ;
-; Total registers*                            ; 410 / 23,018 ( 2 % )     ;
-;     -- Dedicated logic registers            ; 376 / 22,320 ( 2 % )     ;
+; Total registers*                            ; 411 / 23,018 ( 2 % )     ;
+;     -- Dedicated logic registers            ; 377 / 22,320 ( 2 % )     ;
 ;     -- I/O registers                        ; 34 / 698 ( 5 % )         ;
 ;                                             ;                          ;
-; Total LABs:  partially or completely used   ; 40 / 1,395 ( 3 % )       ;
+; Total LABs:  partially or completely used   ; 41 / 1,395 ( 3 % )       ;
 ; Virtual pins                                ; 0                        ;
 ; I/O pins                                    ; 87 / 154 ( 56 % )        ;
 ;     -- Clock pins                           ; 2 / 7 ( 29 % )           ;
@@ -345,12 +345,12 @@ The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsys
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )            ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )            ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )            ;
-; Average interconnect usage (total/H/V)      ; 1.3% / 1.3% / 1.3%       ;
-; Peak interconnect usage (total/H/V)         ; 4.4% / 4.8% / 4.0%       ;
+; Average interconnect usage (total/H/V)      ; 1.3% / 1.3% / 1.2%       ;
+; Peak interconnect usage (total/H/V)         ; 4.6% / 5.1% / 4.2%       ;
 ; Maximum fan-out                             ; 206                      ;
 ; Highest non-global fan-out                  ; 58                       ;
-; Total fan-out                               ; 2811                     ;
-; Average fan-out                             ; 2.60                     ;
+; Total fan-out                               ; 2899                     ;
+; Average fan-out                             ; 2.63                     ;
 +---------------------------------------------+--------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -363,26 +363,26 @@ The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsys
 +---------------------------------------------+---------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                 ; Low                            ;
 ;                                             ;                     ;                                ;
-; Total logic elements                        ; 508 / 22320 ( 2 % ) ; 0 / 22320 ( 0 % )              ;
-;     -- Combinational with no register       ; 132                 ; 0                              ;
-;     -- Register only                        ; 160                 ; 0                              ;
-;     -- Combinational with a register        ; 216                 ; 0                              ;
+; Total logic elements                        ; 531 / 22320 ( 2 % ) ; 0 / 22320 ( 0 % )              ;
+;     -- Combinational with no register       ; 154                 ; 0                              ;
+;     -- Register only                        ; 148                 ; 0                              ;
+;     -- Combinational with a register        ; 229                 ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic element usage by number of LUT inputs ;                     ;                                ;
-;     -- 4 input functions                    ; 212                 ; 0                              ;
-;     -- 3 input functions                    ; 44                  ; 0                              ;
-;     -- <=2 input functions                  ; 92                  ; 0                              ;
-;     -- Register only                        ; 160                 ; 0                              ;
+;     -- 4 input functions                    ; 214                 ; 0                              ;
+;     -- 3 input functions                    ; 62                  ; 0                              ;
+;     -- <=2 input functions                  ; 107                 ; 0                              ;
+;     -- Register only                        ; 148                 ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic elements by mode                      ;                     ;                                ;
-;     -- normal mode                          ; 308                 ; 0                              ;
-;     -- arithmetic mode                      ; 40                  ; 0                              ;
+;     -- normal mode                          ; 334                 ; 0                              ;
+;     -- arithmetic mode                      ; 49                  ; 0                              ;
 ;                                             ;                     ;                                ;
-; Total registers                             ; 410                 ; 0                              ;
-;     -- Dedicated logic registers            ; 376 / 22320 ( 2 % ) ; 0 / 22320 ( 0 % )              ;
+; Total registers                             ; 411                 ; 0                              ;
+;     -- Dedicated logic registers            ; 377 / 22320 ( 2 % ) ; 0 / 22320 ( 0 % )              ;
 ;     -- I/O registers                        ; 68                  ; 0                              ;
 ;                                             ;                     ;                                ;
-; Total LABs:  partially or completely used   ; 40 / 1395 ( 3 % )   ; 0 / 1395 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 41 / 1395 ( 3 % )   ; 0 / 1395 ( 0 % )               ;
 ;                                             ;                     ;                                ;
 ; Virtual pins                                ; 0                   ; 0                              ;
 ; I/O pins                                    ; 87                  ; 0                              ;
@@ -395,18 +395,18 @@ The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsys
 ; Double Data Rate I/O output circuitry       ; 17 / 220 ( 7 % )    ; 0 / 220 ( 0 % )                ;
 ;                                             ;                     ;                                ;
 ; Connections                                 ;                     ;                                ;
-;     -- Input Connections                    ; 436                 ; 1                              ;
-;     -- Registered Input Connections         ; 412                 ; 0                              ;
-;     -- Output Connections                   ; 17                  ; 420                            ;
+;     -- Input Connections                    ; 437                 ; 1                              ;
+;     -- Registered Input Connections         ; 413                 ; 0                              ;
+;     -- Output Connections                   ; 17                  ; 421                            ;
 ;     -- Registered Output Connections        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Internal Connections                        ;                     ;                                ;
-;     -- Total Connections                    ; 2809                ; 429                            ;
-;     -- Registered Connections               ; 1578                ; 0                              ;
+;     -- Total Connections                    ; 2897                ; 430                            ;
+;     -- Registered Connections               ; 1612                ; 0                              ;
 ;                                             ;                     ;                                ;
 ; External Connections                        ;                     ;                                ;
-;     -- Top                                  ; 32                  ; 421                            ;
-;     -- hard_block:auto_generated_inst       ; 421                 ; 0                              ;
+;     -- Top                                  ; 32                  ; 422                            ;
+;     -- hard_block:auto_generated_inst       ; 422                 ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Partition Interface                         ;                     ;                                ;
 ;     -- Input Ports                          ; 28                  ; 1                              ;
@@ -437,14 +437,14 @@ The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsys
 ; CLOCK_50     ; R8    ; 3        ; 27           ; 0            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; KEY[0]       ; J15   ; 5        ; 53           ; 14           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; KEY[1]       ; E1    ; 1        ; 0            ; 16           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-; TCK_i        ; B10   ; 7        ; 34           ; 34           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; TDI_i        ; A10   ; 7        ; 34           ; 34           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; TMS_i        ; B6    ; 8        ; 16           ; 34           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; addr_bus[0]  ; C9    ; 7        ; 31           ; 34           ; 0            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-; addr_bus[1]  ; E11   ; 7        ; 45           ; 34           ; 7            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-; addr_bus[2]  ; C11   ; 7        ; 38           ; 34           ; 0            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
+; TCK_i        ; A12   ; 7        ; 43           ; 34           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; TDI_i        ; T14   ; 4        ; 45           ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; TMS_i        ; N12   ; 4        ; 47           ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; addr_bus[0]  ; C9    ; 7        ; 31           ; 34           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
+; addr_bus[1]  ; E11   ; 7        ; 45           ; 34           ; 7            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
+; addr_bus[2]  ; C11   ; 7        ; 38           ; 34           ; 0            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; cmd_stb      ; B12   ; 7        ; 43           ; 34           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-; data_bus[0]  ; D3    ; 8        ; 1            ; 34           ; 7            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
+; data_bus[0]  ; D3    ; 8        ; 1            ; 34           ; 7            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; data_bus[10] ; D8    ; 8        ; 23           ; 34           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; data_bus[11] ; F8    ; 8        ; 20           ; 34           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; data_bus[12] ; E9    ; 7        ; 29           ; 34           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
@@ -460,7 +460,7 @@ The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsys
 ; data_bus[7]  ; D6    ; 8        ; 9            ; 34           ; 7            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; data_bus[8]  ; C6    ; 8        ; 18           ; 34           ; 21           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; data_bus[9]  ; E6    ; 8        ; 14           ; 34           ; 14           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-; nTRST_i      ; P11   ; 4        ; 38           ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; nTRST_i      ; R13   ; 4        ; 40           ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
 ; pixel_stb    ; D11   ; 7        ; 51           ; 34           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 +--------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
@@ -493,15 +493,15 @@ The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsys
 ; SDRAM_DQMU     ; T5    ; 3        ; 14           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; SDRAM_RAS_N    ; L2    ; 2        ; 0            ; 11           ; 0            ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; SDRAM_WE_N     ; C2    ; 1        ; 0            ; 27           ; 0            ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; TDO_o          ; A4    ; 8        ; 9            ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; VGA_B[0]       ; T10   ; 4        ; 34           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; VGA_B[1]       ; T12   ; 4        ; 36           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; TDO_o          ; A7    ; 8        ; 20           ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; VGA_B[0]       ; T11   ; 4        ; 36           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; VGA_B[1]       ; R11   ; 4        ; 34           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; VGA_B[2]       ; B16   ; 6        ; 53           ; 22           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; VGA_B[3]       ; C16   ; 6        ; 53           ; 30           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; VGA_B[4]       ; D16   ; 6        ; 53           ; 25           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; VGA_G[0]       ; R11   ; 4        ; 34           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; VGA_G[1]       ; R10   ; 4        ; 34           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; VGA_G[2]       ; N9    ; 4        ; 29           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; VGA_G[0]       ; R10   ; 4        ; 34           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; VGA_G[1]       ; N9    ; 4        ; 29           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; VGA_G[2]       ; T10   ; 4        ; 34           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; VGA_G[3]       ; D15   ; 6        ; 53           ; 26           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; VGA_G[4]       ; F15   ; 6        ; 53           ; 22           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; VGA_G[5]       ; F14   ; 6        ; 53           ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
@@ -566,18 +566,15 @@ The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsys
 ; D15      ; PADD23                                  ; Use as regular IO        ; VGA_G[3]                ; Dual Purpose Pin          ;
 ; C16      ; DIFFIO_R1n, PADD20, DQS2R/CQ3R,CDPCLK5  ; Use as regular IO        ; VGA_B[3]                ; Dual Purpose Pin          ;
 ; B11      ; DIFFIO_T20p, PADD0                      ; Use as regular IO        ; data_bus[15]            ; Dual Purpose Pin          ;
-; A10      ; DIFFIO_T16n, PADD5                      ; Use as regular IO        ; TDI_i                   ; Dual Purpose Pin          ;
-; B10      ; DIFFIO_T16p, PADD6                      ; Use as regular IO        ; TCK_i                   ; Dual Purpose Pin          ;
 ; C9       ; DIFFIO_T15n, PADD7                      ; Use as regular IO        ; addr_bus[0]             ; Dual Purpose Pin          ;
 ; D9       ; DIFFIO_T15p, PADD8                      ; Use as regular IO        ; data_bus[13]            ; Dual Purpose Pin          ;
 ; E9       ; DIFFIO_T13p, PADD12, DQS4T/CQ5T,DPCLK9  ; Use as regular IO        ; data_bus[12]            ; Dual Purpose Pin          ;
 ; F8       ; DIFFIO_T10p, DATA3                      ; Use as regular IO        ; data_bus[11]            ; Dual Purpose Pin          ;
+; A7       ; DIFFIO_T9n, PADD18                      ; Use as regular IO        ; TDO_o                   ; Dual Purpose Pin          ;
 ; A6       ; DIFFIO_T7n, DATA14, DQS3T/CQ3T#,DPCLK11 ; Use as regular IO        ; data_bus[6]             ; Dual Purpose Pin          ;
-; B6       ; DIFFIO_T7p, DATA13                      ; Use as regular IO        ; TMS_i                   ; Dual Purpose Pin          ;
 ; E6       ; DIFFIO_T6p, DATA6                       ; Use as regular IO        ; data_bus[9]             ; Dual Purpose Pin          ;
 ; B5       ; DIFFIO_T5p, DATA8                       ; Use as regular IO        ; data_bus[4]             ; Dual Purpose Pin          ;
 ; D6       ; DIFFIO_T4n, DATA9                       ; Use as regular IO        ; data_bus[7]             ; Dual Purpose Pin          ;
-; A4       ; DIFFIO_T3n, DATA10                      ; Use as regular IO        ; TDO_o                   ; Dual Purpose Pin          ;
 ; B4       ; DIFFIO_T3p, DATA11                      ; Use as regular IO        ; data_bus[3]             ; Dual Purpose Pin          ;
 +----------+-----------------------------------------+--------------------------+-------------------------+---------------------------+
 
@@ -590,11 +587,11 @@ The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsys
 ; 1        ; 8 / 14 ( 57 % )  ; 3.3V          ; --           ;
 ; 2        ; 13 / 16 ( 81 % ) ; 3.3V          ; --           ;
 ; 3        ; 24 / 25 ( 96 % ) ; 3.3V          ; --           ;
-; 4        ; 6 / 20 ( 30 % )  ; 3.3V          ; --           ;
+; 4        ; 8 / 20 ( 40 % )  ; 3.3V          ; --           ;
 ; 5        ; 1 / 18 ( 6 % )   ; 3.3V          ; --           ;
 ; 6        ; 10 / 13 ( 77 % ) ; 3.3V          ; --           ;
-; 7        ; 15 / 24 ( 63 % ) ; 3.3V          ; --           ;
-; 8        ; 14 / 24 ( 58 % ) ; 2.5V          ; --           ;
+; 7        ; 14 / 24 ( 58 % ) ; 3.3V          ; --           ;
+; 8        ; 13 / 24 ( 54 % ) ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -606,15 +603,15 @@ The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsys
 ; A1       ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; A2       ; 238        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A3       ; 239        ; 8        ; data_bus[2]                                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; A4       ; 236        ; 8        ; TDO_o                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A4       ; 236        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A5       ; 232        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A6       ; 225        ; 8        ; data_bus[6]                                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; A7       ; 220        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A7       ; 220        ; 8        ; TDO_o                                                     ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A8       ; 211        ; 8        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; A9       ; 209        ; 7        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; A10      ; 198        ; 7        ; TDI_i                                                     ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A10      ; 198        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A11      ; 188        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A12      ; 186        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A12      ; 186        ; 7        ; TCK_i                                                     ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A13      ; 179        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A14      ; 181        ; 7        ; VGA_R[2]                                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A15      ; 191        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -624,11 +621,11 @@ The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsys
 ; B3       ; 242        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B4       ; 237        ; 8        ; data_bus[3]                                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; B5       ; 233        ; 8        ; data_bus[4]                                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; B6       ; 226        ; 8        ; TMS_i                                                     ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B6       ; 226        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B7       ; 221        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B8       ; 212        ; 8        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; B9       ; 210        ; 7        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; B10      ; 199        ; 7        ; TCK_i                                                     ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B10      ; 199        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B11      ; 189        ; 7        ; data_bus[15]                                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; B12      ; 187        ; 7        ; cmd_stb                                                   ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; B13      ; 180        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -804,10 +801,10 @@ The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsys
 ; N6       ; 63         ; 3        ; SDRAM_ADDR[2]                                             ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; N7       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N8       ; 82         ; 3        ; SDRAM_ADDR[6]                                             ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; N9       ; 93         ; 4        ; VGA_G[2]                                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; N9       ; 93         ; 4        ; VGA_G[1]                                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N11      ; 112        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; N12      ; 117        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; N12      ; 117        ; 4        ; TMS_i                                                     ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N13      ;            ;          ; VCCD_PLL4                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; N14      ; 126        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N15      ; 133        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -822,7 +819,7 @@ The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsys
 ; P8       ; 85         ; 3        ; SDRAM_ADDR[4]                                             ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; P9       ; 105        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; P10      ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; P11      ; 106        ; 4        ; nTRST_i                                                   ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; P11      ; 106        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; P12      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P13      ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; P14      ; 119        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -837,10 +834,10 @@ The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsys
 ; R7       ; 76         ; 3        ; SDRAM_DQ[7]                                               ; bidir  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; R8       ; 86         ; 3        ; CLOCK_50                                                  ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; R9       ; 88         ; 4        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; R10      ; 96         ; 4        ; VGA_G[1]                                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; R11      ; 98         ; 4        ; VGA_G[0]                                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; R10      ; 96         ; 4        ; VGA_G[0]                                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; R11      ; 98         ; 4        ; VGA_B[1]                                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; R12      ; 100        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; R13      ; 107        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; R13      ; 107        ; 4        ; nTRST_i                                                   ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; R14      ; 120        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R15      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; R16      ; 129        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -853,11 +850,11 @@ The pin-out file can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsys
 ; T7       ; 77         ; 3        ; SDRAM_ADDR[5]                                             ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; T8       ; 87         ; 3        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; T9       ; 89         ; 4        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; T10      ; 97         ; 4        ; VGA_B[0]                                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; T11      ; 99         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; T12      ; 101        ; 4        ; VGA_B[1]                                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; T10      ; 97         ; 4        ; VGA_G[2]                                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; T11      ; 99         ; 4        ; VGA_B[0]                                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; T12      ; 101        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; T13      ; 108        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; T14      ; 115        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; T14      ; 115        ; 4        ; TDI_i                                                     ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; T15      ; 116        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; T16      ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 +----------+------------+----------+-----------------------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
@@ -958,35 +955,35 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node                      ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                                                               ; Entity Name        ; Library Name ;
 +-------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
-; |top                                            ; 508 (1)     ; 376 (0)                   ; 34 (34)       ; 26624       ; 4    ; 0            ; 0       ; 0         ; 87   ; 0            ; 132 (1)      ; 160 (0)           ; 216 (0)          ; |top                                                                                                                                                              ; top                ; work         ;
+; |top                                            ; 531 (1)     ; 377 (0)                   ; 34 (34)       ; 26624       ; 4    ; 0            ; 0       ; 0         ; 87   ; 0            ; 154 (1)      ; 148 (0)           ; 229 (0)          ; |top                                                                                                                                                              ; top                ; work         ;
 ;    |DCLK_BUF:u_dram_clk_gen|                    ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|DCLK_BUF:u_dram_clk_gen                                                                                                                                      ; DCLK_BUF           ; work         ;
 ;       |altddio_out:ALTDDIO_OUT_component|       ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component                                                                                                    ; altddio_out        ; work         ;
 ;          |ddio_out_p9j:auto_generated|          ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component|ddio_out_p9j:auto_generated                                                                        ; ddio_out_p9j       ; work         ;
 ;    |pll_vga:inst_pll_vga|                       ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|pll_vga:inst_pll_vga                                                                                                                                         ; pll_vga            ; work         ;
 ;       |altpll:altpll_component|                 ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|pll_vga:inst_pll_vga|altpll:altpll_component                                                                                                                 ; altpll             ; work         ;
 ;          |pll_vga_altpll:auto_generated|        ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated                                                                                   ; pll_vga_altpll     ; work         ;
-;    |vga_subsystem_top:inst_vga_subsystem|       ; 507 (97)    ; 376 (92)                  ; 0 (0)         ; 26624       ; 4    ; 0            ; 0       ; 0         ; 0    ; 0            ; 131 (8)      ; 160 (81)          ; 216 (6)          ; |top|vga_subsystem_top:inst_vga_subsystem                                                                                                                         ; vga_subsystem_top  ; work         ;
+;    |vga_subsystem_top:inst_vga_subsystem|       ; 530 (121)   ; 377 (93)                  ; 0 (0)         ; 26624       ; 4    ; 0            ; 0       ; 0         ; 0    ; 0            ; 153 (29)     ; 148 (71)          ; 229 (20)         ; |top|vga_subsystem_top:inst_vga_subsystem                                                                                                                         ; vga_subsystem_top  ; work         ;
 ;       |ram2:read_buffer|                        ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 16384       ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer                                                                                                        ; ram2               ; work         ;
 ;          |altsyncram:altsyncram_component|      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 16384       ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component                                                                        ; altsyncram         ; work         ;
 ;             |altsyncram_mno3:auto_generated|    ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 16384       ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated                                         ; altsyncram_mno3    ; work         ;
-;       |sdram:sdram_ctrl|                        ; 217 (217)   ; 122 (122)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 90 (90)      ; 26 (26)           ; 101 (101)        ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl                                                                                                        ; sdram              ; work         ;
-;       |vga_fifo:pixel_fifo|                     ; 112 (0)     ; 97 (0)                    ; 0 (0)         ; 10240       ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 44 (0)            ; 54 (0)           ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo                                                                                                     ; vga_fifo           ; work         ;
-;          |dcfifo:dcfifo_component|              ; 112 (0)     ; 97 (0)                    ; 0 (0)         ; 10240       ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 44 (0)            ; 54 (0)           ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component                                                                             ; dcfifo             ; work         ;
-;             |dcfifo_eok1:auto_generated|        ; 112 (34)    ; 97 (31)                   ; 0 (0)         ; 10240       ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (2)       ; 44 (18)           ; 54 (5)           ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated                                                  ; dcfifo_eok1        ; work         ;
-;                |a_graycounter_pjc:wrptr_g1p|    ; 18 (18)     ; 13 (13)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 2 (2)             ; 12 (12)          ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_pjc:wrptr_g1p                      ; a_graycounter_pjc  ; work         ;
-;                |a_graycounter_t57:rdptr_g1p|    ; 19 (19)     ; 13 (13)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 1 (1)             ; 14 (14)          ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_t57:rdptr_g1p                      ; a_graycounter_t57  ; work         ;
+;       |sdram:sdram_ctrl|                        ; 219 (219)   ; 122 (122)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 94 (94)      ; 28 (28)           ; 97 (97)          ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl                                                                                                        ; sdram              ; work         ;
+;       |vga_fifo:pixel_fifo|                     ; 111 (0)     ; 97 (0)                    ; 0 (0)         ; 10240       ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 43 (0)            ; 54 (0)           ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo                                                                                                     ; vga_fifo           ; work         ;
+;          |dcfifo:dcfifo_component|              ; 111 (0)     ; 97 (0)                    ; 0 (0)         ; 10240       ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 43 (0)            ; 54 (0)           ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component                                                                             ; dcfifo             ; work         ;
+;             |dcfifo_eok1:auto_generated|        ; 111 (29)    ; 97 (31)                   ; 0 (0)         ; 10240       ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (1)       ; 43 (14)           ; 54 (6)           ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated                                                  ; dcfifo_eok1        ; work         ;
+;                |a_graycounter_pjc:wrptr_g1p|    ; 17 (17)     ; 13 (13)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 1 (1)             ; 12 (12)          ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_pjc:wrptr_g1p                      ; a_graycounter_pjc  ; work         ;
+;                |a_graycounter_t57:rdptr_g1p|    ; 18 (18)     ; 13 (13)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 1 (1)             ; 13 (13)          ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_t57:rdptr_g1p                      ; a_graycounter_t57  ; work         ;
 ;                |alt_synch_pipe_0ol:rs_dgwp|     ; 18 (0)      ; 18 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 10 (0)            ; 8 (0)            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_0ol:rs_dgwp                       ; alt_synch_pipe_0ol ; work         ;
 ;                   |dffpipe_hd9:dffpipe14|       ; 18 (18)     ; 18 (18)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 10 (10)           ; 8 (8)            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_0ol:rs_dgwp|dffpipe_hd9:dffpipe14 ; dffpipe_hd9        ; work         ;
-;                |alt_synch_pipe_1ol:ws_dgrp|     ; 18 (0)      ; 18 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 12 (0)            ; 6 (0)            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_1ol:ws_dgrp                       ; alt_synch_pipe_1ol ; work         ;
-;                   |dffpipe_id9:dffpipe18|       ; 18 (18)     ; 18 (18)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 12 (12)           ; 6 (6)            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_1ol:ws_dgrp|dffpipe_id9:dffpipe18 ; dffpipe_id9        ; work         ;
+;                |alt_synch_pipe_1ol:ws_dgrp|     ; 18 (0)      ; 18 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 17 (0)            ; 1 (0)            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_1ol:ws_dgrp                       ; alt_synch_pipe_1ol ; work         ;
+;                   |dffpipe_id9:dffpipe18|       ; 18 (18)     ; 18 (18)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 17 (17)           ; 1 (1)            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_1ol:ws_dgrp|dffpipe_id9:dffpipe18 ; dffpipe_id9        ; work         ;
 ;                |altsyncram_7o41:fifo_ram|       ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 10240       ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram                         ; altsyncram_7o41    ; work         ;
-;                |dffpipe_3dc:rdaclr|             ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 1 (1)            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|dffpipe_3dc:rdaclr                               ; dffpipe_3dc        ; work         ;
+;                |dffpipe_3dc:rdaclr|             ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|dffpipe_3dc:rdaclr                               ; dffpipe_3dc        ; work         ;
 ;                |dffpipe_3dc:wraclr|             ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|dffpipe_3dc:wraclr                               ; dffpipe_3dc        ; work         ;
 ;                |mux_j28:rdemp_eq_comp_lsb_mux|  ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 6 (6)            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:rdemp_eq_comp_lsb_mux                    ; mux_j28            ; work         ;
 ;                |mux_j28:rdemp_eq_comp_msb_mux|  ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 6 (6)            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:rdemp_eq_comp_msb_mux                    ; mux_j28            ; work         ;
-;                |mux_j28:wrfull_eq_comp_lsb_mux| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 6 (6)            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:wrfull_eq_comp_lsb_mux                   ; mux_j28            ; work         ;
-;                |mux_j28:wrfull_eq_comp_msb_mux| ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 4 (4)            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:wrfull_eq_comp_msb_mux                   ; mux_j28            ; work         ;
-;       |vgaout:vga_engine|                       ; 84 (84)     ; 65 (65)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (19)      ; 9 (9)             ; 56 (56)          ; |top|vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine                                                                                                       ; vgaout             ; work         ;
+;                |mux_j28:wrfull_eq_comp_lsb_mux| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 4 (4)            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:wrfull_eq_comp_lsb_mux                   ; mux_j28            ; work         ;
+;                |mux_j28:wrfull_eq_comp_msb_mux| ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 5 (5)            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:wrfull_eq_comp_msb_mux                   ; mux_j28            ; work         ;
+;       |vgaout:vga_engine|                       ; 81 (81)     ; 65 (65)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 16 (16)      ; 6 (6)             ; 59 (59)          ; |top|vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine                                                                                                       ; vgaout             ; work         ;
 +-------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1063,7 +1060,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; KEY[1]         ; Input    ; (0) 0 ps      ; --            ; --                    ; --       ; --   ;
 ; CLOCK_50       ; Input    ; --            ; --            ; --                    ; --       ; --   ;
 ; data_bus[1]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
-; addr_bus[0]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
+; addr_bus[0]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --       ; --   ;
 ; addr_bus[2]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
 ; addr_bus[1]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
 ; data_bus[2]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
@@ -1071,18 +1068,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; data_bus[4]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
 ; data_bus[0]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
 ; pixel_stb      ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
-; cmd_stb        ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
-; data_bus[5]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
+; cmd_stb        ; Input    ; --            ; (6) 1314 ps   ; --                    ; --       ; --   ;
+; data_bus[5]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --       ; --   ;
 ; data_bus[7]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --       ; --   ;
-; data_bus[9]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
+; data_bus[9]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --       ; --   ;
 ; data_bus[8]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --       ; --   ;
 ; data_bus[6]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
-; data_bus[10]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
+; data_bus[10]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --       ; --   ;
 ; data_bus[11]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
 ; data_bus[12]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
-; data_bus[13]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --       ; --   ;
+; data_bus[13]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
 ; data_bus[14]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
-; data_bus[15]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --       ; --   ;
+; data_bus[15]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --       ; --   ;
 +----------------+----------+---------------+---------------+-----------------------+----------+------+
 
 
@@ -1117,83 +1114,87 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLOCK_50                                                             ;                   ;         ;
 ; data_bus[1]                                                          ;                   ;         ;
 ;      - vga_subsystem_top:inst_vga_subsystem|reg_read_page[1]         ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_color[1]~feeder      ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_x[1]~feeder          ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_write_page[1]~feeder ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_x[1]~1               ; 0                 ; 6       ;
 ;      - vga_subsystem_top:inst_vga_subsystem|reg_y[1]~feeder          ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_write_page[1]~feeder ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_color[1]~feeder      ; 0                 ; 6       ;
 ; addr_bus[0]                                                          ;                   ;         ;
-;      - vga_subsystem_top:inst_vga_subsystem|Mux38~1                  ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|Mux38~2                  ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|Mux38~5                  ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|Mux38~6                  ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|Mux38~7                  ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_color[15]~0          ; 1                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_y[8]~0               ; 1                 ; 6       ;
 ; addr_bus[2]                                                          ;                   ;         ;
-;      - vga_subsystem_top:inst_vga_subsystem|Mux38~0                  ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|Mux38~3                  ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|Mux38~4                  ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_read_page[4]~0       ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_x~11                 ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_y[8]~1               ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_write_page[4]~0      ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_mode[0]~0            ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_color[15]~1          ; 0                 ; 6       ;
 ; addr_bus[1]                                                          ;                   ;         ;
-;      - vga_subsystem_top:inst_vga_subsystem|Mux38~0                  ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|Mux38~2                  ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|Mux38~4                  ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_read_page[4]~0       ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_x~11                 ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_y[8]~1               ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_write_page[4]~0      ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_mode[0]~0            ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_color[15]~1          ; 0                 ; 6       ;
 ; data_bus[2]                                                          ;                   ;         ;
 ;      - vga_subsystem_top:inst_vga_subsystem|reg_read_page[2]         ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_x[2]                 ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_color[2]~feeder      ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_write_page[2]~feeder ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_x[2]~2               ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_write_page[2]        ; 0                 ; 6       ;
 ;      - vga_subsystem_top:inst_vga_subsystem|reg_y[2]~feeder          ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_color[2]~feeder      ; 0                 ; 6       ;
 ; data_bus[3]                                                          ;                   ;         ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_read_page[3]         ; 1                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_x[3]                 ; 1                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_y[3]                 ; 1                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_x[3]~3               ; 1                 ; 6       ;
 ;      - vga_subsystem_top:inst_vga_subsystem|reg_color[3]             ; 1                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_read_page[3]~feeder  ; 1                 ; 6       ;
 ;      - vga_subsystem_top:inst_vga_subsystem|reg_write_page[3]~feeder ; 1                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_y[3]~feeder          ; 1                 ; 6       ;
 ; data_bus[4]                                                          ;                   ;         ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_read_page[4]         ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_x[4]                 ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_color[4]             ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_write_page[4]~feeder ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_y[4]~feeder          ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_x[4]~4               ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_y[4]                 ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_write_page[4]        ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_read_page[4]~feeder  ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_color[4]~feeder      ; 0                 ; 6       ;
 ; data_bus[0]                                                          ;                   ;         ;
 ;      - vga_subsystem_top:inst_vga_subsystem|reg_read_page[0]         ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_x[0]                 ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_x[0]~0               ; 0                 ; 6       ;
 ;      - vga_subsystem_top:inst_vga_subsystem|reg_write_page[0]        ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_color[0]             ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_mode[0]~1            ; 0                 ; 6       ;
 ;      - vga_subsystem_top:inst_vga_subsystem|reg_y[0]~feeder          ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_color[0]~feeder      ; 0                 ; 6       ;
 ; pixel_stb                                                            ;                   ;         ;
-;      - vga_subsystem_top:inst_vga_subsystem|sync_st_pix[0]~feeder    ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|sync_st_pix[0]           ; 0                 ; 6       ;
 ; cmd_stb                                                              ;                   ;         ;
-;      - vga_subsystem_top:inst_vga_subsystem|sync_st_cmd[0]           ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|sync_st_cmd[0]~feeder    ; 1                 ; 6       ;
 ; data_bus[5]                                                          ;                   ;         ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_color[5]             ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_x[5]~feeder          ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_y[5]~feeder          ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_y[5]                 ; 1                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_x[5]~5               ; 1                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_color[5]~feeder      ; 1                 ; 6       ;
 ; data_bus[7]                                                          ;                   ;         ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_color[7]             ; 1                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_x[7]~feeder          ; 1                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_y[7]~feeder          ; 1                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_y[7]                 ; 1                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_x[7]~9               ; 1                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_color[7]~feeder      ; 1                 ; 6       ;
 ; data_bus[9]                                                          ;                   ;         ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_x[9]                 ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_color[9]~feeder      ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_x[9]~7               ; 1                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_color[9]             ; 1                 ; 6       ;
 ; data_bus[8]                                                          ;                   ;         ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_x[8]                 ; 1                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_y[8]                 ; 1                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_x[8]~8               ; 1                 ; 6       ;
 ;      - vga_subsystem_top:inst_vga_subsystem|reg_color[8]~feeder      ; 1                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_y[8]~feeder          ; 1                 ; 6       ;
 ; data_bus[6]                                                          ;                   ;         ;
 ;      - vga_subsystem_top:inst_vga_subsystem|reg_y[6]                 ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_x[6]~6               ; 0                 ; 6       ;
 ;      - vga_subsystem_top:inst_vga_subsystem|reg_color[6]             ; 0                 ; 6       ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_x[6]~feeder          ; 0                 ; 6       ;
 ; data_bus[10]                                                         ;                   ;         ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_color[10]~feeder     ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_color[10]            ; 1                 ; 6       ;
 ; data_bus[11]                                                         ;                   ;         ;
 ;      - vga_subsystem_top:inst_vga_subsystem|reg_color[11]~feeder     ; 0                 ; 6       ;
 ; data_bus[12]                                                         ;                   ;         ;
 ;      - vga_subsystem_top:inst_vga_subsystem|reg_color[12]~feeder     ; 0                 ; 6       ;
 ; data_bus[13]                                                         ;                   ;         ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_color[13]~feeder     ; 1                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_color[13]            ; 0                 ; 6       ;
 ; data_bus[14]                                                         ;                   ;         ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_color[14]            ; 0                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_color[14]~feeder     ; 0                 ; 6       ;
 ; data_bus[15]                                                         ;                   ;         ;
-;      - vga_subsystem_top:inst_vga_subsystem|reg_color[15]            ; 1                 ; 6       ;
+;      - vga_subsystem_top:inst_vga_subsystem|reg_color[15]            ; 0                 ; 6       ;
 +----------------------------------------------------------------------+-------------------+---------+
 
 
@@ -1203,32 +1204,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                                                                                      ; Location           ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 ; CLOCK_50                                                                                                                                  ; PIN_R8             ; 1       ; Clock                      ; no     ; --                   ; --               ; --                        ;
-; pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[0]                                               ; PLL_4              ; 147     ; Clock                      ; yes    ; Global Clock         ; GCLK18           ; --                        ;
+; pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[0]                                               ; PLL_4              ; 148     ; Clock                      ; yes    ; Global Clock         ; GCLK18           ; --                        ;
 ; pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[1]                                               ; PLL_4              ; 66      ; Clock                      ; yes    ; Global Clock         ; GCLK17           ; --                        ;
 ; pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[2]                                               ; PLL_4              ; 204     ; Clock                      ; yes    ; Global Clock         ; GCLK19           ; --                        ;
-; rstn_i~0                                                                                                                                  ; LCCOMB_X52_Y14_N18 ; 56      ; Async. clear               ; yes    ; Global Clock         ; GCLK8            ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|Mux38~1                                                                                              ; LCCOMB_X24_Y14_N10 ; 5       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|Mux38~3                                                                                              ; LCCOMB_X24_Y14_N30 ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|Mux38~5                                                                                              ; LCCOMB_X24_Y14_N0  ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|Mux38~6                                                                                              ; LCCOMB_X24_Y14_N28 ; 5       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|Mux38~7                                                                                              ; LCCOMB_X24_Y14_N8  ; 16      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[16]~1                                                                                   ; LCCOMB_X23_Y13_N0  ; 40      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal8~0                                                                            ; LCCOMB_X17_Y8_N6   ; 36      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutine.SdrRoutine_DirectWrite                                                   ; FF_X19_Y8_N19      ; 25      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutine.SdrRoutine_Idle                                                          ; FF_X17_Y9_N15      ; 58      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector1~0                                                                         ; LCCOMB_X19_Y8_N14  ; 17      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector20~0                                                                        ; LCCOMB_X18_Y9_N26  ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector21~0                                                                        ; LCCOMB_X18_Y9_N22  ; 25      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[0]~17                                                                     ; LCCOMB_X21_Y8_N2   ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|pixelOut[6]~0                                                                       ; LCCOMB_X21_Y8_N30  ; 17      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|rowLoadAck                                                                          ; FF_X17_Y8_N11      ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|sdr_write_active                                                                    ; FF_X14_Y7_N7       ; 16      ; Output enable              ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|wren_sdr                                                                            ; FF_X21_Y8_N5       ; 2       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|dffpipe_3dc:rdaclr|dffe13a[0] ; FF_X17_Y13_N17     ; 45      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|dffpipe_3dc:wraclr|dffe13a[0] ; FF_X20_Y13_N21     ; 53      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|valid_rdreq~0                 ; LCCOMB_X18_Y13_N0  ; 24      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|valid_wrreq~0                 ; LCCOMB_X20_Y13_N0  ; 24      ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Equal0~3                                                                           ; LCCOMB_X23_Y8_N26  ; 13      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; rstn_i~0                                                                                                                                  ; LCCOMB_X24_Y14_N16 ; 56      ; Async. clear               ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[16]~0                                                                                   ; LCCOMB_X23_Y15_N12 ; 40      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|reg_color[15]~1                                                                                      ; LCCOMB_X17_Y12_N2  ; 16      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|reg_read_page[4]~0                                                                                   ; LCCOMB_X17_Y12_N6  ; 5       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|reg_write_page[4]~0                                                                                  ; LCCOMB_X17_Y12_N18 ; 5       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|reg_x~12                                                                                             ; LCCOMB_X23_Y15_N4  ; 10      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|reg_y[8]~1                                                                                           ; LCCOMB_X17_Y12_N14 ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal8~0                                                                            ; LCCOMB_X17_Y11_N8  ; 36      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutine.SdrRoutine_DirectWrite                                                   ; FF_X17_Y11_N25     ; 25      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutine.SdrRoutine_Idle                                                          ; FF_X19_Y12_N7      ; 58      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector1~0                                                                         ; LCCOMB_X15_Y11_N28 ; 17      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector20~0                                                                        ; LCCOMB_X19_Y12_N20 ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector21~0                                                                        ; LCCOMB_X19_Y12_N30 ; 25      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[0]~17                                                                     ; LCCOMB_X21_Y10_N30 ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|pixelOut[6]~0                                                                       ; LCCOMB_X21_Y10_N2  ; 17      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|rowLoadAck                                                                          ; FF_X19_Y12_N9      ; 1       ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|sdr_write_active                                                                    ; FF_X15_Y12_N19     ; 16      ; Output enable              ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|wren_sdr                                                                            ; FF_X21_Y10_N1      ; 2       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|dffpipe_3dc:rdaclr|dffe13a[0] ; FF_X23_Y12_N13     ; 45      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|dffpipe_3dc:wraclr|dffe13a[0] ; FF_X23_Y13_N5      ; 53      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|valid_rdreq~0                 ; LCCOMB_X23_Y12_N12 ; 24      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|valid_wrreq~0                 ; LCCOMB_X23_Y13_N4  ; 24      ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Equal0~3                                                                           ; LCCOMB_X21_Y11_N14 ; 13      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 +-------------------------------------------------------------------------------------------------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1237,10 +1238,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                                                                                        ; Location           ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[0] ; PLL_4              ; 147     ; 17                                   ; Global Clock         ; GCLK18           ; --                        ;
+; pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[0] ; PLL_4              ; 148     ; 3                                    ; Global Clock         ; GCLK18           ; --                        ;
 ; pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[1] ; PLL_4              ; 66      ; 0                                    ; Global Clock         ; GCLK17           ; --                        ;
-; pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[2] ; PLL_4              ; 204     ; 12                                   ; Global Clock         ; GCLK19           ; --                        ;
-; rstn_i~0                                                                                    ; LCCOMB_X52_Y14_N18 ; 56      ; 0                                    ; Global Clock         ; GCLK8            ; --                        ;
+; pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[2] ; PLL_4              ; 204     ; 3                                    ; Global Clock         ; GCLK19           ; --                        ;
+; rstn_i~0                                                                                    ; LCCOMB_X24_Y14_N16 ; 56      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
 +---------------------------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1249,8 +1250,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+--------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 ; Name                                                                                                                                            ; Type ; Mode             ; Clock Mode  ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size  ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF  ; Location                       ; Mixed Width RDW Mode ; Port A RDW Mode        ; Port B RDW Mode        ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+--------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
-; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ALTSYNCRAM                 ; AUTO ; Simple Dual Port ; Dual Clocks ; 1024         ; 16           ; 1024         ; 16           ; yes                    ; no                      ; yes                    ; yes                     ; 16384 ; 1024                        ; 16                          ; 1024                        ; 16                          ; 16384               ; 2    ; None ; M9K_X22_Y8_N0, M9K_X22_Y9_N0   ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Dual Clocks ; 256          ; 40           ; 256          ; 40           ; yes                    ; no                      ; yes                    ; no                      ; 10240 ; 256                         ; 40                          ; 256                         ; 40                          ; 10240               ; 2    ; None ; M9K_X22_Y13_N0, M9K_X22_Y14_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
+; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ALTSYNCRAM                 ; AUTO ; Simple Dual Port ; Dual Clocks ; 1024         ; 16           ; 1024         ; 16           ; yes                    ; no                      ; yes                    ; yes                     ; 16384 ; 1024                        ; 16                          ; 1024                        ; 16                          ; 16384               ; 2    ; None ; M9K_X22_Y10_N0, M9K_X22_Y11_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
+; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Dual Clocks ; 256          ; 40           ; 256          ; 40           ; yes                    ; no                      ; yes                    ; no                      ; 10240 ; 256                         ; 40                          ; 256                         ; 40                          ; 10240               ; 2    ; None ; M9K_X22_Y15_N0, M9K_X22_Y13_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+--------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -1260,51 +1261,52 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 806 / 71,559 ( 1 % )   ;
-; C16 interconnects     ; 89 / 2,597 ( 3 % )     ;
-; C4 interconnects      ; 401 / 46,848 ( < 1 % ) ;
-; Direct links          ; 158 / 71,559 ( < 1 % ) ;
+; Block interconnects   ; 815 / 71,559 ( 1 % )   ;
+; C16 interconnects     ; 87 / 2,597 ( 3 % )     ;
+; C4 interconnects      ; 383 / 46,848 ( < 1 % ) ;
+; Direct links          ; 152 / 71,559 ( < 1 % ) ;
 ; Global clocks         ; 4 / 20 ( 20 % )        ;
-; Local interconnects   ; 275 / 24,624 ( 1 % )   ;
-; R24 interconnects     ; 79 / 2,496 ( 3 % )     ;
-; R4 interconnects      ; 526 / 62,424 ( < 1 % ) ;
+; Local interconnects   ; 298 / 24,624 ( 1 % )   ;
+; R24 interconnects     ; 77 / 2,496 ( 3 % )     ;
+; R4 interconnects      ; 556 / 62,424 ( < 1 % ) ;
 +-----------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 12.70) ; Number of LABs  (Total = 40) ;
+; Number of Logic Elements  (Average = 12.95) ; Number of LABs  (Total = 41) ;
 +---------------------------------------------+------------------------------+
 ; 1                                           ; 2                            ;
-; 2                                           ; 3                            ;
+; 2                                           ; 1                            ;
 ; 3                                           ; 1                            ;
-; 4                                           ; 1                            ;
-; 5                                           ; 1                            ;
-; 6                                           ; 0                            ;
+; 4                                           ; 0                            ;
+; 5                                           ; 0                            ;
+; 6                                           ; 1                            ;
 ; 7                                           ; 0                            ;
 ; 8                                           ; 1                            ;
-; 9                                           ; 1                            ;
-; 10                                          ; 0                            ;
-; 11                                          ; 1                            ;
-; 12                                          ; 0                            ;
-; 13                                          ; 0                            ;
-; 14                                          ; 0                            ;
-; 15                                          ; 4                            ;
-; 16                                          ; 25                           ;
+; 9                                           ; 4                            ;
+; 10                                          ; 1                            ;
+; 11                                          ; 0                            ;
+; 12                                          ; 1                            ;
+; 13                                          ; 1                            ;
+; 14                                          ; 1                            ;
+; 15                                          ; 7                            ;
+; 16                                          ; 20                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 2.10) ; Number of LABs  (Total = 40) ;
+; LAB-wide Signals  (Average = 2.17) ; Number of LABs  (Total = 41) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 15                           ;
+; 1 Async. clear                     ; 16                           ;
 ; 1 Clock                            ; 32                           ;
-; 1 Clock enable                     ; 18                           ;
-; 1 Sync. clear                      ; 7                            ;
-; 2 Async. clears                    ; 1                            ;
+; 1 Clock enable                     ; 20                           ;
+; 1 Sync. clear                      ; 6                            ;
+; 1 Sync. load                       ; 2                            ;
+; 2 Async. clears                    ; 2                            ;
 ; 2 Clock enables                    ; 4                            ;
 ; 2 Clocks                           ; 7                            ;
 +------------------------------------+------------------------------+
@@ -1313,109 +1315,103 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 21.02) ; Number of LABs  (Total = 40) ;
+; Number of Signals Sourced  (Average = 21.00) ; Number of LABs  (Total = 41) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 2                            ;
-; 2                                            ; 0                            ;
-; 3                                            ; 2                            ;
-; 4                                            ; 1                            ;
+; 1                                            ; 1                            ;
+; 2                                            ; 1                            ;
+; 3                                            ; 1                            ;
+; 4                                            ; 0                            ;
 ; 5                                            ; 0                            ;
 ; 6                                            ; 1                            ;
-; 7                                            ; 1                            ;
+; 7                                            ; 0                            ;
 ; 8                                            ; 0                            ;
 ; 9                                            ; 0                            ;
-; 10                                           ; 1                            ;
+; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
-; 12                                           ; 1                            ;
+; 12                                           ; 2                            ;
 ; 13                                           ; 0                            ;
-; 14                                           ; 0                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 1                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 0                            ;
-; 19                                           ; 0                            ;
-; 20                                           ; 2                            ;
-; 21                                           ; 3                            ;
-; 22                                           ; 1                            ;
-; 23                                           ; 2                            ;
-; 24                                           ; 2                            ;
-; 25                                           ; 0                            ;
-; 26                                           ; 5                            ;
-; 27                                           ; 3                            ;
-; 28                                           ; 5                            ;
-; 29                                           ; 3                            ;
+; 14                                           ; 1                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 2                            ;
+; 17                                           ; 1                            ;
+; 18                                           ; 1                            ;
+; 19                                           ; 1                            ;
+; 20                                           ; 1                            ;
+; 21                                           ; 4                            ;
+; 22                                           ; 2                            ;
+; 23                                           ; 3                            ;
+; 24                                           ; 1                            ;
+; 25                                           ; 1                            ;
+; 26                                           ; 3                            ;
+; 27                                           ; 4                            ;
+; 28                                           ; 6                            ;
+; 29                                           ; 0                            ;
 ; 30                                           ; 3                            ;
-; 31                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 8.70) ; Number of LABs  (Total = 40) ;
+; Number of Signals Sourced Out  (Average = 9.07) ; Number of LABs  (Total = 41) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 3                            ;
-; 2                                               ; 3                            ;
-; 3                                               ; 1                            ;
-; 4                                               ; 3                            ;
-; 5                                               ; 2                            ;
-; 6                                               ; 1                            ;
-; 7                                               ; 3                            ;
-; 8                                               ; 3                            ;
-; 9                                               ; 1                            ;
-; 10                                              ; 3                            ;
+; 1                                               ; 2                            ;
+; 2                                               ; 1                            ;
+; 3                                               ; 2                            ;
+; 4                                               ; 1                            ;
+; 5                                               ; 1                            ;
+; 6                                               ; 4                            ;
+; 7                                               ; 1                            ;
+; 8                                               ; 6                            ;
+; 9                                               ; 5                            ;
+; 10                                              ; 4                            ;
 ; 11                                              ; 3                            ;
 ; 12                                              ; 3                            ;
-; 13                                              ; 4                            ;
-; 14                                              ; 4                            ;
-; 15                                              ; 2                            ;
-; 16                                              ; 0                            ;
+; 13                                              ; 3                            ;
+; 14                                              ; 1                            ;
+; 15                                              ; 1                            ;
+; 16                                              ; 1                            ;
 ; 17                                              ; 1                            ;
+; 18                                              ; 0                            ;
+; 19                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 13.90) ; Number of LABs  (Total = 40) ;
+; Number of Distinct Inputs  (Average = 14.22) ; Number of LABs  (Total = 41) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
-; 2                                            ; 0                            ;
-; 3                                            ; 3                            ;
-; 4                                            ; 3                            ;
-; 5                                            ; 3                            ;
-; 6                                            ; 0                            ;
+; 2                                            ; 1                            ;
+; 3                                            ; 1                            ;
+; 4                                            ; 2                            ;
+; 5                                            ; 2                            ;
+; 6                                            ; 1                            ;
 ; 7                                            ; 1                            ;
-; 8                                            ; 1                            ;
-; 9                                            ; 4                            ;
-; 10                                           ; 1                            ;
-; 11                                           ; 1                            ;
-; 12                                           ; 3                            ;
-; 13                                           ; 1                            ;
-; 14                                           ; 2                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 1                            ;
-; 17                                           ; 3                            ;
-; 18                                           ; 1                            ;
-; 19                                           ; 2                            ;
-; 20                                           ; 0                            ;
-; 21                                           ; 0                            ;
-; 22                                           ; 3                            ;
-; 23                                           ; 3                            ;
-; 24                                           ; 1                            ;
-; 25                                           ; 0                            ;
+; 8                                            ; 0                            ;
+; 9                                            ; 1                            ;
+; 10                                           ; 3                            ;
+; 11                                           ; 2                            ;
+; 12                                           ; 2                            ;
+; 13                                           ; 3                            ;
+; 14                                           ; 1                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 3                            ;
+; 17                                           ; 2                            ;
+; 18                                           ; 4                            ;
+; 19                                           ; 3                            ;
+; 20                                           ; 1                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 2                            ;
+; 23                                           ; 2                            ;
+; 24                                           ; 0                            ;
+; 25                                           ; 1                            ;
 ; 26                                           ; 0                            ;
 ; 27                                           ; 1                            ;
-; 28                                           ; 1                            ;
-; 29                                           ; 0                            ;
-; 30                                           ; 0                            ;
-; 31                                           ; 0                            ;
-; 32                                           ; 0                            ;
-; 33                                           ; 0                            ;
-; 34                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -1611,8 +1607,7 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +----------------------------------------------------------+----------------------------------------------------------+-------------------+
 ; Source Clock(s)                                          ; Destination Clock(s)                                     ; Delay Added in ns ;
 +----------------------------------------------------------+----------------------------------------------------------+-------------------+
-; inst_pll_vga|altpll_component|auto_generated|pll1|clk[0] ; inst_pll_vga|altpll_component|auto_generated|pll1|clk[0] ; 2.4               ;
-; inst_pll_vga|altpll_component|auto_generated|pll1|clk[1] ; inst_pll_vga|altpll_component|auto_generated|pll1|clk[2] ; 1.3               ;
+; inst_pll_vga|altpll_component|auto_generated|pll1|clk[0] ; inst_pll_vga|altpll_component|auto_generated|pll1|clk[0] ; 2.9               ;
 +----------------------------------------------------------+----------------------------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -1623,55 +1618,55 @@ This will disable optimization of problematic paths and expose them for further 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 ; Source Register                                                                                                                                    ; Destination Register                                                                                                                                                   ; Delay Added in ns ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[1]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.260             ;
-; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[20]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a20~porta_datain_reg0  ; 0.232             ;
-; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[21]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a21~porta_datain_reg0  ; 0.222             ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[1]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.281             ;
+; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|wrptr_g[1]                             ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a12~porta_address_reg0 ; 0.277             ;
+; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|wrptr_g[2]                             ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a12~porta_address_reg0 ; 0.277             ;
+; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|wrptr_g[4]                             ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a12~porta_address_reg0 ; 0.277             ;
+; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[39]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a39~porta_datain_reg0  ; 0.232             ;
+; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[38]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a38~porta_datain_reg0  ; 0.232             ;
+; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[37]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a37~porta_datain_reg0  ; 0.222             ;
+; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[36]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a36~porta_datain_reg0  ; 0.222             ;
 ; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[19]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a19~porta_datain_reg0  ; 0.222             ;
-; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[18]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a18~porta_datain_reg0  ; 0.222             ;
 ; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[17]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a17~porta_datain_reg0  ; 0.222             ;
 ; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[16]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a16~porta_datain_reg0  ; 0.222             ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|row_number[4]                                                                               ; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|curRow[4]                                                                                                        ; 0.200             ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|row_number[3]                                                                               ; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|curRow[3]                                                                                                        ; 0.200             ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|row_number[8]                                                                               ; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|curRow[8]                                                                                                        ; 0.200             ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|row_number[5]                                                                               ; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|curRow[5]                                                                                                        ; 0.200             ;
 ; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|row_number[2]                                                                               ; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|curRow[2]                                                                                                        ; 0.200             ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|row_number[1]                                                                               ; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|curRow[1]                                                                                                        ; 0.200             ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|row_number[0]                                                                               ; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|curRow[0]                                                                                                        ; 0.200             ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|col_number[4]                                                                               ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~portb_address_reg0                  ; 0.104             ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|col_number[5]                                                                               ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~portb_address_reg0                  ; 0.104             ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|col_number[6]                                                                               ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~portb_address_reg0                  ; 0.104             ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|col_number[7]                                                                               ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~portb_address_reg0                  ; 0.104             ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|col_number[8]                                                                               ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~portb_address_reg0                  ; 0.104             ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|col_number[9]                                                                               ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~portb_address_reg0                  ; 0.104             ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|row_number[8]                                                                               ; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|curRow[8]                                                                                                        ; 0.065             ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|row_number[7]                                                                               ; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|curRow[7]                                                                                                        ; 0.065             ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|row_number[6]                                                                               ; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|curRow[6]                                                                                                        ; 0.065             ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|row_number[5]                                                                               ; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|curRow[5]                                                                                                        ; 0.059             ;
-; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[33]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a33~porta_datain_reg0  ; 0.058             ;
-; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[24]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a24~porta_datain_reg0  ; 0.058             ;
-; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[32]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a32~porta_datain_reg0  ; 0.058             ;
-; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[23]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a23~porta_datain_reg0  ; 0.058             ;
-; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[22]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a22~porta_datain_reg0  ; 0.058             ;
-; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[25]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a25~porta_datain_reg0  ; 0.058             ;
-; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|wrptr_g[1]                             ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a12~porta_address_reg0 ; 0.052             ;
-; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|wrptr_g[2]                             ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a12~porta_address_reg0 ; 0.052             ;
-; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|wrptr_g[0]                             ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a12~porta_address_reg0 ; 0.052             ;
-; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|wrptr_g[3]                             ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a12~porta_address_reg0 ; 0.052             ;
-; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[34]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a34~porta_datain_reg0  ; 0.048             ;
-; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[31]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a31~porta_datain_reg0  ; 0.048             ;
-; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[29]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a29~porta_datain_reg0  ; 0.048             ;
-; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[28]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a28~porta_datain_reg0  ; 0.048             ;
-; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[27]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a27~porta_datain_reg0  ; 0.048             ;
-; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[26]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a26~porta_datain_reg0  ; 0.048             ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[0]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.034             ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[7]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.031             ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[6]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.031             ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[4]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.031             ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[3]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.031             ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[2]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.031             ;
-; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a7 ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_pjc:wrptr_g1p|sub_parity10a[1]               ; 0.030             ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|col_number[0]                                                                               ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a9~portb_address_reg0                   ; 0.116             ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|col_number[2]                                                                               ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a9~portb_address_reg0                   ; 0.105             ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|col_number[3]                                                                               ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a9~portb_address_reg0                   ; 0.105             ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|col_number[4]                                                                               ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a9~portb_address_reg0                   ; 0.105             ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|col_number[6]                                                                               ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a9~portb_address_reg0                   ; 0.105             ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[0]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.059             ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|row_number[7]                                                                               ; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|curRow[7]                                                                                                        ; 0.058             ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|row_number[0]                                                                               ; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|curRow[0]                                                                                                        ; 0.058             ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[5]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.053             ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[4]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.053             ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[3]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.052             ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[6]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.051             ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[2]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.049             ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[7]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.049             ;
+; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[33]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a33~porta_datain_reg0  ; 0.035             ;
+; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[24]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a24~porta_datain_reg0  ; 0.035             ;
+; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[32]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a32~porta_datain_reg0  ; 0.035             ;
+; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[23]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a23~porta_datain_reg0  ; 0.035             ;
+; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[22]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a22~porta_datain_reg0  ; 0.035             ;
+; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[30]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a30~porta_datain_reg0  ; 0.035             ;
+; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[25]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a25~porta_datain_reg0  ; 0.035             ;
+; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|wrptr_g[6]                             ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a12~porta_address_reg0 ; 0.033             ;
+; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|wrptr_g[3]                             ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a12~porta_address_reg0 ; 0.033             ;
 ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a0 ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a1                     ; 0.030             ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[5]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.024             ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[9]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.027             ;
+; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|wrptr_g[0]                             ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a12~porta_address_reg0 ; 0.025             ;
+; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|wrptr_g[5]                             ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a12~porta_address_reg0 ; 0.025             ;
+; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[35]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a35~porta_datain_reg0  ; 0.025             ;
+; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[34]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a34~porta_datain_reg0  ; 0.025             ;
+; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[28]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a28~porta_datain_reg0  ; 0.025             ;
+; vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[18]                                                                                              ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ram_block11a18~porta_datain_reg0  ; 0.025             ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[8]                                                                                 ; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ram_block1a11~porta_address_reg0                  ; 0.024             ;
+; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_t57:rdptr_g1p|counter5a7 ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_t57:rdptr_g1p|sub_parity7a[1]                ; 0.023             ;
 ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_t57:rdptr_g1p|counter5a1 ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_t57:rdptr_g1p|sub_parity7a[0]                ; 0.022             ;
-; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_t57:rdptr_g1p|counter5a2 ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_t57:rdptr_g1p|sub_parity7a[0]                ; 0.021             ;
+; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_t57:rdptr_g1p|counter5a4 ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_t57:rdptr_g1p|sub_parity7a[1]                ; 0.021             ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 Note: This table only shows the top 49 path(s) that have the largest delay added for hold.
 
@@ -1684,10 +1679,10 @@ Info (20032): Parallel compilation is enabled and will use up to 4 processors
 Info (119006): Selected device EP4CE22F17C6 for design "VGA_Subsystem"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Info (15535): Implemented PLL "pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|pll1" as Cyclone IV E PLL type File: D:/LAVORI/VGA_SUBSYSTEM/db/pll_vga_altpll.v Line: 46
-    Info (15099): Implementing clock multiplication of 14, clock division of 5, and phase shift of 0 degrees (0 ps) for pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[0] port File: D:/LAVORI/VGA_SUBSYSTEM/db/pll_vga_altpll.v Line: 46
-    Info (15099): Implementing clock multiplication of 63, clock division of 125, and phase shift of 0 degrees (0 ps) for pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[1] port File: D:/LAVORI/VGA_SUBSYSTEM/db/pll_vga_altpll.v Line: 46
-    Info (15099): Implementing clock multiplication of 14, clock division of 5, and phase shift of 40 degrees (794 ps) for pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[2] port File: D:/LAVORI/VGA_SUBSYSTEM/db/pll_vga_altpll.v Line: 46
+Info (15535): Implemented PLL "pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|pll1" as Cyclone IV E PLL type File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/pll_vga_altpll.v Line: 46
+    Info (15099): Implementing clock multiplication of 14, clock division of 5, and phase shift of 0 degrees (0 ps) for pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[0] port File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/pll_vga_altpll.v Line: 46
+    Info (15099): Implementing clock multiplication of 63, clock division of 125, and phase shift of 0 degrees (0 ps) for pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[1] port File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/pll_vga_altpll.v Line: 46
+    Info (15099): Implementing clock multiplication of 14, clock division of 5, and phase shift of 40 degrees (794 ps) for pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[2] port File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/pll_vga_altpll.v Line: 46
 Info (171004): Fitter is performing a Standard Fit compilation using maximum Fitter effort to optimize design performance
 Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
     Info (176445): Device EP4CE10F17C6 is compatible
@@ -1711,32 +1706,32 @@ Info (332110): Deriving PLL clocks
     Info (332110): create_generated_clock -source {inst_pll_vga|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 125 -multiply_by 63 -duty_cycle 50.00 -name {inst_pll_vga|altpll_component|auto_generated|pll1|clk[1]} {inst_pll_vga|altpll_component|auto_generated|pll1|clk[1]}
     Info (332110): create_generated_clock -source {inst_pll_vga|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 5 -multiply_by 14 -phase 40.00 -duty_cycle 50.00 -name {inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]} {inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]}
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
-Warning (332174): Ignored filter at VGA_Subsystem.sdc(74): altera_reserved_tck could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 74
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(74): Argument <from> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 74
-    Info (332050): set_false_path -from [get_ports {altera_reserved_tck}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 74
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(75): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 75
-    Info (332050): set_false_path -to [get_ports {altera_reserved_tck}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 75
-Warning (332174): Ignored filter at VGA_Subsystem.sdc(77): DRAM_ADDR[*] could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 77
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(77): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 77
-    Info (332050): set_false_path -to [get_ports {DRAM_ADDR[*]}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 77
-Warning (332174): Ignored filter at VGA_Subsystem.sdc(78): DRAM_BA[*] could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 78
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(78): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 78
-    Info (332050): set_false_path -to [get_ports {DRAM_BA[*]}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 78
-Warning (332174): Ignored filter at VGA_Subsystem.sdc(79): DRAM_CAS_N could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 79
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(79): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 79
-    Info (332050): set_false_path -to [get_ports {DRAM_CAS_N}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 79
-Warning (332174): Ignored filter at VGA_Subsystem.sdc(80): DRAM_RAS_N could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 80
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(80): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 80
-    Info (332050): set_false_path -to [get_ports {DRAM_RAS_N}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 80
-Warning (332174): Ignored filter at VGA_Subsystem.sdc(81): DRAM_WE_N could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 81
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(81): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 81
-    Info (332050): set_false_path -to [get_ports {DRAM_WE_N}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 81
-Warning (332174): Ignored filter at VGA_Subsystem.sdc(82): DRAM_CS_N could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 82
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(82): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 82
-    Info (332050): set_false_path -to [get_ports {DRAM_CS_N}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 82
-Warning (332174): Ignored filter at VGA_Subsystem.sdc(83): DRAM_CKE could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 83
-Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(83): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 83
-    Info (332050): set_false_path -to [get_ports {DRAM_CKE}] File: D:/LAVORI/VGA_SUBSYSTEM/VGA_Subsystem.sdc Line: 83
+Warning (332174): Ignored filter at VGA_Subsystem.sdc(74): altera_reserved_tck could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 74
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(74): Argument <from> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 74
+    Info (332050): set_false_path -from [get_ports {altera_reserved_tck}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 74
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(75): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 75
+    Info (332050): set_false_path -to [get_ports {altera_reserved_tck}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 75
+Warning (332174): Ignored filter at VGA_Subsystem.sdc(77): DRAM_ADDR[*] could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 77
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(77): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 77
+    Info (332050): set_false_path -to [get_ports {DRAM_ADDR[*]}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 77
+Warning (332174): Ignored filter at VGA_Subsystem.sdc(78): DRAM_BA[*] could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 78
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(78): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 78
+    Info (332050): set_false_path -to [get_ports {DRAM_BA[*]}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 78
+Warning (332174): Ignored filter at VGA_Subsystem.sdc(79): DRAM_CAS_N could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 79
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(79): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 79
+    Info (332050): set_false_path -to [get_ports {DRAM_CAS_N}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 79
+Warning (332174): Ignored filter at VGA_Subsystem.sdc(80): DRAM_RAS_N could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 80
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(80): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 80
+    Info (332050): set_false_path -to [get_ports {DRAM_RAS_N}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 80
+Warning (332174): Ignored filter at VGA_Subsystem.sdc(81): DRAM_WE_N could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 81
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(81): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 81
+    Info (332050): set_false_path -to [get_ports {DRAM_WE_N}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 81
+Warning (332174): Ignored filter at VGA_Subsystem.sdc(82): DRAM_CS_N could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 82
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(82): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 82
+    Info (332050): set_false_path -to [get_ports {DRAM_CS_N}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 82
+Warning (332174): Ignored filter at VGA_Subsystem.sdc(83): DRAM_CKE could not be matched with a port File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 83
+Warning (332049): Ignored set_false_path at VGA_Subsystem.sdc(83): Argument <to> is an empty collection File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 83
+    Info (332050): set_false_path -to [get_ports {DRAM_CKE}] File: D:/LAVORI/VGA_SUBSYSTEM_V3/VGA_Subsystem.sdc Line: 83
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
 Info (332111): Found 4 clocks
@@ -1746,16 +1741,17 @@ Info (332111): Found 4 clocks
     Info (332111):    7.142 inst_pll_vga|altpll_component|auto_generated|pll1|clk[0]
     Info (332111):   39.682 inst_pll_vga|altpll_component|auto_generated|pll1|clk[1]
     Info (332111):    7.142 inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]
-Info (176353): Automatically promoted node pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[0] (placed in counter C0 of PLL_4) File: D:/LAVORI/VGA_SUBSYSTEM/db/pll_vga_altpll.v Line: 81
+Info (176353): Automatically promoted node pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[0] (placed in counter C0 of PLL_4) File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/pll_vga_altpll.v Line: 81
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G18
-Info (176353): Automatically promoted node pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[1] (placed in counter C2 of PLL_4) File: D:/LAVORI/VGA_SUBSYSTEM/db/pll_vga_altpll.v Line: 81
+Info (176353): Automatically promoted node pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[1] (placed in counter C2 of PLL_4) File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/pll_vga_altpll.v Line: 81
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G17
-Info (176353): Automatically promoted node pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[2] (placed in counter C1 of PLL_4) File: D:/LAVORI/VGA_SUBSYSTEM/db/pll_vga_altpll.v Line: 81
+Info (176353): Automatically promoted node pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[2] (placed in counter C1 of PLL_4) File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/pll_vga_altpll.v Line: 81
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G19
-Info (176353): Automatically promoted node rstn_i~0  File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 112
+Info (176353): Automatically promoted node rstn_i~0  File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 112
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[16]~1 File: D:/LAVORI/VGA_SUBSYSTEM/src/VGA/vga_subsystem_top.vhd Line: 82
+        Info (176357): Destination node vga_subsystem_top:inst_vga_subsystem|fifo_wr_data[16]~0 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 84
+        Info (176357): Destination node vga_subsystem_top:inst_vga_subsystem|reg_mode[0]~0 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 84
 Info (176233): Starting register packing
 Warning (176250): Ignoring invalid fast I/O register assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (176235): Finished register packing
@@ -1788,7 +1784,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "LED[5]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LED[6]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LED[7]" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:04
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1797,70 +1793,71 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:03
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 1% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 3% of the available device resources in the region that extends from location X10_Y0 to location X20_Y10
+    Info (170196): Router estimated peak interconnect usage is 4% of the available device resources in the region that extends from location X21_Y11 to location X31_Y22
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.73 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.78 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Warning (169177): 43 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin nTRST_i uses I/O standard 2.5 V at P11 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 34
-    Info (169178): Pin TCK_i uses I/O standard 2.5 V at B10 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 35
-    Info (169178): Pin TDI_i uses I/O standard 2.5 V at A10 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 36
-    Info (169178): Pin SDRAM_DQ[0] uses I/O standard 3.3-V LVTTL at G2 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 57
-    Info (169178): Pin SDRAM_DQ[1] uses I/O standard 3.3-V LVTTL at G1 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 57
-    Info (169178): Pin SDRAM_DQ[2] uses I/O standard 3.3-V LVTTL at L8 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 57
-    Info (169178): Pin SDRAM_DQ[3] uses I/O standard 3.3-V LVTTL at K5 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 57
-    Info (169178): Pin SDRAM_DQ[4] uses I/O standard 3.3-V LVTTL at K2 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 57
-    Info (169178): Pin SDRAM_DQ[5] uses I/O standard 3.3-V LVTTL at J2 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 57
-    Info (169178): Pin SDRAM_DQ[6] uses I/O standard 3.3-V LVTTL at J1 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 57
-    Info (169178): Pin SDRAM_DQ[7] uses I/O standard 3.3-V LVTTL at R7 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 57
-    Info (169178): Pin SDRAM_DQ[8] uses I/O standard 3.3-V LVTTL at T4 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 57
-    Info (169178): Pin SDRAM_DQ[9] uses I/O standard 3.3-V LVTTL at T2 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 57
-    Info (169178): Pin SDRAM_DQ[10] uses I/O standard 3.3-V LVTTL at T3 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 57
-    Info (169178): Pin SDRAM_DQ[11] uses I/O standard 3.3-V LVTTL at R3 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 57
-    Info (169178): Pin SDRAM_DQ[12] uses I/O standard 3.3-V LVTTL at R5 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 57
-    Info (169178): Pin SDRAM_DQ[13] uses I/O standard 3.3-V LVTTL at P3 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 57
-    Info (169178): Pin SDRAM_DQ[14] uses I/O standard 3.3-V LVTTL at N3 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 57
-    Info (169178): Pin SDRAM_DQ[15] uses I/O standard 3.3-V LVTTL at K1 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 57
-    Info (169178): Pin KEY[0] uses I/O standard 3.3-V LVTTL at J15 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 29
-    Info (169178): Pin KEY[1] uses I/O standard 3.3-V LVTTL at E1 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 29
-    Info (169178): Pin CLOCK_50 uses I/O standard 3.3-V LVTTL at R8 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 24
-    Info (169178): Pin data_bus[1] uses I/O standard 3.3-V LVTTL at C3 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 44
-    Info (169178): Pin addr_bus[0] uses I/O standard 3.3-V LVTTL at C9 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 43
-    Info (169178): Pin addr_bus[2] uses I/O standard 3.3-V LVTTL at C11 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 43
-    Info (169178): Pin addr_bus[1] uses I/O standard 3.3-V LVTTL at E11 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 43
-    Info (169178): Pin data_bus[2] uses I/O standard 3.3-V LVTTL at A3 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 44
-    Info (169178): Pin data_bus[3] uses I/O standard 3.3-V LVTTL at B4 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 44
-    Info (169178): Pin data_bus[4] uses I/O standard 3.3-V LVTTL at B5 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 44
-    Info (169178): Pin data_bus[0] uses I/O standard 3.3-V LVTTL at D3 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 44
-    Info (169178): Pin pixel_stb uses I/O standard 3.3-V LVTTL at D11 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 45
-    Info (169178): Pin cmd_stb uses I/O standard 3.3-V LVTTL at B12 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 46
-    Info (169178): Pin data_bus[5] uses I/O standard 3.3-V LVTTL at D5 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 44
-    Info (169178): Pin data_bus[7] uses I/O standard 3.3-V LVTTL at D6 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 44
-    Info (169178): Pin data_bus[9] uses I/O standard 3.3-V LVTTL at E6 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 44
-    Info (169178): Pin data_bus[8] uses I/O standard 3.3-V LVTTL at C6 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 44
-    Info (169178): Pin data_bus[6] uses I/O standard 3.3-V LVTTL at A6 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 44
-    Info (169178): Pin data_bus[10] uses I/O standard 3.3-V LVTTL at D8 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 44
-    Info (169178): Pin data_bus[11] uses I/O standard 3.3-V LVTTL at F8 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 44
-    Info (169178): Pin data_bus[12] uses I/O standard 3.3-V LVTTL at E9 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 44
-    Info (169178): Pin data_bus[13] uses I/O standard 3.3-V LVTTL at D9 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 44
-    Info (169178): Pin data_bus[14] uses I/O standard 3.3-V LVTTL at E10 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 44
-    Info (169178): Pin data_bus[15] uses I/O standard 3.3-V LVTTL at B11 File: D:/LAVORI/VGA_SUBSYSTEM/src/top.vhd Line: 44
-Info (144001): Generated suppressed messages file D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsystem.fit.smsg
+Warning (169177): 44 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
+    Info (169178): Pin nTRST_i uses I/O standard 2.5 V at R13 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 34
+    Info (169178): Pin TCK_i uses I/O standard 2.5 V at A12 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 35
+    Info (169178): Pin TDI_i uses I/O standard 2.5 V at T14 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 36
+    Info (169178): Pin TMS_i uses I/O standard 2.5 V at N12 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 38
+    Info (169178): Pin SDRAM_DQ[0] uses I/O standard 3.3-V LVTTL at G2 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 57
+    Info (169178): Pin SDRAM_DQ[1] uses I/O standard 3.3-V LVTTL at G1 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 57
+    Info (169178): Pin SDRAM_DQ[2] uses I/O standard 3.3-V LVTTL at L8 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 57
+    Info (169178): Pin SDRAM_DQ[3] uses I/O standard 3.3-V LVTTL at K5 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 57
+    Info (169178): Pin SDRAM_DQ[4] uses I/O standard 3.3-V LVTTL at K2 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 57
+    Info (169178): Pin SDRAM_DQ[5] uses I/O standard 3.3-V LVTTL at J2 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 57
+    Info (169178): Pin SDRAM_DQ[6] uses I/O standard 3.3-V LVTTL at J1 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 57
+    Info (169178): Pin SDRAM_DQ[7] uses I/O standard 3.3-V LVTTL at R7 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 57
+    Info (169178): Pin SDRAM_DQ[8] uses I/O standard 3.3-V LVTTL at T4 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 57
+    Info (169178): Pin SDRAM_DQ[9] uses I/O standard 3.3-V LVTTL at T2 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 57
+    Info (169178): Pin SDRAM_DQ[10] uses I/O standard 3.3-V LVTTL at T3 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 57
+    Info (169178): Pin SDRAM_DQ[11] uses I/O standard 3.3-V LVTTL at R3 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 57
+    Info (169178): Pin SDRAM_DQ[12] uses I/O standard 3.3-V LVTTL at R5 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 57
+    Info (169178): Pin SDRAM_DQ[13] uses I/O standard 3.3-V LVTTL at P3 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 57
+    Info (169178): Pin SDRAM_DQ[14] uses I/O standard 3.3-V LVTTL at N3 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 57
+    Info (169178): Pin SDRAM_DQ[15] uses I/O standard 3.3-V LVTTL at K1 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 57
+    Info (169178): Pin KEY[0] uses I/O standard 3.3-V LVTTL at J15 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 29
+    Info (169178): Pin KEY[1] uses I/O standard 3.3-V LVTTL at E1 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 29
+    Info (169178): Pin CLOCK_50 uses I/O standard 3.3-V LVTTL at R8 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 24
+    Info (169178): Pin data_bus[1] uses I/O standard 3.3-V LVTTL at C3 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 44
+    Info (169178): Pin addr_bus[0] uses I/O standard 3.3-V LVTTL at C9 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 43
+    Info (169178): Pin addr_bus[2] uses I/O standard 3.3-V LVTTL at C11 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 43
+    Info (169178): Pin addr_bus[1] uses I/O standard 3.3-V LVTTL at E11 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 43
+    Info (169178): Pin data_bus[2] uses I/O standard 3.3-V LVTTL at A3 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 44
+    Info (169178): Pin data_bus[3] uses I/O standard 3.3-V LVTTL at B4 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 44
+    Info (169178): Pin data_bus[4] uses I/O standard 3.3-V LVTTL at B5 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 44
+    Info (169178): Pin data_bus[0] uses I/O standard 3.3-V LVTTL at D3 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 44
+    Info (169178): Pin pixel_stb uses I/O standard 3.3-V LVTTL at D11 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 45
+    Info (169178): Pin cmd_stb uses I/O standard 3.3-V LVTTL at B12 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 46
+    Info (169178): Pin data_bus[5] uses I/O standard 3.3-V LVTTL at D5 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 44
+    Info (169178): Pin data_bus[7] uses I/O standard 3.3-V LVTTL at D6 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 44
+    Info (169178): Pin data_bus[9] uses I/O standard 3.3-V LVTTL at E6 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 44
+    Info (169178): Pin data_bus[8] uses I/O standard 3.3-V LVTTL at C6 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 44
+    Info (169178): Pin data_bus[6] uses I/O standard 3.3-V LVTTL at A6 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 44
+    Info (169178): Pin data_bus[10] uses I/O standard 3.3-V LVTTL at D8 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 44
+    Info (169178): Pin data_bus[11] uses I/O standard 3.3-V LVTTL at F8 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 44
+    Info (169178): Pin data_bus[12] uses I/O standard 3.3-V LVTTL at E9 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 44
+    Info (169178): Pin data_bus[13] uses I/O standard 3.3-V LVTTL at D9 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 44
+    Info (169178): Pin data_bus[14] uses I/O standard 3.3-V LVTTL at E10 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 44
+    Info (169178): Pin data_bus[15] uses I/O standard 3.3-V LVTTL at B11 File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 44
+Info (144001): Generated suppressed messages file D:/LAVORI/VGA_SUBSYSTEM_V3/output_files/VGA_Subsystem.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 5598 megabytes
-    Info: Processing ended: Sun May  3 23:41:02 2026
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 5602 megabytes
+    Info: Processing ended: Sat May  9 14:58:40 2026
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:16
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in D:/LAVORI/VGA_SUBSYSTEM/output_files/VGA_Subsystem.fit.smsg.
+The suppressed messages can be found in D:/LAVORI/VGA_SUBSYSTEM_V3/output_files/VGA_Subsystem.fit.smsg.
 
 

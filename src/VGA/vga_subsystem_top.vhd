@@ -67,6 +67,8 @@ architecture rtl of vga_subsystem_top is
     signal sdr_load_ack        : std_logic;
     signal wren_sdr_to_ram2    : std_logic;
     signal ram2_q_vec          : std_logic_vector(15 downto 0);
+	
+	signal reg_mode : std_logic_vector(15 downto 0) := (others => '0');
 
 begin
 
@@ -104,25 +106,36 @@ begin
                     when "011" => reg_color <= vga_data_i;
                     when "100" => reg_write_page <= vga_data_i(4 downto 0);
                     when "101" => reg_read_page <= vga_data_i(4 downto 0);
+					when "111" => reg_mode <= vga_data_i; -- Associato all'indirizzo 0x1C
                     when others => null;
                 end case;
             end if;
 
             -- 2. TRIGGER SCRITTURA PIXEL (Fronte saliente dello strobe pixel)
-            if sync_st_pix(2 downto 1) = "01" then
-                -- Calcolo indirizzo SDRAM (Logica specchiata per colonne > 319)
-                if reg_x <= 319 then
-                     addr_temp := unsigned(reg_write_page) & '0' & reg_y(8 downto 0) & reg_x(8 downto 0);
-                else
-                     addr_temp := unsigned(reg_write_page) & '1' & reg_y(8 downto 0) & unsigned(reg_x - 320)(8 downto 0);
-                end if;
-                
-                -- Se la FIFO non è piena, scriviamo il dato
-                if fifo_full = '0' then
-                    fifo_wr_data <= std_logic_vector(addr_temp) & reg_color;
-                    fifo_wr_req  <= '1';
-                end if;
-            end if;
+			if sync_st_pix(2 downto 1) = "01" then
+				-- Calcolo indirizzo SDRAM (usiamo la tua logica esistente)
+				if reg_x <= 319 then
+					 addr_temp := unsigned(reg_write_page) & '0' & reg_y(8 downto 0) & reg_x(8 downto 0);
+				else
+					 addr_temp := unsigned(reg_write_page) & '1' & reg_y(8 downto 0) & unsigned(reg_x - 320)(8 downto 0);
+				end if;
+				
+				if fifo_full = '0' then
+					fifo_wr_data <= std_logic_vector(addr_temp) & reg_color;
+					fifo_wr_req  <= '1';
+					
+					-- GESTIONE AUTO-INCREMENTO
+					if reg_mode(0) = '1' then
+						if reg_x < 639 then
+							reg_x <= reg_x + 1;
+						else
+							reg_x <= (others => '0'); -- Reset a fine riga
+							-- Opzionale: incremento automatico di reg_y? 
+							-- Per ora lo lasciamo manuale per dare controllo alla CPU
+						end if;
+					end if;
+				end if;
+			end if;
         end if;
     end process;
 

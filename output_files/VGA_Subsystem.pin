@@ -72,15 +72,15 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A2        :        :                   :         : 8         :                
 data_bus[2]                  : A3        : input  : 3.3-V LVTTL       :         : 8         : Y              
-TDO_o                        : A4        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A5        :        :                   :         : 8         :                
 data_bus[6]                  : A6        : input  : 3.3-V LVTTL       :         : 8         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : A7        :        :                   :         : 8         :                
+TDO_o                        : A7        : output : 2.5 V             :         : 8         : N              
 GND+                         : A8        :        :                   :         : 8         :                
 GND+                         : A9        :        :                   :         : 7         :                
-TDI_i                        : A10       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A10       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A11       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A12       :        :                   :         : 7         :                
+TCK_i                        : A12       : input  : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A13       :        :                   :         : 7         :                
 VGA_R[2]                     : A14       : output : 3.3-V LVTTL       :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A15       :        :                   :         : 7         :                
@@ -90,11 +90,11 @@ GND                          : B2        : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : B3        :        :                   :         : 8         :                
 data_bus[3]                  : B4        : input  : 3.3-V LVTTL       :         : 8         : Y              
 data_bus[4]                  : B5        : input  : 3.3-V LVTTL       :         : 8         : Y              
-TMS_i                        : B6        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B6        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B7        :        :                   :         : 8         :                
 GND+                         : B8        :        :                   :         : 8         :                
 GND+                         : B9        :        :                   :         : 7         :                
-TCK_i                        : B10       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B10       :        :                   :         : 7         :                
 data_bus[15]                 : B11       : input  : 3.3-V LVTTL       :         : 7         : Y              
 cmd_stb                      : B12       : input  : 3.3-V LVTTL       :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : B13       :        :                   :         : 7         :                
@@ -269,10 +269,10 @@ SDRAM_ADDR[1]                : N5        : output : 3.3-V LVTTL       :         
 SDRAM_ADDR[2]                : N6        : output : 3.3-V LVTTL       :         : 3         : Y              
 GND                          : N7        : gnd    :                   :         :           :                
 SDRAM_ADDR[6]                : N8        : output : 3.3-V LVTTL       :         : 3         : Y              
-VGA_G[2]                     : N9        : output : 3.3-V LVTTL       :         : 4         : N              
+VGA_G[1]                     : N9        : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : N10       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N11       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N12       :        :                   :         : 4         :                
+TMS_i                        : N12       : input  : 2.5 V             :         : 4         : N              
 VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N14       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N15       :        :                   :         : 5         :                
@@ -287,7 +287,7 @@ VCCIO3                       : P7        : power  :                   : 3.3V    
 SDRAM_ADDR[4]                : P8        : output : 3.3-V LVTTL       :         : 3         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : P9        :        :                   :         : 4         :                
 VCCIO4                       : P10       : power  :                   : 3.3V    : 4         :                
-nTRST_i                      : P11       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P11       :        :                   :         : 4         :                
 GND                          : P12       : gnd    :                   :         :           :                
 VCCIO4                       : P13       : power  :                   : 3.3V    : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P14       :        :                   :         : 4         :                
@@ -302,10 +302,10 @@ SDRAM_DQML                   : R6        : output : 3.3-V LVTTL       :         
 SDRAM_DQ[7]                  : R7        : bidir  : 3.3-V LVTTL       :         : 3         : Y              
 CLOCK_50                     : R8        : input  : 3.3-V LVTTL       :         : 3         : Y              
 GND+                         : R9        :        :                   :         : 4         :                
-VGA_G[1]                     : R10       : output : 3.3-V LVTTL       :         : 4         : N              
-VGA_G[0]                     : R11       : output : 3.3-V LVTTL       :         : 4         : N              
+VGA_G[0]                     : R10       : output : 3.3-V LVTTL       :         : 4         : N              
+VGA_B[1]                     : R11       : output : 3.3-V LVTTL       :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : R12       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R13       :        :                   :         : 4         :                
+nTRST_i                      : R13       : input  : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : R14       :        :                   :         : 4         :                
 GND                          : R15       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R16       :        :                   :         : 5         :                
@@ -318,10 +318,10 @@ SDRAM_ADDR[7]                : T6        : output : 3.3-V LVTTL       :         
 SDRAM_ADDR[5]                : T7        : output : 3.3-V LVTTL       :         : 3         : Y              
 GND+                         : T8        :        :                   :         : 3         :                
 GND+                         : T9        :        :                   :         : 4         :                
-VGA_B[0]                     : T10       : output : 3.3-V LVTTL       :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : T11       :        :                   :         : 4         :                
-VGA_B[1]                     : T12       : output : 3.3-V LVTTL       :         : 4         : N              
+VGA_G[2]                     : T10       : output : 3.3-V LVTTL       :         : 4         : N              
+VGA_B[0]                     : T11       : output : 3.3-V LVTTL       :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T12       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T13       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T14       :        :                   :         : 4         :                
+TDI_i                        : T14       : input  : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T15       :        :                   :         : 4         :                
 VCCIO4                       : T16       : power  :                   : 3.3V    : 4         :                

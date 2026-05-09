@@ -1,5 +1,5 @@
 Flow report for VGA_Subsystem
-Sun May  3 23:41:09 2026
+Sat May  9 14:58:52 2026
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
 
 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------+
 ; Flow Summary                                                                            ;
 +------------------------------------+----------------------------------------------------+
-; Flow Status                        ; Successful - Sun May  3 23:41:09 2026              ;
+; Flow Status                        ; Successful - Sat May  9 14:58:52 2026              ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Standard Edition ;
 ; Revision Name                      ; VGA_Subsystem                                      ;
 ; Top-level Entity Name              ; top                                                ;
 ; Family                             ; Cyclone IV E                                       ;
 ; Device                             ; EP4CE22F17C6                                       ;
 ; Timing Models                      ; Final                                              ;
-; Total logic elements               ; 508 / 22,320 ( 2 % )                               ;
-;     Total combinational functions  ; 348 / 22,320 ( 2 % )                               ;
-;     Dedicated logic registers      ; 376 / 22,320 ( 2 % )                               ;
-; Total registers                    ; 410                                                ;
+; Total logic elements               ; 531 / 22,320 ( 2 % )                               ;
+;     Total combinational functions  ; 383 / 22,320 ( 2 % )                               ;
+;     Dedicated logic registers      ; 377 / 22,320 ( 2 % )                               ;
+; Total registers                    ; 411                                                ;
 ; Total pins                         ; 87 / 154 ( 56 % )                                  ;
 ; Total virtual pins                 ; 0                                                  ;
 ; Total memory bits                  ; 26,624 / 608,256 ( 4 % )                           ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/03/2026 23:40:36 ;
+; Start date & time ; 05/09/2026 14:57:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; VGA_Subsystem       ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 229044584247206.177784443611332        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 229044584247206.177833146803788        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_timing_analysis               ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -126,12 +126,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4864 MB             ; 00:00:30                           ;
-; Fitter               ; 00:00:10     ; 1.0                     ; 5598 MB             ; 00:00:14                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4719 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4813 MB             ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:26     ; 1.0                     ; 4886 MB             ; 00:00:31                           ;
+; Fitter               ; 00:00:19     ; 1.0                     ; 5602 MB             ; 00:00:16                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4723 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4816 MB             ; 00:00:02                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4652 MB             ; 00:00:01                           ;
-; Total                ; 00:00:29     ; --                      ; --                  ; 00:00:48                           ;
+; Total                ; 00:00:50     ; --                      ; --                  ; 00:00:51                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
