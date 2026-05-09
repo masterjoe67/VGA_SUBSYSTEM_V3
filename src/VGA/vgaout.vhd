@@ -22,7 +22,9 @@ entity vgaout is
         col_number   : out unsigned(9 downto 0); 
         load_req     : out std_logic := '0';
         load_ack     : in std_logic;
-        video_active : in std_logic -- 0: segnale AVR, 1: barre colore
+        video_active : in std_logic; -- 0: segnale AVR, 1: barre colore
+		scaling_h_i : in std_logic;
+        scaling_v_i : in std_logic
     );
 end vgaout;
 
@@ -78,19 +80,29 @@ begin
     -- 3. INDIRIZZAMENTO SDRAM / RAM LINE BUFFER
     --row_number <= vcount; -- Indirizzo riga per SDRAM
     
-    process(clock_vga)
+process(clock_vga)
     begin
         if rising_edge(clock_vga) then
-            -- col_number pilota la lettura della RAM2 (Line Buffer)
-            -- Deve essere 0 esattamente quando hcount è 0.
             if hcount < hor_active_video then
-                col_number <= hcount(9 downto 0);
+                -- LOGICA SCALING ORIZZONTALE
+                if scaling_h_i = '1' then
+                    -- Bit 1 attivo: Scaling 2x
+                    -- Prendiamo i bit da 9 a 1. Il bit 0 viene ignorato.
+                    -- Risultato: indirizzo 0 per due colpi, indirizzo 1 per due colpi...
+                    col_number <= "0" & hcount(9 downto 1);
+                else
+                    -- Modalità standard 1:1
+                    col_number <= hcount(9 downto 0);
+                end if;
             else
                 col_number <= (others => '0');
             end if;
             
-            -- row_number per la riga successiva o attuale
-            row_number <= vcount;
+            if scaling_v_i = '1' then -- Usiamo il bit 2 per lo scaling verticale
+				row_number <= "0" & vcount(9 downto 1);
+			else
+				row_number <= vcount(9 downto 0);
+			end if;
         end if;
     end process;
 

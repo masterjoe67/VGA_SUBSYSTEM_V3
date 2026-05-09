@@ -69,11 +69,15 @@ architecture rtl of vga_subsystem_top is
     signal ram2_q_vec          : std_logic_vector(15 downto 0);
 	
 	signal reg_mode : std_logic_vector(15 downto 0) := (others => '0');
+	signal vga_scale_h : std_logic;
+	signal vga_scale_v : std_logic;
 
 begin
 
     -- Busy attivo se la FIFO è piena
     vga_busy_o <= fifo_full;
+	vga_scale_h <= reg_mode(1);
+	vga_scale_v <= reg_mode(2);
 
     ------------------------------------------------------------------
     -- LOGICA DI INTERFACCIA (Dominio clk_sync)
@@ -206,6 +210,8 @@ begin
             clock_dram   => clk_pixel,
             video_active => '0',
             pixel_in     => unsigned(ram2_q_vec),
+			scaling_h_i => vga_scale_h,
+			scaling_v_i => vga_scale_v,
             load_req     => sdr_load_req,
             load_ack     => sdr_load_ack,
             row_number   => vga_row_req_addr,

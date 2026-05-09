@@ -228,7 +228,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "data_bus[1]",
+					"name" : "data_bus[0]",
+					"strict" : false
+				},
+				{
+					"name" : "addr_bus[1]",
 					"strict" : false
 				},
 				{
@@ -240,7 +244,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "addr_bus[1]",
+					"name" : "data_bus[1]",
 					"strict" : false
 				},
 				{
@@ -256,15 +260,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "data_bus[0]",
+					"name" : "cmd_stb",
 					"strict" : false
 				},
 				{
 					"name" : "pixel_stb",
-					"strict" : false
-				},
-				{
-					"name" : "cmd_stb",
 					"strict" : false
 				},
 				{
@@ -309,6 +309,22 @@
 				},
 				{
 					"name" : "data_bus[15]",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
 					"strict" : false
 				}
 			]
