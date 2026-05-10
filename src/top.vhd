@@ -40,11 +40,17 @@ entity top is
 	--
 	-- EXTERNAL PIN
 	--
-	addr_bus 	: in std_logic_vector(2 downto 0);
+	addr_bus 	: in std_logic_vector(3 downto 0);
 	data_bus 	: in std_logic_vector(15 downto 0);
 	pixel_stb  	: in std_logic; 
 	cmd_stb  	: in std_logic;
 	busy    	: out std_logic;
+	
+	-- AUDIO DAC MCP4902 (Nuovi pin)
+    DAC_CS_N    : out std_logic; -- Chip Select
+    DAC_SCK     : out std_logic; -- Serial Clock
+    DAC_SDI     : out std_logic; -- Serial Data In (MOSI)
+    DAC_LDAC_N  : out std_logic; -- Latch (puoi fissarlo a '0' o gestirlo)
 	--
 	-- SDRAM interface,
 	--
@@ -120,7 +126,7 @@ architecture syn of top is
 
 
 	
-	signal vga_bus_adr : std_logic_vector(2 downto 0);
+	signal vga_bus_adr : std_logic_vector(3 downto 0);
 	signal vga_bus_dat : std_logic_vector(15 downto 0);
 	signal vga_bus_we  : std_logic;
 	signal vga_busy    : std_logic;
@@ -174,35 +180,41 @@ begin
 		vga_st_i     => vga_bus_we,
 		vga_st_cmd_i => vga_st_cmd,
 		vga_busy_o   => vga_busy,
+		
+		--- NUOVA INTERFACCIA AUDIO ---
+		audio_sck    => DAC_SCK,
+        audio_sdi    => DAC_SDI,
+        audio_cs_n   => DAC_CS_N,
+        audio_ldac_n => DAC_LDAC_N,
 
-			--- Interfaccia Fisica SDRAM ---
-            dram_clk     => open, -- Pilotato dal PLL fuori da qui
-            dram_cke     => SDRAM_CKE,
-            dram_cs_n    => SDRAM_CS_N,
-            dram_ras_n   => SDRAM_RAS_N,
-            dram_cas_n   => SDRAM_CAS_N,
-            dram_we_n    => SDRAM_WE_N,
-            
-            -- Mappatura Bank Address (Split)
-            dram_ba(1)   => SDRAM_BA_1,
-            dram_ba(0)   => SDRAM_BA_0,
-            
-            -- Conversione Address (da unsigned a std_logic_vector)
-            std_logic_vector(dram_addr) => SDRAM_ADDR,
-            
-            -- Mappatura Mask (Split)
-            dram_dqm(1)  => SDRAM_DQMU,
-            dram_dqm(0)  => SDRAM_DQML,
-            
-            -- Conversione Dati Inout
-            std_logic_vector(dram_dq) => SDRAM_DQ,
+		--- Interfaccia Fisica SDRAM ---
+		dram_clk     => open, -- Pilotato dal PLL fuori da qui
+		dram_cke     => SDRAM_CKE,
+		dram_cs_n    => SDRAM_CS_N,
+		dram_ras_n   => SDRAM_RAS_N,
+		dram_cas_n   => SDRAM_CAS_N,
+		dram_we_n    => SDRAM_WE_N,
 
-        -- --- Uscite VGA Fisiche (Standard RGB565) ---
-			vga_r        => VGA_R,
-			vga_g        => VGA_G,
-			vga_b        => VGA_B,
-			vga_hsync    => VGA_HSYNC,
-			vga_vsync    => VGA_VSYNC
+		-- Mappatura Bank Address (Split)
+		dram_ba(1)   => SDRAM_BA_1,
+		dram_ba(0)   => SDRAM_BA_0,
+
+		-- Conversione Address (da unsigned a std_logic_vector)
+		std_logic_vector(dram_addr) => SDRAM_ADDR,
+
+		-- Mappatura Mask (Split)
+		dram_dqm(1)  => SDRAM_DQMU,
+		dram_dqm(0)  => SDRAM_DQML,
+
+		-- Conversione Dati Inout
+		std_logic_vector(dram_dq) => SDRAM_DQ,
+
+		-- --- Uscite VGA Fisiche (Standard RGB565) ---
+		vga_r        => VGA_R,
+		vga_g        => VGA_G,
+		vga_b        => VGA_B,
+		vga_hsync    => VGA_HSYNC,
+		vga_vsync    => VGA_VSYNC
     );
 	 
 	 u_dram_clk_gen: entity work.DCLK_BUF
