@@ -375,4 +375,12 @@ set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -
 set_global_assignment -name SIGNALTAP_FILE output_files/stp1.stp
 set_location_assignment PIN_F9 -to addr_bus[3]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to addr_bus[3]
+set_location_assignment PIN_A5 -to DAC_LDAC_N
+set_location_assignment PIN_B3 -to DAC_SCK
+set_location_assignment PIN_A4 -to DAC_SDI
+set_location_assignment PIN_A2 -to DAC_CS_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_LDAC_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_SCK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_SDI
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_CS_N
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
