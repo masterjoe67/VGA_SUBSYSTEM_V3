@@ -351,16 +351,7 @@ set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
 set_global_assignment -name OPTIMIZATION_MODE "AGGRESSIVE PERFORMANCE"
 
-set_global_assignment -name QIP_FILE src/VGA/DCLK_BUF.qip
-set_global_assignment -name VHDL_FILE src/VGA/vgaout.vhd
-set_global_assignment -name VHDL_FILE src/VGA/sdram.vhd
-set_global_assignment -name VHDL_FILE src/VGA/ram2.vhd
-set_global_assignment -name VHDL_FILE src/VGA/vga_fifo.vhd
-set_global_assignment -name SDC_FILE VGA_Subsystem.sdc
 
-set_global_assignment -name VHDL_FILE src/top.vhd
-set_global_assignment -name VHDL_FILE src/VGA/vga_subsystem_top.vhd
-set_global_assignment -name QIP_FILE src/pll/pll_vga.qip
 
 set_global_assignment -name ENABLE_OCT_DONE OFF
 set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
@@ -372,7 +363,6 @@ set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 
 
-set_global_assignment -name SIGNALTAP_FILE output_files/stp1.stp
 set_location_assignment PIN_F9 -to addr_bus[3]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to addr_bus[3]
 set_location_assignment PIN_A5 -to DAC_LDAC_N
@@ -383,4 +373,16 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_LDAC_N
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_SCK
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_SDI
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_CS_N
+set_global_assignment -name SOURCE_FILE src/VGA/audio_fifo.cmp
+set_global_assignment -name QIP_FILE src/VGA/DCLK_BUF.qip
+set_global_assignment -name VHDL_FILE src/VGA/vgaout.vhd
+set_global_assignment -name VHDL_FILE src/VGA/sdram.vhd
+set_global_assignment -name VHDL_FILE src/VGA/ram2.vhd
+set_global_assignment -name VHDL_FILE src/VGA/vga_fifo.vhd
+set_global_assignment -name SDC_FILE VGA_Subsystem.sdc
+set_global_assignment -name VHDL_FILE src/top.vhd
+set_global_assignment -name VHDL_FILE src/VGA/vga_subsystem_top.vhd
+set_global_assignment -name QIP_FILE src/pll/pll_vga.qip
+set_global_assignment -name SIGNALTAP_FILE output_files/stp1.stp
+set_global_assignment -name QIP_FILE src/VGA/audio_fifo.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

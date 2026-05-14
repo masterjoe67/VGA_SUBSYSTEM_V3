@@ -4,9 +4,9 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity vga_subsystem_top is
     port (
-        clk_sync     : in std_logic;    -- 114.54 MHz
+        clk_sync     : in std_logic;    -- 140.00 MHz
         clk_vga      : in std_logic;    -- 25.175 MHz
-        clk_pixel    : in std_logic;    -- 114.54 MHz
+        clk_pixel    : in std_logic;    -- 140.00 MHz  45'
         rst_n        : in std_logic;
 
         vga_data_i   : in  std_logic_vector(15 downto 0);
@@ -80,10 +80,24 @@ architecture rtl of vga_subsystem_top is
     signal sck_inner : std_logic := '0';
     -- Divisore per clock SPI: 140MHz / 8 = 17.5 MHz
     signal clk_div   : unsigned(2 downto 0) := (others => '0');
+	
+	signal audio_fifo_full  : std_logic;
+	signal audio_fifo_empty : std_logic;
+	signal audio_fifo_rdreq : std_logic;
+	signal audio_fifo_q     : std_logic_vector(15 downto 0);
+	
+	signal sample_timer    : unsigned(15 downto 0) := (others => '0');
+	signal sample_tick     : std_logic := '0';
+	signal audio_trigger_d1 : std_logic := '0';
+	constant SAMPLE_DIVIDER : unsigned(15 downto 0) := to_unsigned(12698, 16);
+	
+	signal reg_scroll_offset : unsigned(9 downto 0) := (others => '0');
+	signal row_addr_virtual : unsigned(9 downto 0);
 
 begin
 
-    vga_busy_o <= fifo_full;
+    --vga_busy_o <= fifo_full;
+	vga_busy_o <= fifo_full or audio_fifo_full;
     vga_scale_h <= reg_mode(1);
     vga_scale_v <= reg_mode(2);
     audio_ldac_n <= '0'; -- Sempre attivo per aggiornamento immediato
@@ -91,20 +105,23 @@ begin
     ------------------------------------------------------------------
     -- LOGICA DI INTERFACCIA E REGISTRI (clk_sync)
     ------------------------------------------------------------------
-    process(clk_sync, rst_n)
+process(clk_sync, rst_n)
         variable addr_temp : unsigned(23 downto 0);
     begin
         if rst_n = '0' then
             sync_st_pix <= "000"; sync_st_cmd <= "000";
             reg_x <= (others => '0'); reg_y <= (others => '0');
             audio_trigger <= '0';
+            audio_trigger_d1 <= '0';
         elsif rising_edge(clk_sync) then
+            -- Sincronizzazione e rilevamento fronti
             sync_st_pix <= sync_st_pix(1 downto 0) & vga_st_i;
             sync_st_cmd <= sync_st_cmd(1 downto 0) & vga_st_cmd_i;
+            
             fifo_wr_req <= '0';
             audio_trigger <= '0';
 
-            -- DECODIFICA COMANDI (Bus a 4 bit)
+            -- DECODIFICA COMANDI (Esegue solo sul fronte di salita dello strobe)
             if sync_st_cmd(2 downto 1) = "01" then
                 case vga_cmd_i is
                     when "0001" => reg_x <= unsigned(vga_data_i(9 downto 0)); -- 0x1
@@ -117,11 +134,15 @@ begin
                     -- NUOVO REGISTRO AUDIO (0x8)
                     when "1000" => 
                         reg_audio_data <= vga_data_i;
-                        audio_trigger <= '1'; -- Fa partire la FSM SPI
-                        
+                        audio_trigger <= '1'; -- Dura ESATTAMENTE un ciclo di clock
+                    when "1001" => 
+						reg_scroll_offset <= unsigned(vga_data_i(9 downto 0)); -- Comando 0x9    
                     when others => null;
                 end case;
             end if;
+            
+            -- Ritardo di un ciclo per far stabilizzare il dato prima di scriverlo in FIFO
+            audio_trigger_d1 <= audio_trigger;
 
             -- LOGICA PIXEL (Invariata)
             if sync_st_pix(2 downto 1) = "01" then
@@ -141,64 +162,109 @@ begin
             end if;
         end if;
     end process;
+	
+	------------------------------------------------------------------
+	-- GENERATORE SAMPLE RATE (11025 Hz)
+	------------------------------------------------------------------
+	process(clk_sync, rst_n)
+	begin
+		if rst_n = '0' then
+			sample_timer <= (others => '0');
+			sample_tick <= '0';
+		elsif rising_edge(clk_sync) then
+			sample_tick <= '0';
+			if sample_timer = SAMPLE_DIVIDER then
+				sample_timer <= (others => '0');
+				sample_tick <= '1'; -- Scatta l'ora del campione!
+			else
+				sample_timer <= sample_timer + 1;
+			end if;
+		end if;
+	end process;
 
     ------------------------------------------------------------------
     -- FSM AUDIO SPI (Generazione segnali per MCP4902)
     ------------------------------------------------------------------
+	------------------------------------------------------------------
+-- FSM AUDIO SPI (Modificata per Hardware Timing)
+------------------------------------------------------------------
 	process(clk_sync, rst_n)
-    begin
-        if rst_n = '0' then
-            state <= IDLE;
-            audio_cs_n <= '1';
-            audio_sdi <= '0';
-            audio_sck <= '0';
-            sck_inner <= '0';
-            clk_div <= (others => '0');
-        elsif rising_edge(clk_sync) then
-            case state is
-                when IDLE =>
-                    audio_cs_n <= '1';
-                    sck_inner <= '0';
-                    if audio_trigger = '1' then
-                        shift_reg <= reg_audio_data;
-                        bit_cnt <= 15;
-                        state <= LOAD;
-                    end if;
+	begin
+		if rst_n = '0' then
+			state <= IDLE;
+			audio_cs_n <= '1';
+			audio_sck <= '0';
+			audio_fifo_rdreq <= '0';
+			sck_inner <= '0';
+		elsif rising_edge(clk_sync) then
+			audio_fifo_rdreq <= '0'; -- Pulizia automatica del segnale di lettura
 
-                when LOAD =>
-                    audio_cs_n <= '0'; -- Attiva il DAC
-                    clk_div <= (others => '0');
-                    state <= SHIFT;
+			case state is
+				when IDLE =>
+					audio_cs_n <= '1';
+					audio_sck <= '0';
+					sck_inner <= '0';
+					clk_div <= (others => '0');
+					
+					-- Se scatta il tick a 11kHz e abbiamo dati, chiediamo il dato alla FIFO
+					if sample_tick = '1' and audio_fifo_empty = '0' then
+						audio_fifo_rdreq <= '1'; -- Chiediamo il dato ora...
+						state <= LOAD;           -- ...e lo carichiamo al prossimo colpo
+					end if;
 
-                when SHIFT =>
-                    -- Divisore: 140 MHz / 8 = 17.5 MHz SPI clock
-                    if clk_div = 3 then 
-                        clk_div <= (others => '0');
-                        sck_inner <= not sck_inner;
-                        
-                        -- Sul fronte di discesa (quando sck_inner passa da 1 a 0)
-                        -- prepariamo il prossimo bit
-                        if sck_inner = '1' then 
-                            if bit_cnt = 0 then
-                                state <= LATCH;
-                            else
-                                bit_cnt <= bit_cnt - 1;
-                                shift_reg <= shift_reg(14 downto 0) & '0';
-                            end if;
-                        end if;
-                    else
-                        clk_div <= clk_div + 1;
-                    end if;
-                    
-                    audio_sdi <= shift_reg(15);
-                    audio_sck <= sck_inner;
+				when LOAD =>
+					-- Qui audio_fifo_q è finalmente stabile e aggiornato
+					shift_reg <= audio_fifo_q;
+					bit_cnt <= 15;
+					audio_cs_n <= '0'; -- Inizia la trasmissione SPI
+					state <= SHIFT;
 
-                when LATCH =>
-                    audio_cs_n <= '1'; -- Chiude la comunicazione
-                    state <= IDLE;
-            end case;
+				when SHIFT =>
+					if clk_div = 3 then
+						clk_div <= (others => '0');
+						sck_inner <= not sck_inner;
+						
+						-- Gestione dati su fronte di discesa (per MCP4902)
+						if sck_inner = '1' then 
+							if bit_cnt = 0 then
+								state <= LATCH;
+							else
+								bit_cnt <= bit_cnt - 1;
+								shift_reg <= shift_reg(14 downto 0) & '0';
+							end if;
+						end if;
+					else
+						clk_div <= clk_div + 1;
+					end if;
+					
+					audio_sdi <= shift_reg(15);
+					audio_sck <= sck_inner;
+
+				when LATCH =>
+					audio_cs_n <= '1';
+					-- Torniamo in IDLE. Se il codice C è troppo veloce, 
+					-- i dati rimangono sicuri nella FIFO.
+					state <= IDLE;
+
+				when others => state <= IDLE;
+			end case;
+		end if;
+end process;
+
+process(clk_vga)
+    variable temp_sum : unsigned(9 downto 0);
+begin
+    if rising_edge(clk_vga) then
+        -- Calcolo con Wrap-around a 480 righe
+        temp_sum := vga_row_req_addr + reg_scroll_offset;
+        
+        if temp_sum >= 480 then
+            row_addr_virtual <= temp_sum - 480;
+        else
+            row_addr_virtual <= temp_sum;
         end if;
-    end process;
+    end if;
+end process;
 
     ------------------------------------------------------------------
     -- COMPONENTI INTERNI
@@ -225,7 +291,7 @@ begin
             clk            => clk_pixel,
             pixelOut       => sdr_pixel_out,
             read_page      => reg_read_page,
-            rowLoadNr      => vga_row_req_addr,
+            rowLoadNr      => row_addr_virtual,
             rowLoadReq     => sdr_load_req,
             rowLoadAck     => sdr_load_ack,
             colLoadNr      => sdr_col_wr_addr,
@@ -275,6 +341,17 @@ begin
             col_number   => vga_col_req_addr,
             vga_out      => vga_bus_internal
         );
+		
+	audio_fifo_inst : entity work.audio_fifo
+    port map (
+        clock => clk_sync,
+        data  => reg_audio_data,   -- Il registro caricato dal comando 0x8
+        rdreq => audio_fifo_rdreq, -- Pilotato dalla tua FSM nello stato IDLE
+        wrreq => audio_trigger_d1,    -- Impulso che arriva quando scrivi sull'indirizzo 0x8
+        empty => audio_fifo_empty, -- Usato dalla FSM per sapere se c'è audio
+        full  => audio_fifo_full,  -- Puoi lasciarlo aperto o collegarlo a un segnale
+        q     => audio_fifo_q      -- Il dato che va nello shift_reg dello SPI
+    );
 
     -- Mappatura segnali video in uscita
     vga_hsync <= std_logic(vga_bus_internal(1));

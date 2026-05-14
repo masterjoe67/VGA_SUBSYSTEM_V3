@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA_Subsystem
-Mon May 11 23:13:26 2026
+Thu May 14 20:49:21 2026
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
 
 
@@ -37,24 +37,27 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
  29. Source assignments for vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_1ol:ws_dgrp
  30. Source assignments for vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_1ol:ws_dgrp|dffpipe_id9:dffpipe18
  31. Source assignments for vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated
- 32. Source assignments for DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component
- 33. Source assignments for DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component|ddio_out_p9j:auto_generated
- 34. Parameter Settings for User Entity Instance: pll_vga:inst_pll_vga|altpll:altpll_component
- 35. Parameter Settings for User Entity Instance: vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component
- 36. Parameter Settings for User Entity Instance: vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl
- 37. Parameter Settings for User Entity Instance: vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component
- 38. Parameter Settings for User Entity Instance: vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine
- 39. Parameter Settings for User Entity Instance: DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component
- 40. altpll Parameter Settings by Entity Instance
- 41. dcfifo Parameter Settings by Entity Instance
- 42. altsyncram Parameter Settings by Entity Instance
- 43. Port Connectivity Checks: "DCLK_BUF:u_dram_clk_gen"
- 44. Port Connectivity Checks: "vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine"
- 45. Port Connectivity Checks: "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo"
- 46. Port Connectivity Checks: "vga_subsystem_top:inst_vga_subsystem"
- 47. Post-Synthesis Netlist Statistics for Top Partition
- 48. Elapsed Time Per Partition
- 49. Analysis & Synthesis Messages
+ 32. Source assignments for vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component|scfifo_7831:auto_generated|a_dpfifo_ee31:dpfifo|altsyncram_0tm1:FIFOram
+ 33. Source assignments for DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component
+ 34. Source assignments for DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component|ddio_out_p9j:auto_generated
+ 35. Parameter Settings for User Entity Instance: pll_vga:inst_pll_vga|altpll:altpll_component
+ 36. Parameter Settings for User Entity Instance: vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component
+ 37. Parameter Settings for User Entity Instance: vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl
+ 38. Parameter Settings for User Entity Instance: vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component
+ 39. Parameter Settings for User Entity Instance: vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine
+ 40. Parameter Settings for User Entity Instance: vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component
+ 41. Parameter Settings for User Entity Instance: DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component
+ 42. altpll Parameter Settings by Entity Instance
+ 43. dcfifo Parameter Settings by Entity Instance
+ 44. scfifo Parameter Settings by Entity Instance
+ 45. altsyncram Parameter Settings by Entity Instance
+ 46. Port Connectivity Checks: "DCLK_BUF:u_dram_clk_gen"
+ 47. Port Connectivity Checks: "vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine"
+ 48. Port Connectivity Checks: "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo"
+ 49. Port Connectivity Checks: "vga_subsystem_top:inst_vga_subsystem"
+ 50. Post-Synthesis Netlist Statistics for Top Partition
+ 51. Elapsed Time Per Partition
+ 52. Analysis & Synthesis Messages
 
 
 
@@ -81,18 +84,18 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                            ;
 +------------------------------------+----------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon May 11 23:13:26 2026              ;
+; Analysis & Synthesis Status        ; Successful - Thu May 14 20:49:21 2026              ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Standard Edition ;
 ; Revision Name                      ; VGA_Subsystem                                      ;
 ; Top-level Entity Name              ; top                                                ;
 ; Family                             ; Cyclone IV E                                       ;
-; Total logic elements               ; 689                                                ;
-;     Total combinational functions  ; 451                                                ;
-;     Dedicated logic registers      ; 446                                                ;
-; Total registers                    ; 448                                                ;
+; Total logic elements               ; 780                                                ;
+;     Total combinational functions  ; 541                                                ;
+;     Dedicated logic registers      ; 505                                                ;
+; Total registers                    ; 507                                                ;
 ; Total pins                         ; 92                                                 ;
 ; Total virtual pins                 ; 0                                                  ;
-; Total memory bits                  ; 26,624                                             ;
+; Total memory bits                  ; 43,008                                             ;
 ; Embedded Multiplier 9-bit elements ; 0                                                  ;
 ; Total PLLs                         ; 1                                                  ;
 +------------------------------------+----------------------------------------------------+
@@ -200,7 +203,8 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -217,6 +221,7 @@ https://fpgasoftware.intel.com/eula.
 ; src/top.vhd                      ; yes             ; User VHDL File               ; D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd                                     ;         ;
 ; src/VGA/vga_subsystem_top.vhd    ; yes             ; User VHDL File               ; D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd                   ;         ;
 ; src/pll/pll_vga.vhd              ; yes             ; User Wizard-Generated File   ; D:/LAVORI/VGA_SUBSYSTEM_V3/src/pll/pll_vga.vhd                             ;         ;
+; src/VGA/audio_fifo.vhd           ; yes             ; User Wizard-Generated File   ; D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/audio_fifo.vhd                          ;         ;
 ; altpll.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/altpll.tdf            ;         ;
 ; aglobal221.inc                   ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/aglobal221.inc        ;         ;
 ; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/stratix_pll.inc       ;         ;
@@ -256,6 +261,18 @@ https://fpgasoftware.intel.com/eula.
 ; altrom.inc                       ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; db/altsyncram_mno3.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/altsyncram_mno3.tdf                          ;         ;
+; scfifo.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/scfifo.tdf            ;         ;
+; a_regfifo.inc                    ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/a_regfifo.inc         ;         ;
+; a_dpfifo.inc                     ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/a_dpfifo.inc          ;         ;
+; a_i2fifo.inc                     ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/a_i2fifo.inc          ;         ;
+; a_fffifo.inc                     ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/a_fffifo.inc          ;         ;
+; a_f2fifo.inc                     ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/a_f2fifo.inc          ;         ;
+; db/scfifo_7831.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/scfifo_7831.tdf                              ;         ;
+; db/a_dpfifo_ee31.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/a_dpfifo_ee31.tdf                            ;         ;
+; db/a_fefifo_kae.tdf              ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/a_fefifo_kae.tdf                             ;         ;
+; db/cntr_op7.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/cntr_op7.tdf                                 ;         ;
+; db/altsyncram_0tm1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/altsyncram_0tm1.tdf                          ;         ;
+; db/cntr_cpb.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/LAVORI/VGA_SUBSYSTEM_V3/db/cntr_cpb.tdf                                 ;         ;
 ; altddio_out.tdf                  ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/altddio_out.tdf       ;         ;
 ; stratix_ddio.inc                 ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/stratix_ddio.inc      ;         ;
 ; cyclone_ddio.inc                 ; yes             ; Megafunction                 ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/cyclone_ddio.inc      ;         ;
@@ -269,24 +286,24 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                       ;
 +---------------------------------------------+---------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 689                                                                                         ;
+; Estimated Total logic elements              ; 780                                                                                         ;
 ;                                             ;                                                                                             ;
-; Total combinational functions               ; 451                                                                                         ;
+; Total combinational functions               ; 541                                                                                         ;
 ; Logic element usage by number of LUT inputs ;                                                                                             ;
-;     -- 4 input functions                    ; 241                                                                                         ;
-;     -- 3 input functions                    ; 108                                                                                         ;
-;     -- <=2 input functions                  ; 102                                                                                         ;
+;     -- 4 input functions                    ; 272                                                                                         ;
+;     -- 3 input functions                    ; 116                                                                                         ;
+;     -- <=2 input functions                  ; 153                                                                                         ;
 ;                                             ;                                                                                             ;
 ; Logic elements by mode                      ;                                                                                             ;
-;     -- normal mode                          ; 402                                                                                         ;
-;     -- arithmetic mode                      ; 49                                                                                          ;
+;     -- normal mode                          ; 441                                                                                         ;
+;     -- arithmetic mode                      ; 100                                                                                         ;
 ;                                             ;                                                                                             ;
-; Total registers                             ; 448                                                                                         ;
-;     -- Dedicated logic registers            ; 446                                                                                         ;
+; Total registers                             ; 507                                                                                         ;
+;     -- Dedicated logic registers            ; 505                                                                                         ;
 ;     -- I/O registers                        ; 4                                                                                           ;
 ;                                             ;                                                                                             ;
 ; I/O pins                                    ; 92                                                                                          ;
-; Total memory bits                           ; 26624                                                                                       ;
+; Total memory bits                           ; 43008                                                                                       ;
 ;                                             ;                                                                                             ;
 ; Embedded Multiplier 9-bit elements          ; 0                                                                                           ;
 ;                                             ;                                                                                             ;
@@ -294,68 +311,79 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1                                                                                           ;
 ;                                             ;                                                                                             ;
 ; Maximum fan-out node                        ; pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 505                                                                                         ;
-; Total fan-out                               ; 4177                                                                                        ;
-; Average fan-out                             ; 3.62                                                                                        ;
+; Maximum fan-out                             ; 580                                                                                         ;
+; Total fan-out                               ; 4976                                                                                        ;
+; Average fan-out                             ; 3.77                                                                                        ;
 +---------------------------------------------+---------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                ;
-+-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
-; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                               ; Entity Name        ; Library Name ;
-+-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
-; |top                                            ; 451 (1)             ; 446 (0)                   ; 26624       ; 0            ; 0       ; 0         ; 92   ; 0            ; |top                                                                                                                                                              ; top                ; work         ;
-;    |DCLK_BUF:u_dram_clk_gen|                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|DCLK_BUF:u_dram_clk_gen                                                                                                                                      ; DCLK_BUF           ; work         ;
-;       |altddio_out:ALTDDIO_OUT_component|       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component                                                                                                    ; altddio_out        ; work         ;
-;          |ddio_out_p9j:auto_generated|          ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component|ddio_out_p9j:auto_generated                                                                        ; ddio_out_p9j       ; work         ;
-;    |pll_vga:inst_pll_vga|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pll_vga:inst_pll_vga                                                                                                                                         ; pll_vga            ; work         ;
-;       |altpll:altpll_component|                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pll_vga:inst_pll_vga|altpll:altpll_component                                                                                                                 ; altpll             ; work         ;
-;          |pll_vga_altpll:auto_generated|        ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated                                                                                   ; pll_vga_altpll     ; work         ;
-;    |vga_subsystem_top:inst_vga_subsystem|       ; 450 (105)           ; 446 (142)                 ; 26624       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem                                                                                                                         ; vga_subsystem_top  ; work         ;
-;       |ram2:read_buffer|                        ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer                                                                                                        ; ram2               ; work         ;
-;          |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component                                                                        ; altsyncram         ; work         ;
-;             |altsyncram_mno3:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated                                         ; altsyncram_mno3    ; work         ;
-;       |sdram:sdram_ctrl|                        ; 188 (188)           ; 142 (142)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl                                                                                                        ; sdram              ; work         ;
-;       |vga_fifo:pixel_fifo|                     ; 66 (0)              ; 97 (0)                    ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo                                                                                                     ; vga_fifo           ; work         ;
-;          |dcfifo:dcfifo_component|              ; 66 (0)              ; 97 (0)                    ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component                                                                             ; dcfifo             ; work         ;
-;             |dcfifo_eok1:auto_generated|        ; 66 (7)              ; 97 (31)                   ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated                                                  ; dcfifo_eok1        ; work         ;
-;                |a_graycounter_pjc:wrptr_g1p|    ; 16 (16)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_pjc:wrptr_g1p                      ; a_graycounter_pjc  ; work         ;
-;                |a_graycounter_t57:rdptr_g1p|    ; 17 (17)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_t57:rdptr_g1p                      ; a_graycounter_t57  ; work         ;
-;                |alt_synch_pipe_0ol:rs_dgwp|     ; 0 (0)               ; 18 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_0ol:rs_dgwp                       ; alt_synch_pipe_0ol ; work         ;
-;                   |dffpipe_hd9:dffpipe14|       ; 0 (0)               ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_0ol:rs_dgwp|dffpipe_hd9:dffpipe14 ; dffpipe_hd9        ; work         ;
-;                |alt_synch_pipe_1ol:ws_dgrp|     ; 0 (0)               ; 18 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_1ol:ws_dgrp                       ; alt_synch_pipe_1ol ; work         ;
-;                   |dffpipe_id9:dffpipe18|       ; 0 (0)               ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_1ol:ws_dgrp|dffpipe_id9:dffpipe18 ; dffpipe_id9        ; work         ;
-;                |altsyncram_7o41:fifo_ram|       ; 0 (0)               ; 0 (0)                     ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram                         ; altsyncram_7o41    ; work         ;
-;                |dffpipe_3dc:rdaclr|             ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|dffpipe_3dc:rdaclr                               ; dffpipe_3dc        ; work         ;
-;                |dffpipe_3dc:wraclr|             ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|dffpipe_3dc:wraclr                               ; dffpipe_3dc        ; work         ;
-;                |mux_j28:rdemp_eq_comp_lsb_mux|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:rdemp_eq_comp_lsb_mux                    ; mux_j28            ; work         ;
-;                |mux_j28:rdemp_eq_comp_msb_mux|  ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:rdemp_eq_comp_msb_mux                    ; mux_j28            ; work         ;
-;                |mux_j28:wrfull_eq_comp_lsb_mux| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:wrfull_eq_comp_lsb_mux                   ; mux_j28            ; work         ;
-;                |mux_j28:wrfull_eq_comp_msb_mux| ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:wrfull_eq_comp_msb_mux                   ; mux_j28            ; work         ;
-;       |vgaout:vga_engine|                       ; 91 (91)             ; 65 (65)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine                                                                                                       ; vgaout             ; work         ;
-+-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                        ;
++-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                       ; Entity Name        ; Library Name ;
++-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
+; |top                                            ; 541 (1)             ; 505 (0)                   ; 43008       ; 0            ; 0       ; 0         ; 92   ; 0            ; |top                                                                                                                                                                                      ; top                ; work         ;
+;    |DCLK_BUF:u_dram_clk_gen|                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|DCLK_BUF:u_dram_clk_gen                                                                                                                                                              ; DCLK_BUF           ; work         ;
+;       |altddio_out:ALTDDIO_OUT_component|       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component                                                                                                                            ; altddio_out        ; work         ;
+;          |ddio_out_p9j:auto_generated|          ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component|ddio_out_p9j:auto_generated                                                                                                ; ddio_out_p9j       ; work         ;
+;    |pll_vga:inst_pll_vga|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pll_vga:inst_pll_vga                                                                                                                                                                 ; pll_vga            ; work         ;
+;       |altpll:altpll_component|                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pll_vga:inst_pll_vga|altpll:altpll_component                                                                                                                                         ; altpll             ; work         ;
+;          |pll_vga_altpll:auto_generated|        ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated                                                                                                           ; pll_vga_altpll     ; work         ;
+;    |vga_subsystem_top:inst_vga_subsystem|       ; 540 (157)           ; 505 (179)                 ; 43008       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem                                                                                                                                                 ; vga_subsystem_top  ; work         ;
+;       |audio_fifo:audio_fifo_inst|              ; 43 (0)              ; 32 (0)                    ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst                                                                                                                      ; audio_fifo         ; work         ;
+;          |scfifo:scfifo_component|              ; 43 (0)              ; 32 (0)                    ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component                                                                                              ; scfifo             ; work         ;
+;             |scfifo_7831:auto_generated|        ; 43 (0)              ; 32 (0)                    ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component|scfifo_7831:auto_generated                                                                   ; scfifo_7831        ; work         ;
+;                |a_dpfifo_ee31:dpfifo|           ; 43 (2)              ; 32 (0)                    ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component|scfifo_7831:auto_generated|a_dpfifo_ee31:dpfifo                                              ; a_dpfifo_ee31      ; work         ;
+;                   |a_fefifo_kae:fifo_state|     ; 21 (11)             ; 12 (2)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component|scfifo_7831:auto_generated|a_dpfifo_ee31:dpfifo|a_fefifo_kae:fifo_state                      ; a_fefifo_kae       ; work         ;
+;                      |cntr_op7:count_usedw|     ; 10 (10)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component|scfifo_7831:auto_generated|a_dpfifo_ee31:dpfifo|a_fefifo_kae:fifo_state|cntr_op7:count_usedw ; cntr_op7           ; work         ;
+;                   |altsyncram_0tm1:FIFOram|     ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component|scfifo_7831:auto_generated|a_dpfifo_ee31:dpfifo|altsyncram_0tm1:FIFOram                      ; altsyncram_0tm1    ; work         ;
+;                   |cntr_cpb:rd_ptr_count|       ; 10 (10)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component|scfifo_7831:auto_generated|a_dpfifo_ee31:dpfifo|cntr_cpb:rd_ptr_count                        ; cntr_cpb           ; work         ;
+;                   |cntr_cpb:wr_ptr|             ; 10 (10)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component|scfifo_7831:auto_generated|a_dpfifo_ee31:dpfifo|cntr_cpb:wr_ptr                              ; cntr_cpb           ; work         ;
+;       |ram2:read_buffer|                        ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer                                                                                                                                ; ram2               ; work         ;
+;          |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component                                                                                                ; altsyncram         ; work         ;
+;             |altsyncram_mno3:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated                                                                 ; altsyncram_mno3    ; work         ;
+;       |sdram:sdram_ctrl|                        ; 190 (190)           ; 131 (131)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl                                                                                                                                ; sdram              ; work         ;
+;       |vga_fifo:pixel_fifo|                     ; 65 (0)              ; 97 (0)                    ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo                                                                                                                             ; vga_fifo           ; work         ;
+;          |dcfifo:dcfifo_component|              ; 65 (0)              ; 97 (0)                    ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component                                                                                                     ; dcfifo             ; work         ;
+;             |dcfifo_eok1:auto_generated|        ; 65 (6)              ; 97 (31)                   ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated                                                                          ; dcfifo_eok1        ; work         ;
+;                |a_graycounter_pjc:wrptr_g1p|    ; 16 (16)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_pjc:wrptr_g1p                                              ; a_graycounter_pjc  ; work         ;
+;                |a_graycounter_t57:rdptr_g1p|    ; 17 (17)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_t57:rdptr_g1p                                              ; a_graycounter_t57  ; work         ;
+;                |alt_synch_pipe_0ol:rs_dgwp|     ; 0 (0)               ; 18 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_0ol:rs_dgwp                                               ; alt_synch_pipe_0ol ; work         ;
+;                   |dffpipe_hd9:dffpipe14|       ; 0 (0)               ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_0ol:rs_dgwp|dffpipe_hd9:dffpipe14                         ; dffpipe_hd9        ; work         ;
+;                |alt_synch_pipe_1ol:ws_dgrp|     ; 0 (0)               ; 18 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_1ol:ws_dgrp                                               ; alt_synch_pipe_1ol ; work         ;
+;                   |dffpipe_id9:dffpipe18|       ; 0 (0)               ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|alt_synch_pipe_1ol:ws_dgrp|dffpipe_id9:dffpipe18                         ; dffpipe_id9        ; work         ;
+;                |altsyncram_7o41:fifo_ram|       ; 0 (0)               ; 0 (0)                     ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram                                                 ; altsyncram_7o41    ; work         ;
+;                |dffpipe_3dc:rdaclr|             ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|dffpipe_3dc:rdaclr                                                       ; dffpipe_3dc        ; work         ;
+;                |dffpipe_3dc:wraclr|             ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|dffpipe_3dc:wraclr                                                       ; dffpipe_3dc        ; work         ;
+;                |mux_j28:rdemp_eq_comp_lsb_mux|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:rdemp_eq_comp_lsb_mux                                            ; mux_j28            ; work         ;
+;                |mux_j28:rdemp_eq_comp_msb_mux|  ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:rdemp_eq_comp_msb_mux                                            ; mux_j28            ; work         ;
+;                |mux_j28:wrfull_eq_comp_lsb_mux| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:wrfull_eq_comp_lsb_mux                                           ; mux_j28            ; work         ;
+;                |mux_j28:wrfull_eq_comp_msb_mux| ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:wrfull_eq_comp_msb_mux                                           ; mux_j28            ; work         ;
+;       |vgaout:vga_engine|                       ; 85 (85)             ; 66 (66)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine                                                                                                                               ; vgaout             ; work         ;
++-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                     ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
-; Name                                                                                                                                            ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF  ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
-; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ALTSYNCRAM                 ; AUTO ; Simple Dual Port ; 1024         ; 16           ; 1024         ; 16           ; 16384 ; None ;
-; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 256          ; 40           ; 256          ; 40           ; 10240 ; None ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                                ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
+; Name                                                                                                                                                                       ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF  ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
+; vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component|scfifo_7831:auto_generated|a_dpfifo_ee31:dpfifo|altsyncram_0tm1:FIFOram|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 1024         ; 16           ; 1024         ; 16           ; 16384 ; None ;
+; vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated|ALTSYNCRAM                                            ; AUTO ; Simple Dual Port ; 1024         ; 16           ; 1024         ; 16           ; 16384 ; None ;
+; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|altsyncram_7o41:fifo_ram|ALTSYNCRAM                            ; AUTO ; Simple Dual Port ; 256          ; 40           ; 256          ; 40           ; 10240 ; None ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                               ;
-+--------+--------------+---------+--------------+--------------+------------------------------+----------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance              ; IP Include File      ;
-+--------+--------------+---------+--------------+--------------+------------------------------+----------------------+
-; Altera ; ALTPLL       ; 22.1    ; N/A          ; N/A          ; |top|pll_vga:inst_pll_vga    ; src/pll/pll_vga.vhd  ;
-; Altera ; ALTDDIO_OUT  ; 22.1    ; N/A          ; N/A          ; |top|DCLK_BUF:u_dram_clk_gen ; src/VGA/DCLK_BUF.vhd ;
-+--------+--------------+---------+--------------+--------------+------------------------------+----------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                         ;
++--------+--------------+---------+--------------+--------------+----------------------------------------------------------------------+------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                      ; IP Include File        ;
++--------+--------------+---------+--------------+--------------+----------------------------------------------------------------------+------------------------+
+; Altera ; ALTPLL       ; 22.1    ; N/A          ; N/A          ; |top|pll_vga:inst_pll_vga                                            ; src/pll/pll_vga.vhd    ;
+; Altera ; FIFO         ; 22.1    ; N/A          ; N/A          ; |top|vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst ; src/VGA/audio_fifo.vhd ;
+; Altera ; ALTDDIO_OUT  ; 22.1    ; N/A          ; N/A          ; |top|DCLK_BUF:u_dram_clk_gen                                         ; src/VGA/DCLK_BUF.vhd   ;
++--------+--------------+---------+--------------+--------------+----------------------------------------------------------------------+------------------------+
 
 
 Encoding Type:  One-Hot
@@ -433,15 +461,16 @@ Encoding Type:  One-Hot
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                       ;
-+-----------------------------------------------------------------+----------------------------------------+
-; Register name                                                   ; Reason for Removal                     ;
-+-----------------------------------------------------------------+----------------------------------------+
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrCmd[3] ; Stuck at GND due to stuck port data_in ;
-; vga_subsystem_top:inst_vga_subsystem|clk_div[2]                 ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 2                           ;                                        ;
-+-----------------------------------------------------------------+----------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                  ;
++-----------------------------------------------------------------+-------------------------------------------------------------------+
+; Register name                                                   ; Reason for Removal                                                ;
++-----------------------------------------------------------------+-------------------------------------------------------------------+
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrCmd[3] ; Stuck at GND due to stuck port data_in                            ;
+; vga_subsystem_top:inst_vga_subsystem|clk_div[2]                 ; Stuck at GND due to stuck port data_in                            ;
+; vga_subsystem_top:inst_vga_subsystem|state.LOAD                 ; Merged with vga_subsystem_top:inst_vga_subsystem|audio_fifo_rdreq ;
+; Total Number of Removed Registers = 3                           ;                                                                   ;
++-----------------------------------------------------------------+-------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -449,12 +478,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 446   ;
-; Number of registers using Synchronous Clear  ; 52    ;
+; Total registers                              ; 505   ;
+; Number of registers using Synchronous Clear  ; 41    ;
 ; Number of registers using Synchronous Load   ; 10    ;
-; Number of registers using Asynchronous Clear ; 134   ;
+; Number of registers using Asynchronous Clear ; 149   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 209   ;
+; Number of registers using Clock Enable       ; 254   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -471,8 +500,8 @@ Encoding Type:  One-Hot
 ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_pjc:wrptr_g1p|parity9    ; 4       ;
 ; vga_subsystem_top:inst_vga_subsystem|bit_cnt[3]                                                                                                    ; 3       ;
 ; vga_subsystem_top:inst_vga_subsystem|bit_cnt[2]                                                                                                    ; 4       ;
-; vga_subsystem_top:inst_vga_subsystem|bit_cnt[0]                                                                                                    ; 5       ;
 ; vga_subsystem_top:inst_vga_subsystem|bit_cnt[1]                                                                                                    ; 4       ;
+; vga_subsystem_top:inst_vga_subsystem|bit_cnt[0]                                                                                                    ; 4       ;
 ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|rdemp_eq_comp_lsb_aeb                  ; 3       ;
 ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|rdemp_eq_comp_msb_aeb                  ; 3       ;
 ; vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|a_graycounter_t57:rdptr_g1p|counter5a0 ; 8       ;
@@ -481,172 +510,139 @@ Encoding Type:  One-Hot
 +----------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Physical Synthesis Netlist Optimizations                                                                                              ;
-+----------------------------------------------------------------------------------------------+------------------+---------------------+
-; Node                                                                                         ; Action           ; Reason              ;
-+----------------------------------------------------------------------------------------------+------------------+---------------------+
-; vga_subsystem_top:inst_vga_subsystem|Add1~1                                                  ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|Add1~2                                                  ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal0~0                               ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal0~0_OTERM89                       ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal2~0_OTERM63                       ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal2~1                               ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal3~0                               ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal3~0_OTERM117                      ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal3~0_RTM0119                       ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal3~0_RTM0119                       ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal3~1                               ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal3~1_RTM0118                       ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~0                               ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~0_OTERM47                       ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~0_RTM049                        ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~0_RTM049                        ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~1                               ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~1_OTERM31                       ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~1_RTM033                        ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~1_RTM033                        ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~2                               ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~2_OTERM17                       ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~2_RTM019                        ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~2_RTM019                        ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~3                               ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~3_OTERM59                       ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~3_RTM018                        ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~3_RTM032                        ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~3_RTM048                        ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~3_RTM061                        ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~3_RTM061                        ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal8~0                               ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal9~0_OTERM53                       ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal9~1                               ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal9~1_RTM070                        ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~6                              ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~6_OTERM77                      ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~6_RTM022                       ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~6_RTM044                       ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~7                              ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~7_OTERM35                      ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~7_RTM037                       ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~7_RTM037                       ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~8                              ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~8_RTM036                       ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~9                              ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~9_OTERM69                      ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~9_RTM071                       ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~9_RTM071                       ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal11~4_OTERM11                      ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal11~5                              ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal11~5_OTERM79                      ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal12~0                              ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal12~0_OTERM85                      ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal12~0_RTM087                       ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal12~0_RTM087                       ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal13~0_OTERM51                      ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal13~1                              ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal13~1_OTERM83                      ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal14~1                              ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~0                            ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~0_OTERM21                    ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~0_RTM023                     ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~0_RTM023                     ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~1                            ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~1_OTERM39                    ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~1_RTM041                     ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~1_RTM041                     ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~2                            ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~2_OTERM13                    ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~2_RTM015                     ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~2_RTM015                     ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrCmd~1                               ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrCmd~1_RTM0126                       ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrCmd~2                               ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[0]~12                    ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[0]~12_NEW_REG112_RTM0114 ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[0]~12_NEW_REG112_RTM0114 ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[0]~12_OTERM113           ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[0]~12_RTM0115            ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[0]~12_RTM0115            ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[0]~13                    ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[1]~14_OTERM111           ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[2]~16_OTERM109           ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[3]~18_OTERM107           ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[4]~20_OTERM105           ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[5]~22_OTERM103           ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[6]~24_OTERM101           ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[7]~26_OTERM99            ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[8]~28_OTERM97            ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[9]~30_OTERM95            ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[10]~32_OTERM93           ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[11]~34_OTERM91           ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutine~11                          ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector0~0                            ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector0~0_RTM060                     ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector1~1                            ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector1~1_RTM086                     ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector5~0                            ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector5~1                            ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector5~6                            ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector6~0                            ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector14~0                           ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector17~7                           ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr~12                           ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr~16                           ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr~36                           ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr~36_OTERM121                  ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|directAck~0                            ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|pixelOut[6]~0                          ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~4_OTERM25                    ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~5                            ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~5_OTERM43                    ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~5_RTM045                     ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~5_RTM045                     ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~6                            ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~6_OTERM27                    ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~6_RTM029                     ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~6_RTM029                     ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~7                            ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~7_OTERM73                    ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~7_RTM014                     ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~7_RTM028                     ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~7_RTM040                     ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~7_RTM075                     ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~7_RTM075                     ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~8_OTERM65                    ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~9                            ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~9_OTERM125                   ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~9_RTM074                     ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~9_RTM0127                    ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~9_RTM0127                    ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~10                           ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~10_OTERM123                  ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~10_RTM056                    ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~11                           ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~12_OTERM67                   ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~13                           ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~13_OTERM55                   ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~13_RTM057                    ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~13_RTM057                    ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Add0~1                                ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Add1~0                                ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Equal0~0                              ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Equal0~0_OTERM1                       ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Equal0~0_RTM03                        ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Equal0~0_RTM03                        ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Equal0~1                              ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Equal0~1_OTERM9                       ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Equal0~1_RTM02                        ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|LessThan5~0                           ; Deleted          ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|LessThan5~0_OTERM5                    ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|LessThan5~0_RTM07                     ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|LessThan5~0_RTM07                     ; Retimed Register ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|LessThan5~1                           ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|LessThan5~1_RTM06                     ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|col_number~35                         ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|col_number~36                         ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|process_1~0                           ; Modified         ; Timing optimization ;
-; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|vcount~3                              ; Modified         ; Timing optimization ;
-+----------------------------------------------------------------------------------------------+------------------+---------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Physical Synthesis Netlist Optimizations                                                                            ;
++----------------------------------------------------------------------------+------------------+---------------------+
+; Node                                                                       ; Action           ; Reason              ;
++----------------------------------------------------------------------------+------------------+---------------------+
+; vga_subsystem_top:inst_vga_subsystem|Add1~1                                ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|Add1~2                                ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|Add2~1                                ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sample_timer~7                        ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal0~0             ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal2~0_OTERM65     ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal2~1             ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal3~1             ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~0             ; Deleted          ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~0_OTERM47     ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~0_RTM049      ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~0_RTM049      ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~1             ; Deleted          ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~1_OTERM31     ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~1_RTM033      ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~1_RTM033      ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~2             ; Deleted          ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~2_OTERM17     ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~2_RTM019      ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~2_RTM019      ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~3             ; Deleted          ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~3_OTERM61     ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~3_RTM018      ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~3_RTM032      ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~3_RTM048      ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~3_RTM063      ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal5~3_RTM063      ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal8~0             ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal9~0_OTERM53     ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal9~1             ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal9~1_RTM074      ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~6            ; Deleted          ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~6_OTERM35    ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~6_RTM037     ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~6_RTM037     ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~7            ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~7_OTERM77    ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~7_RTM022     ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~8            ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~9            ; Deleted          ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~9_OTERM73    ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~9_RTM075     ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal10~9_RTM075     ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal11~6_OTERM11    ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal11~7            ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal11~7_OTERM79    ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal11~7_RTM036     ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal11~7_RTM044     ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal11~8            ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal11~8_OTERM55    ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal12~0            ; Deleted          ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal12~0_OTERM67    ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal12~0_RTM069     ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal12~0_RTM069     ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal12~1            ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal12~1_RTM068     ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal13~0_OTERM51    ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal13~1            ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal13~1_OTERM85    ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Equal14~1            ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~0          ; Deleted          ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~0_OTERM21  ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~0_RTM023   ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~0_RTM023   ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~1          ; Deleted          ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~1_OTERM39  ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~1_RTM041   ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~1_RTM041   ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~2          ; Deleted          ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~2_OTERM13  ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~2_RTM015   ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|LessThan0~2_RTM015   ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrCmd~2             ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[0]~12  ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutine~11        ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector0~0          ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector0~0_RTM062   ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector3~1          ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector4~1          ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector5~4          ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector6~0          ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector17~1         ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr~36         ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|directAck~0          ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~4          ; Deleted          ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~4_OTERM43  ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~4_RTM045   ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~4_RTM045   ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~5_OTERM25  ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~6          ; Deleted          ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~6_OTERM27  ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~6_RTM029   ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~6_RTM029   ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~7          ; Deleted          ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~7_OTERM81  ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~7_RTM014   ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~7_RTM028   ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~7_RTM040   ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~7_RTM083   ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~7_RTM083   ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~8_OTERM71  ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~9          ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~9_RTM082   ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~10         ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~10_RTM058  ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~11         ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~13         ; Deleted          ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~13_OTERM57 ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~13_RTM059  ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|process_0~13_RTM059  ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Add0~1              ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Add1~0              ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Equal0~0            ; Deleted          ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Equal0~0_OTERM1     ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Equal0~0_RTM03      ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Equal0~0_RTM03      ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Equal0~1            ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Equal0~1_OTERM9     ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|Equal0~1_RTM02      ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|LessThan5~0         ; Deleted          ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|LessThan5~0_OTERM5  ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|LessThan5~0_RTM07   ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|LessThan5~0_RTM07   ; Retimed Register ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|LessThan5~1         ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|LessThan5~1_RTM06   ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|process_1~0         ; Modified         ; Timing optimization ;
+; vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|vcount~3            ; Modified         ; Timing optimization ;
++----------------------------------------------------------------------------+------------------+---------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -654,14 +650,14 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[7]   ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|col_number[0] ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|reg_x[1]                        ;
-; 5:1                ; 15 bits   ; 45 LEs        ; 15 LEs               ; 30 LEs                 ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|shift_reg[6]                    ;
-; 11:1               ; 3 bits    ; 21 LEs        ; 6 LEs                ; 15 LEs                 ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrAdr_s[9]    ;
-; 12:1               ; 9 bits    ; 72 LEs        ; 27 LEs               ; 45 LEs                 ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrAdr_s[0]    ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|bit_cnt[0]                      ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |top|vga_subsystem_top:inst_vga_subsystem|Selector22                      ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|colLoadNr[1]   ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine|col_number[4] ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|shift_reg[5]                    ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|reg_x[6]                        ;
+; 11:1               ; 3 bits    ; 21 LEs        ; 6 LEs                ; 15 LEs                 ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrAdr_s[12]   ;
+; 12:1               ; 9 bits    ; 72 LEs        ; 27 LEs               ; 45 LEs                 ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrAdr_s[7]    ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|vga_subsystem_top:inst_vga_subsystem|bit_cnt[2]                      ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |top|vga_subsystem_top:inst_vga_subsystem|Selector8                       ;
 ; 9:1                ; 4 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; No         ; |top|vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|Selector21     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
 
@@ -818,6 +814,15 @@ Encoding Type:  One-Hot
 +---------------------------------+--------------------+------+-------------------------------------------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                             ;
 +---------------------------------+--------------------+------+-------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component|scfifo_7831:auto_generated|a_dpfifo_ee31:dpfifo|altsyncram_0tm1:FIFOram ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                                                                       ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                                                        ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------+
@@ -1339,6 +1344,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component ;
++-------------------------+--------------+---------------------------------------------------------------------------------------------+
+; Parameter Name          ; Value        ; Type                                                                                        ;
++-------------------------+--------------+---------------------------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS       ; ON           ; AUTO_CARRY                                                                                  ;
+; IGNORE_CARRY_BUFFERS    ; OFF          ; IGNORE_CARRY                                                                                ;
+; AUTO_CASCADE_CHAINS     ; ON           ; AUTO_CASCADE                                                                                ;
+; IGNORE_CASCADE_BUFFERS  ; OFF          ; IGNORE_CASCADE                                                                              ;
+; lpm_width               ; 16           ; Signed Integer                                                                              ;
+; LPM_NUMWORDS            ; 1024         ; Signed Integer                                                                              ;
+; LPM_WIDTHU              ; 10           ; Signed Integer                                                                              ;
+; LPM_SHOWAHEAD           ; OFF          ; Untyped                                                                                     ;
+; UNDERFLOW_CHECKING      ; ON           ; Untyped                                                                                     ;
+; OVERFLOW_CHECKING       ; ON           ; Untyped                                                                                     ;
+; ALLOW_RWCYCLE_WHEN_FULL ; OFF          ; Untyped                                                                                     ;
+; ADD_RAM_OUTPUT_REGISTER ; OFF          ; Untyped                                                                                     ;
+; ALMOST_FULL_VALUE       ; 0            ; Untyped                                                                                     ;
+; ALMOST_EMPTY_VALUE      ; 0            ; Untyped                                                                                     ;
+; ENABLE_ECC              ; FALSE        ; Untyped                                                                                     ;
+; USE_EAB                 ; ON           ; Untyped                                                                                     ;
+; MAXIMIZE_SPEED          ; 5            ; Untyped                                                                                     ;
+; DEVICE_FAMILY           ; Cyclone IV E ; Untyped                                                                                     ;
+; OPTIMIZE_FOR_SPEED      ; 5            ; Untyped                                                                                     ;
+; CBXI_PARAMETER          ; scfifo_7831  ; Untyped                                                                                     ;
++-------------------------+--------------+---------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component ;
 +------------------------+--------------+----------------------------------------------------------------+
@@ -1389,6 +1423,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- LPM_SHOWAHEAD       ; ON                                                                               ;
 ;     -- USE_EAB             ; ON                                                                               ;
 +----------------------------+----------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; scfifo Parameter Settings by Entity Instance                                                                         ;
++----------------------------+-----------------------------------------------------------------------------------------+
+; Name                       ; Value                                                                                   ;
++----------------------------+-----------------------------------------------------------------------------------------+
+; Number of entity instances ; 1                                                                                       ;
+; Entity Instance            ; vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component ;
+;     -- FIFO Type           ; Single Clock                                                                            ;
+;     -- lpm_width           ; 16                                                                                      ;
+;     -- LPM_NUMWORDS        ; 1024                                                                                    ;
+;     -- LPM_SHOWAHEAD       ; OFF                                                                                     ;
+;     -- USE_EAB             ; ON                                                                                      ;
++----------------------------+-----------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------+
@@ -1455,29 +1504,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; boundary_port         ; 92                          ;
 ; cycloneiii_ddio_out   ; 1                           ;
-; cycloneiii_ff         ; 458                         ;
-;     CLR               ; 85                          ;
+; cycloneiii_ff         ; 511                         ;
+;     CLR               ; 102                         ;
 ;     CLR SLD           ; 10                          ;
-;     ENA               ; 160                         ;
-;     ENA CLR           ; 39                          ;
+;     ENA               ; 207                         ;
+;     ENA CLR           ; 37                          ;
 ;     ENA SCLR          ; 10                          ;
-;     SCLR              ; 54                          ;
-;     plain             ; 100                         ;
+;     SCLR              ; 37                          ;
+;     plain             ; 108                         ;
 ; cycloneiii_io_obuf    ; 16                          ;
-; cycloneiii_lcell_comb ; 455                         ;
-;     arith             ; 49                          ;
-;         2 data inputs ; 49                          ;
-;     normal            ; 406                         ;
+; cycloneiii_lcell_comb ; 544                         ;
+;     arith             ; 100                         ;
+;         2 data inputs ; 82                          ;
+;         3 data inputs ; 18                          ;
+;     normal            ; 444                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 14                          ;
-;         2 data inputs ; 41                          ;
-;         3 data inputs ; 108                         ;
-;         4 data inputs ; 241                         ;
+;         1 data inputs ; 15                          ;
+;         2 data inputs ; 57                          ;
+;         3 data inputs ; 98                          ;
+;         4 data inputs ; 272                         ;
 ; cycloneiii_pll        ; 1                           ;
-; cycloneiii_ram_block  ; 56                          ;
+; cycloneiii_ram_block  ; 72                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.24                        ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 2.38                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1486,7 +1536,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -1496,7 +1546,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
-    Info: Processing started: Mon May 11 23:13:00 2026
+    Info: Processing started: Thu May 14 20:48:05 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA_Subsystem -c VGA_Subsystem
 Info (16303): Aggressive Performance optimization mode selected -- timing performance will be prioritized at the potential cost of increased logic area and compilation time
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
@@ -1524,6 +1574,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file src/vga
 Info (12021): Found 2 design units, including 1 entities, in source file src/pll/pll_vga.vhd
     Info (12022): Found design unit 1: pll_vga-SYN File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/pll/pll_vga.vhd Line: 55
     Info (12023): Found entity 1: pll_vga File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/pll/pll_vga.vhd Line: 43
+Info (12021): Found 2 design units, including 1 entities, in source file src/vga/audio_fifo.vhd
+    Info (12022): Found design unit 1: audio_fifo-SYN File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/audio_fifo.vhd Line: 57
+    Info (12023): Found entity 1: audio_fifo File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/audio_fifo.vhd Line: 43
 Info (12127): Elaborating entity "top" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at top.vhd(37): used implicit default value for signal "TDO_o" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 37
 Info (12128): Elaborating entity "pll_vga" for hierarchy "pll_vga:inst_pll_vga" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 144
@@ -1597,7 +1650,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/pll_
     Info (12023): Found entity 1: pll_vga_altpll File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/pll_vga_altpll.v Line: 30
 Info (12128): Elaborating entity "pll_vga_altpll" for hierarchy "pll_vga:inst_pll_vga|altpll:altpll_component|pll_vga_altpll:auto_generated" File: c:/intelfpga/22.1std/quartus/libraries/megafunctions/altpll.tdf Line: 898
 Info (12128): Elaborating entity "vga_subsystem_top" for hierarchy "vga_subsystem_top:inst_vga_subsystem" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 169
-Info (12128): Elaborating entity "vga_fifo" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 208
+Info (12128): Elaborating entity "vga_fifo" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 274
 Info (12128): Elaborating entity "dcfifo" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_fifo.vhd Line: 105
 Info (12130): Elaborated megafunction instantiation "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_fifo.vhd Line: 105
 Info (12133): Instantiated megafunction "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component" with the following parameter: File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_fifo.vhd Line: 105
@@ -1656,8 +1709,8 @@ Info (12128): Elaborating entity "cmpr_a66" for hierarchy "vga_subsystem_top:ins
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_j28.tdf
     Info (12023): Found entity 1: mux_j28 File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/mux_j28.tdf Line: 23
 Info (12128): Elaborating entity "mux_j28" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vga_fifo:pixel_fifo|dcfifo:dcfifo_component|dcfifo_eok1:auto_generated|mux_j28:rdemp_eq_comp_lsb_mux" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/dcfifo_eok1.tdf Line: 101
-Info (12128): Elaborating entity "sdram" for hierarchy "vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 222
-Info (12128): Elaborating entity "ram2" for hierarchy "vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 252
+Info (12128): Elaborating entity "sdram" for hierarchy "vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 288
+Info (12128): Elaborating entity "ram2" for hierarchy "vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 318
 Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/ram2.vhd Line: 64
 Info (12130): Elaborated megafunction instantiation "vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/ram2.vhd Line: 64
 Info (12133): Instantiated megafunction "vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component" with the following parameter: File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/ram2.vhd Line: 64
@@ -1714,7 +1767,39 @@ Info (12133): Instantiated megafunction "vga_subsystem_top:inst_vga_subsystem|ra
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mno3.tdf
     Info (12023): Found entity 1: altsyncram_mno3 File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/altsyncram_mno3.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_mno3" for hierarchy "vga_subsystem_top:inst_vga_subsystem|ram2:read_buffer|altsyncram:altsyncram_component|altsyncram_mno3:auto_generated" File: c:/intelfpga/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "vgaout" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 264
+Info (12128): Elaborating entity "vgaout" for hierarchy "vga_subsystem_top:inst_vga_subsystem|vgaout:vga_engine" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 330
+Info (12128): Elaborating entity "audio_fifo" for hierarchy "vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/vga_subsystem_top.vhd Line: 345
+Info (12128): Elaborating entity "scfifo" for hierarchy "vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/audio_fifo.vhd Line: 94
+Info (12130): Elaborated megafunction instantiation "vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/audio_fifo.vhd Line: 94
+Info (12133): Instantiated megafunction "vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component" with the following parameter: File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/audio_fifo.vhd Line: 94
+    Info (12134): Parameter "add_ram_output_register" = "OFF"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_numwords" = "1024"
+    Info (12134): Parameter "lpm_showahead" = "OFF"
+    Info (12134): Parameter "lpm_type" = "scfifo"
+    Info (12134): Parameter "lpm_width" = "16"
+    Info (12134): Parameter "lpm_widthu" = "10"
+    Info (12134): Parameter "overflow_checking" = "ON"
+    Info (12134): Parameter "underflow_checking" = "ON"
+    Info (12134): Parameter "use_eab" = "ON"
+Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_7831.tdf
+    Info (12023): Found entity 1: scfifo_7831 File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/scfifo_7831.tdf Line: 25
+Info (12128): Elaborating entity "scfifo_7831" for hierarchy "vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component|scfifo_7831:auto_generated" File: c:/intelfpga/22.1std/quartus/libraries/megafunctions/scfifo.tdf Line: 300
+Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_ee31.tdf
+    Info (12023): Found entity 1: a_dpfifo_ee31 File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/a_dpfifo_ee31.tdf Line: 29
+Info (12128): Elaborating entity "a_dpfifo_ee31" for hierarchy "vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component|scfifo_7831:auto_generated|a_dpfifo_ee31:dpfifo" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/scfifo_7831.tdf Line: 36
+Info (12021): Found 1 design units, including 1 entities, in source file db/a_fefifo_kae.tdf
+    Info (12023): Found entity 1: a_fefifo_kae File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/a_fefifo_kae.tdf Line: 25
+Info (12128): Elaborating entity "a_fefifo_kae" for hierarchy "vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component|scfifo_7831:auto_generated|a_dpfifo_ee31:dpfifo|a_fefifo_kae:fifo_state" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/a_dpfifo_ee31.tdf Line: 41
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_op7.tdf
+    Info (12023): Found entity 1: cntr_op7 File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/cntr_op7.tdf Line: 26
+Info (12128): Elaborating entity "cntr_op7" for hierarchy "vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component|scfifo_7831:auto_generated|a_dpfifo_ee31:dpfifo|a_fefifo_kae:fifo_state|cntr_op7:count_usedw" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/a_fefifo_kae.tdf Line: 38
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_0tm1.tdf
+    Info (12023): Found entity 1: altsyncram_0tm1 File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/altsyncram_0tm1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_0tm1" for hierarchy "vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component|scfifo_7831:auto_generated|a_dpfifo_ee31:dpfifo|altsyncram_0tm1:FIFOram" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/a_dpfifo_ee31.tdf Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_cpb.tdf
+    Info (12023): Found entity 1: cntr_cpb File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/cntr_cpb.tdf Line: 26
+Info (12128): Elaborating entity "cntr_cpb" for hierarchy "vga_subsystem_top:inst_vga_subsystem|audio_fifo:audio_fifo_inst|scfifo:scfifo_component|scfifo_7831:auto_generated|a_dpfifo_ee31:dpfifo|cntr_cpb:rd_ptr_count" File: D:/LAVORI/VGA_SUBSYSTEM_V3/db/a_dpfifo_ee31.tdf Line: 43
 Info (12128): Elaborating entity "DCLK_BUF" for hierarchy "DCLK_BUF:u_dram_clk_gen" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 220
 Info (12128): Elaborating entity "altddio_out" for hierarchy "DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/DCLK_BUF.vhd Line: 61
 Info (12130): Elaborated megafunction instantiation "DCLK_BUF:u_dram_clk_gen|altddio_out:ALTDDIO_OUT_component" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/DCLK_BUF.vhd Line: 61
@@ -1787,32 +1872,28 @@ Info (332111): Found 4 clocks
     Info (332111):   39.682 inst_pll_vga|altpll_component|auto_generated|pll1|clk[1]
     Info (332111):    7.142 inst_pll_vga|altpll_component|auto_generated|pll1|clk[2]
 Info (128002): Starting physical synthesis algorithm register retiming
-Info (128003): Physical synthesis algorithm register retiming complete: estimated slack improvement of 667 ps
+Info (128003): Physical synthesis algorithm register retiming complete: estimated slack improvement of 706 ps
 Info (128002): Starting physical synthesis algorithm combinational resynthesis using boolean division
 Info (128003): Physical synthesis algorithm combinational resynthesis using boolean division complete: estimated slack improvement of 0 ps
 Info (128001): Physical synthesis optimizations for speed complete: elapsed time is 00:00:02
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (35003): Optimize away 16 nodes that do not fanout to OUTPUT or BIDIR pins
-    Info (35004): Node: "vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[10]" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/sdram.vhd Line: 66
-    Info (35004): Node: "vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[11]" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/sdram.vhd Line: 66
-    Info (35004): Node: "vga_subsystem_top:inst_vga_subsystem|sdram:sdram_ctrl|SdrRoutineSeq[6]" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/VGA/sdram.vhd Line: 66
 Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "nTRST_i" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 34
     Warning (15610): No output dependent on input pin "TCK_i" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 35
     Warning (15610): No output dependent on input pin "TDI_i" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 36
     Warning (15610): No output dependent on input pin "TMS_i" File: D:/LAVORI/VGA_SUBSYSTEM_V3/src/top.vhd Line: 38
-Info (21057): Implemented 857 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 974 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 29 input pins
     Info (21059): Implemented 47 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 707 logic cells
-    Info (21064): Implemented 56 RAM segments
+    Info (21061): Implemented 808 logic cells
+    Info (21064): Implemented 72 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 4897 megabytes
-    Info: Processing ended: Mon May 11 23:13:26 2026
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Peak virtual memory: 4892 megabytes
+    Info: Processing ended: Thu May 14 20:49:21 2026
+    Info: Elapsed time: 00:01:16
+    Info: Total CPU time (on all processors): 00:00:32
 
 
